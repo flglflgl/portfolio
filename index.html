@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="stylesheet/index.css">
   <title>dnnn</title>
 </head>
+
+<body>
 
 <!-- Grid -->
 <div class="grid">
@@ -24,75 +26,87 @@
 
     <ul>
       <li>l@icloud.com</li>
-      <li>Skills</li>
-      <li>Work</li>
+      <a href="skills">
+        <li>Skills</li>
+      </a>
+      <li>Tips</li>
     </ul>
   </div>
 
-  <div class="col">
-    <div class="intro">
-      <h1>Hi I'm
+  <div class="intro">
+    <h1>
+      Hi I'm
 
-        I first got into coding writing custom PHP scripts .
-        scripting finding solution
+      I first got into coding writing custom PHP scripts .
+      scripting finding solution
 
-        I'm now tipping my toes into .
+      I'm now tipping my toes into .
 
-        Experienced Support Engineer with strong problem-solving skills
-        customer-centric support solutions.
-      </h1>
-    </div>
+      Experienced Support Engineer with strong problem-solving skills
+      customer-centric support solutions.
+    </h1>
+
+    <p>lllllllll</p>
   </div>
 
-  <!-- Post Grid -->
-  <div class="col postGrid">
+  <div id="skills" class="skills">
+    <h1>Skills</h1>
+  </div>
+</div>
 
-    <!-- Coding Tool -->
-    <div class="post">
-      <a href="https://github.com/dwnmmsnn/shorturl">
-        <img src="" alt="CodingTool" border="0"></br>
-        <strong>
-          <p>CodingTool</p>
-        </strong>
-        <p>Coding tool to edit HTML, CSS, JS</p>
-        <p>HTML, CSS, TypeScript, Next.js</p>
-      </a>
-    </div>
+<!-- Post Grid -->
+<div class="col postGrid">
 
-    <!-- Tip -->
-    <div class="post">
-      <a href="https://github.com/dwnmmsnn/shorturl">
-        <img src="" alt="shorturl" border="0"></br>
-        <strong>
-          <p>Tip</p>
-        </strong>
+  <!-- Coding Tool -->
+  <div class="post" data-text="Coding Tool">
+    <a href="https://github.com/dwnmmsnn/shorturl">
+      <img src="" alt="CodingTool" border="0"></br>
+      <strong>
+        <p>CodingTool</p>
+      </strong>
+      <p>Coding tool to edit HTML, CSS, JS</p>
+      <p>HTML, CSS, TypeScript, Next.js</p>
+    </a>
+  </div>
+
+  <!-- Tip -->
+  <div class="post" data-text="Tip">
+    <a href="https://github.com/dwnmmsnn/shorturl">
+      <img src="" alt="shorturl" border="0"></br>
+      <strong>
         <p>Tip</p>
-        <p>HTML, CSS, TypeScript, Node.js, Express.js, Github</p>
-      </a>
-    </div>
-
-    <!-- Short URL -->
-    <div class="post">
-      <a href="https://github.com/dwnmmsnn/shorturl">
-        <img src="" alt="shorturl" border="0"></br>
-        <strong>
-          <p>shorturl</p>
-        </strong>
-        <p>Tool to shorten URLs</p>
-        <p>HTML, CSS, TypeScript, Next.js</p>
-      </a>
-    </div>
-
+      </strong>
+      <p>Tip</p>
+      <p>HTML, CSS, TypeScript, Node.js, Express.js, Github</p>
+    </a>
   </div>
 
-  <!-- Bottom -->
-  <div class="col bottom">
-    <ul>
-      <li>git</li>
-      <li>lin</li>
-    </ul>
+  <!-- Short URL -->
+  <div class="post" data-text="Short URL">
+    <a href="https://github.com/dwnmmsnn/shorturl">
+      <img src="" alt="shorturl" border="0"></br>
+      <strong>
+        <p>shorturl</p>
+      </strong>
+      <p>Tool to shorten URLs</p>
+      <p>HTML, CSS, TypeScript, Next.js</p>
+    </a>
   </div>
 
 </div>
+
+<!-- Bottom -->
+<div class="col bottom">
+  <ul>
+    <li>git</li>
+    <li>lin</li>
+  </ul>
+</div>
+
+</div>
+
+<script src="script/index.js"></script>
+
+</body>
 
 </html>

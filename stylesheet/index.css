@@ -1,12 +1,36 @@
+/*
+**
+** Top
+**
+** Bottom
+**
+** Grid
+**
+** postGrid
+**
+** Intro
+**
+** Skills
+**
+** Cursor
+**
+** Form
+**
+*/
+
 * {
   margin: 0;
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: system-ui;
   font-size: 4.9vh;
-  background-color: #bdbdbd;
+  background-color: #ccd0d2;
   color: #ffffff;
   cursor: none;
 }
@@ -97,21 +121,42 @@ body {
   height: 70%;
 }
 
-.postCursor {
+.postCursorCon {
   position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  pointer-events: none;
+}
+
+.postCursorToolTip {
+  font-size: 4vh;
+  color: #ffffff;
+  white-space: nowrap;
+  transform: translateY(2px);
+  padding: 2px 8px;
+}
+
+.postCursor {
   height: 10.9vh;
   aspect-ratio: 4/10;
   border: 2px solid #ffffff;
   border-radius: 20px;
   pointer-events: none;
-  transform: translate(-50%, -50%);
-  transition: transform 0.04s linear;
-  transition: transform 0.4s ease;
 }
 
 /* ---------- #INTRO ---------- */
 
 .intro {
+  aspect-ratio: 10 / 4;
+  font-size: 7vh;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ---------- #SKILLS ---------- */
+
+.skills {
   aspect-ratio: 10 / 4;
   font-size: 7vh;
   margin: 0 auto;
@@ -148,4 +193,3 @@ p {
 ul {
   list-style-type: none;
 }
-
