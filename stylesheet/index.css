@@ -16,6 +16,8 @@
 **
 ** Form
 **
+** Helpers
+**
 */
 
 * {
@@ -70,6 +72,10 @@ body {
   display: grid;
   grid-template-rows: 20vh auto auto 10vh;
   gap: 100px;
+}
+
+.col {
+  overflow: hidden;
 }
 
 /* ---------- #POSTGRID ---------- */
@@ -179,7 +185,11 @@ body {
 
 /* ---------- #FORM ---------- */
 
-/* ---------- # ---------- */
+/* ---------- #HELPERS ---------- */
+
+h1 {
+  font-size: 7vh;
+}
 
 a {
   text-decoration: none;
