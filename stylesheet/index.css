@@ -34,7 +34,7 @@
   
   body {
     font-family: system-ui;
-    font-size: 4.9vh;
+    font-size: 2.9vh;
     background-color: #ccd0d2;
     color: #ffffff;
     cursor: none;
@@ -76,8 +76,8 @@
     width: 100vw;
     height: 100vh;
     display: grid;
-    grid-template-rows: 20vh auto auto 10vh;
-    gap: 200px;
+    grid-template-rows: 20vh auto auto auto 10vh;
+    gap: 20px;
   }
   
   .col {
@@ -90,8 +90,9 @@
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-rows: repeat(1, 1fr);
-    grid-gap: 170px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
     align-items: center;
     justify-items: center;
     padding: 20px;
@@ -100,8 +101,8 @@
   /* ---------- #POST ---------- */
   
   .post {
-    width: 70vw;
-    aspect-ratio: 10 / 4;
+    width: 100%;
+    aspect-ratio: 4/3;
     font-size: 4vh;
     transition: transform 0.4s ease;
     opacity: 0;
@@ -118,50 +119,16 @@
     transform: scale(1.02);
   }
   
-  .post:hover .cursor {
-    width: 10px;
-    height: 10px;
-    background: none;
-    border: 2px solid #7c7c7c;
-    border-radius: 20px;
-    transform: translate(-50%, -50%) scale(1.1);
-    transition: transform 0.4s ease, width 0.4s ease, height 0.4s ease;
-  }
-  
   .post img {
     width: 100%;
     height: 70%;
   }
   
-  .postCursorCon {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    pointer-events: none;
-  }
-  
-  .postCursorToolTip {
-    font-size: 4vh;
-    color: #ffffff;
-    white-space: nowrap;
-    transform: translateY(2px);
-    padding: 2px 8px;
-  }
-  
-  .postCursor {
-    height: 10.9vh;
-    aspect-ratio: 4/10;
-    border: 2px solid #ffffff;
-    border-radius: 20px;
-    pointer-events: none;
-  }
-  
   /* ---------- #INTRO ---------- */
   
   .intro {
-    aspect-ratio: 10 / 4;
-    font-size: 7vh;
+    aspect-ratio: 10/4;
+    font-size: 4vh;
     margin: 0 auto;
     padding: 0 40px;
   }
@@ -169,24 +136,16 @@
   /* ---------- #SKILLS ---------- */
   
   .skills {
-    aspect-ratio: 10 / 4;
-    font-size: 7vh;
+    aspect-ratio: 10/4;
+    font-size: 4vh;
     margin: 0 auto;
     padding: 0 40px;
   }
   
   /* ---------- #CURSOR ---------- */
   
-  .cursor {
-    position: absolute;
-    height: 7vh;
-    aspect-ratio: 4/10;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.29);
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: transform 0.04s linear;
-    transition: transform 0.4s ease;
+  .cursor, .postCursorCon {
+    display: none; /* Hide custom cursor on mobile */
   }
   
   /* ---------- #FORM ---------- */
@@ -194,7 +153,7 @@
   /* ---------- #HELPERS ---------- */
   
   h1 {
-    font-size: 7vh;
+    font-size: 4vh;
   }
   
   a {
@@ -266,7 +225,7 @@ body {
   width: 100vw;
   height: 100vh;
   display: grid;
-  grid-template-rows: 20vh auto auto 10vh;
+  grid-template-rows: 20vh auto auto auto 10vh;
   gap: 200px;
 }
 
@@ -291,7 +250,7 @@ body {
 
 .post {
   width: 70vw;
-  aspect-ratio: 10 / 4;
+  aspect-ratio: 10/4;
   font-size: 4vh;
   transition: transform 0.4s ease;
   opacity: 0;
@@ -350,6 +309,7 @@ body {
 /* ---------- #INTRO ---------- */
 
 .intro {
+  width: 70vw;
   aspect-ratio: 10 / 4;
   font-size: 7vh;
   margin: 0 auto;
@@ -359,6 +319,7 @@ body {
 /* ---------- #SKILLS ---------- */
 
 .skills {
+  width: 70vw;
   aspect-ratio: 10 / 4;
   font-size: 7vh;
   margin: 0 auto;
