@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
-  // Custom Cursor .posrCursor
+  // Custom Cursor .postCursor
   
   document.addEventListener("DOMContentLoaded", () => {
     const cursor = document.createElement("div");
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
       postCursorCon.style.top = `${e.pageY + offsetY}px`;
     });
   
-    const posts = document.querySelectorAll(".post");
+    const posts = document.querySelectorAll(".post img");
     posts.forEach((post) => {
       post.addEventListener("mouseover", () => {
         cursor.style.display = "none";
