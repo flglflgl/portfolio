@@ -78,7 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Flyin effect when clicking on .top ul li
   document.addEventListener("DOMContentLoaded", () => {
-    // Select all links inside .top ul li
     document.querySelectorAll(".top ul a").forEach(link => {
         link.addEventListener("click", (event) => {
             event.preventDefault(); // Prevent default anchor behavior
@@ -87,15 +86,16 @@ document.addEventListener("DOMContentLoaded", () => {
             const targetSection = document.querySelector(targetId); // Select the section
             
             if (targetSection) {
-                // Reveal the section by setting display to block (if hidden)
+                // Ensure the section is visible
                 targetSection.style.display = "block";
-                targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+                
+                // Smoothly scroll to the section and center it
+                targetSection.scrollIntoView({ behavior: "smooth", block: "center" });
             }
         });
     });
 });
-
-  
+ 
 
   // Run video when .cursor is on .post
 
