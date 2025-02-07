@@ -48,6 +48,7 @@
     display: flex;
     align-items: center;
     padding: 0 20px 0 40px;
+    z-index: 100;
   }
   
   .top li {
@@ -194,7 +195,7 @@ html {
 
 body {
   font-family: system-ui;
-  font-size: 4.9vh;
+  font-size: 2vh;
   background-color: #777777;
   color: #ffffff;
   cursor: none;
@@ -209,6 +210,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px 0 40px;
+  z-index: 100;
 }
 
 .top li {
@@ -391,7 +393,7 @@ ul {
   
   body {
     font-family: system-ui;
-    font-size: 4.9vh;
+    font-size: 2vh;
     background-color: #777777;
     color: #ffffff;
     cursor: none;
@@ -406,6 +408,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px 0 40px;
+    z-index: 100;
   }
   
   .top li {
