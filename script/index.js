@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
       postCursorCon.style.top = `${e.pageY + offsetY}px`;
     });
   
-    const posts = document.querySelectorAll(".post img");
+    const posts = document.querySelectorAll(".post");
     posts.forEach((post) => {
       post.addEventListener("mouseover", () => {
         cursor.style.display = "none";
@@ -75,3 +75,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
+
+  // Run video when .cursor is on .post
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const posts = document.querySelectorAll(".post");
+
+    posts.forEach((post) => {
+        const video = post.querySelector("video");
+
+        if (video) {
+            post.addEventListener("mouseenter", () => {
+                video.play();
+            });
+
+            post.addEventListener("mouseleave", () => {
+                video.pause();
+                video.currentTime = 0; // Reset video when leaving
+            });
+        }
+    });
+});
