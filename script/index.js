@@ -74,6 +74,27 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
+
+
+  // Flyin effect when clicking on .top ul li
+  document.addEventListener("DOMContentLoaded", () => {
+    // Select all links inside .top ul li
+    document.querySelectorAll(".top ul a").forEach(link => {
+        link.addEventListener("click", (event) => {
+            event.preventDefault(); // Prevent default anchor behavior
+            
+            const targetId = link.getAttribute("href"); // Get href attribute (e.g., #skills)
+            const targetSection = document.querySelector(targetId); // Select the section
+            
+            if (targetSection) {
+                // Reveal the section by setting display to block (if hidden)
+                targetSection.style.display = "block";
+                targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+        });
+    });
+});
+
   
 
   // Run video when .cursor is on .post
