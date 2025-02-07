@@ -388,10 +388,11 @@ ul {
   
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
   
   body {
-    font-family: system-ui;
+    font-family: system-ui; 
     font-size: 4vh;
     background-color: #777777;
     color: #ffffff;
@@ -440,7 +441,7 @@ ul {
     width: 100vw;
     display: grid;
     grid-template-rows: 20vh auto auto auto 10vh;
-    gap: 200px;
+    gap: 100px;
   }
   
   .col {
