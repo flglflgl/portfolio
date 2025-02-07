@@ -80,7 +80,6 @@
   
   .grid {
     width: 100vw;
-    height: 100vh;
     display: grid;
     grid-template-rows: 20vh auto auto auto 10vh;
     gap: 20px;
@@ -239,7 +238,6 @@ body {
 
 .grid {
   width: 100vw;
-  height: 100vh;
   display: grid;
   grid-template-rows: 20vh auto auto auto 10vh;
   gap: 200px;
@@ -327,7 +325,7 @@ body {
 .intro {
   width: 70vw;
   aspect-ratio: 10 / 4;
-  font-size: 7vh;
+  font-size: 4vh;
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -337,7 +335,7 @@ body {
 .skills {
   width: 70vw;
   aspect-ratio: 10 / 4;
-  font-size: 7vh;
+  font-size: 4vh;
   margin: 0 auto;
   padding: 0 40px;
 }
@@ -361,7 +359,7 @@ body {
 /* ---------- #HELPERS ---------- */
 
 h1 {
-  font-size: 7vh;
+  font-size: 4vh;
 }
 
 a {
@@ -394,7 +392,7 @@ ul {
   
   body {
     font-family: system-ui;
-    font-size: 2.9vh;
+    font-size: 4vh;
     background-color: #777777;
     color: #ffffff;
     cursor: none;
@@ -424,8 +422,8 @@ ul {
   .bottom {
     position: fixed;
     left: 0;
-  right: 0;
-  bottom: 0;
+    right: 0;
+    bottom: 0;
     padding: 20px;
   }
   
@@ -439,7 +437,6 @@ ul {
   
   .grid {
     width: 100vw;
-    height: 100vh;
     display: grid;
     grid-template-rows: 20vh auto auto auto 10vh;
     gap: 200px;
