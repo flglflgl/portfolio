@@ -62,11 +62,13 @@
   /* ---------- #BOTTOM ---------- */
   
   .bottom {
+    position: sticky;
     padding: 20px;
   }
   
   .bottom li {
     float: right;
+    font-family: monospace;
     margin: 0 20px 24px 0;
   }
   
@@ -213,11 +215,13 @@ body {
 /* ---------- #BOTTOM ---------- */
 
 .bottom {
+  position: sticky;
   padding: 20px;
 }
 
 .bottom li {
   float: right;
+  font-family: monospace;
   margin: 0 20px 24px 0;
 }
 
@@ -404,11 +408,13 @@ ul {
   /* ---------- #BOTTOM ---------- */
   
   .bottom {
+    position: sticky;
     padding: 20px;
   }
   
   .bottom li {
     float: right;
+    font-family: monospace;
     margin: 0 20px 24px 0;
   }
   
