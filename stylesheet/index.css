@@ -524,7 +524,7 @@ ul {
   /* ---------- #INTRO ---------- */
   
   .intro {
-    width: 70vw;
+    width: 60vw;
     aspect-ratio: 10 / 4;
     font-size: 4.9vh;
     margin: 0 auto;
@@ -534,7 +534,7 @@ ul {
   /* ---------- #SKILLS ---------- */
   
   .skills {
-    width: 70vw;
+    width: 60vw;
     aspect-ratio: 10 / 4;
     font-size: 4.9vh;
     margin: 0 auto;
