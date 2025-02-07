@@ -442,7 +442,13 @@ ul {
     display: grid;
     grid-template-rows: 20vh auto auto auto 10vh;
     gap: 100px;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
   }
+
+  .grid::-webkit-scrollbar {
+    display: none;
+}
   
   .col {
     overflow: hidden;
