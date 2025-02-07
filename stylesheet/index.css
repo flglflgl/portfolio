@@ -62,7 +62,10 @@
   /* ---------- #BOTTOM ---------- */
   
   .bottom {
-    position: sticky;
+    position: fixed;
+    left: 0;
+  right: 0;
+  bottom: 0;
     padding: 20px;
   }
   
@@ -215,7 +218,10 @@ body {
 /* ---------- #BOTTOM ---------- */
 
 .bottom {
-  position: sticky;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
   padding: 20px;
 }
 
@@ -408,7 +414,10 @@ ul {
   /* ---------- #BOTTOM ---------- */
   
   .bottom {
-    position: sticky;
+    position: fixed;
+    left: 0;
+  right: 0;
+  bottom: 0;
     padding: 20px;
   }
   
