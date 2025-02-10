@@ -423,6 +423,18 @@ ul {
     width: 2px;
     height: 4px;
   }
+
+  .list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers items */
+    margin-bottom: 10px; /* Adds spacing between each list item */
+  }
+
+  .icon {
+    display: block; /* Ensures span is under the li */
+    margin-top: 5px; /* Adds space between li and svg */
+  }
   
   /* ---------- #BOTTOM ---------- */
   

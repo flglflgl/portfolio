@@ -145,11 +145,11 @@ document.addEventListener("DOMContentLoaded", function () {
       const offsetX = clientX - (rect.left + rect.width / 2);
       const offsetY = clientY - (rect.top + rect.height / 2);
 
-      item.style.transform = `translate(${offsetX * 0.3}px, ${offsetY * 0.3}px)`;
+      item.style.transform = `translate(${offsetX * 4.9}px, ${offsetY * 4.9}px)`;
     });
 
     item.addEventListener("mouseleave", () => {
-      item.style.transition = "transform 0.3s ease-out";
+      item.style.transition = "transform 0.4s ease-out";
       item.style.transform = "translate(0, 0)";
     });
   });
