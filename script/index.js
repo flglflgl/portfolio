@@ -133,3 +133,28 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// Follow Cursor effect for .top ul li elements
+
+document.addEventListener("DOMContentLoaded", function () {
+  const topMenuItems = document.querySelectorAll(".top ul li");
+
+  topMenuItems.forEach((item) => {
+    item.addEventListener("mouseenter", (event) => {
+      document.addEventListener("mousemove", moveItem);
+    });
+
+    item.addEventListener("mouseleave", () => {
+      document.removeEventListener("mousemove", moveItem);
+      item.style.transform = "translate(0, 0)"; // Reset position
+    });
+
+    function moveItem(event) {
+      const { clientX, clientY } = event;
+      const offsetX = (clientX / window.innerWidth - 0.5) * 20; // Adjust sensitivity
+      const offsetY = (clientY / window.innerHeight - 0.5) * 20;
+
+      item.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+    }
+  });
+});
