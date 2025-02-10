@@ -421,10 +421,8 @@ ul {
   .top li {
     float: left;
     margin: 0 20px 0 0;
-    display: block; /* Ensures the <li> takes up full width */
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 10px; /* Adds space between list items */
+    display: block;
+    margin-bottom: 10px;
     position: relative;
   }
 
@@ -433,19 +431,24 @@ ul {
   }
 
   .top ul svg {
+    display: none;
     width: 4px;
     height: 8px;
+  }
+
+  .top ul:hover svg {
+    display: block;
   }
 
   .list-item {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers items */
-    margin-bottom: 10px; /* Adds spacing between each list item */
+    align-items: center;
+    margin-bottom: 10px;
   }
 
   .icon {
-    display: block; /* Forces the icon to be on the next line */
+    display: block;
     margin-top: 4.9px;
   }
   
@@ -456,13 +459,12 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 20px;
   }
   
   .bottom li {
     float: right;
     font-family: monospace;
-    margin: 0 20px 24px 0;
+    margin: 0 20px 20px 0;
   }
   
   /* ---------- #GRID ---------- */
