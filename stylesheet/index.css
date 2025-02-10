@@ -395,6 +395,10 @@ ul {
     font-family: system-ui; 
     font-size: 4vh;
     background-color: #777777;
+    background-image:url('public/bg.svg');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #ffffff;
     cursor: none;
   }
