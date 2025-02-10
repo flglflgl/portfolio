@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const offsetX = clientX - (rect.left + rect.width / 2);
       const offsetY = clientY - (rect.top + rect.height / 2);
 
-      item.style.transform = `translate(${offsetX * 4.9}px, ${offsetY * 4.9}px)`;
+      item.style.transform = `translate(${offsetX * 4}px, ${offsetY * 4}px)`;
     });
 
     item.addEventListener("mouseleave", () => {
