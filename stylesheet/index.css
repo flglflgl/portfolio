@@ -418,6 +418,11 @@ ul {
     float: left;
     margin: 0 20px 0 0;
   }
+
+  .top ul svg {
+    width: 2px;
+    height: 4px;
+  }
   
   /* ---------- #BOTTOM ---------- */
   
