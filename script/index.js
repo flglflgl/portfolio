@@ -125,10 +125,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("scroll", function () {
     if (window.scrollY > 100) {
-      bottom.style.position = "absolute";
+      bottom.style.position = "relative";
       bottom.style.bottom = "-100px"; // Moves it out of view
     } else {
-      bottom.style.position = "fixed";
+      bottom.style.position = "sticky";
       bottom.style.bottom = "0";
     }
   });
