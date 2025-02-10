@@ -417,6 +417,15 @@ ul {
   .top li {
     float: left;
     margin: 0 20px 0 0;
+    display: block; /* Ensures the <li> takes up full width */
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Adds space between list items */
+    position: relative;
+  }
+
+  .top ul {
+    text-align: center; 
   }
 
   .top ul svg {
@@ -432,8 +441,8 @@ ul {
   }
 
   .icon {
-    display: block; /* Ensures span is under the li */
-    margin-top: 5px; /* Adds space between li and svg */
+    display: block; /* Forces the icon to be on the next line */
+    margin-top: 4.9px;
   }
   
   /* ---------- #BOTTOM ---------- */
@@ -443,7 +452,7 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 40px;
+    padding: 20px;
   }
   
   .bottom li {
@@ -457,7 +466,7 @@ ul {
   .grid {
     width: 100vw;
     display: grid;
-    grid-template-rows: 20vh auto auto auto 10vh;
+    grid-template-rows: 20vh auto auto auto 20vh;
     gap: 100px;
     -ms-overflow-style: none;
     scrollbar-width: none; 
