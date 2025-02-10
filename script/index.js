@@ -135,26 +135,22 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Follow Cursor effect for .top ul li elements
-
 document.addEventListener("DOMContentLoaded", function () {
   const topMenuItems = document.querySelectorAll(".top ul li");
 
   topMenuItems.forEach((item) => {
-    item.addEventListener("mouseenter", (event) => {
-      document.addEventListener("mousemove", moveItem);
+    item.addEventListener("mousemove", (event) => {
+      const { clientX, clientY } = event;
+      const rect = item.getBoundingClientRect();
+      const offsetX = clientX - (rect.left + rect.width / 2);
+      const offsetY = clientY - (rect.top + rect.height / 2);
+
+      item.style.transform = `translate(${offsetX * 0.3}px, ${offsetY * 0.3}px)`;
     });
 
     item.addEventListener("mouseleave", () => {
-      document.removeEventListener("mousemove", moveItem);
-      item.style.transform = "translate(0, 0)"; // Reset position
+      item.style.transition = "transform 0.3s ease-out";
+      item.style.transform = "translate(0, 0)";
     });
-
-    function moveItem(event) {
-      const { clientX, clientY } = event;
-      const offsetX = (clientX / window.innerWidth - 0.5) * 20; // Adjust sensitivity
-      const offsetY = (clientY / window.innerHeight - 0.5) * 20;
-
-      item.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
-    }
   });
 });
