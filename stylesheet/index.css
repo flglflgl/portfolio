@@ -426,11 +426,7 @@ ul {
   body {
     font-family: system-ui; 
     font-size: 4vh;
-    background: rgb(119,119,119);
-    background: -moz-linear-gradient(0deg, rgba(119,119,119,1) 0%, rgba(255,255,255,1) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(119,119,119,1) 0%, rgba(255,255,255,1) 100%);
-    background: linear-gradient(0deg, rgba(119,119,119,1) 0%, rgba(255,255,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#777777",endColorstr="#ffffff",GradientType=1);
+    background-color: #777777;
     background-image:url('public/bg.svg');
     background-attachment:fixed;
     background-repeat: no-repeat;
@@ -684,6 +680,10 @@ ul {
   
   ul {
     list-style-type: none;
+  }
+
+  svg {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(102%) contrast(102%);
   }
   
   }
