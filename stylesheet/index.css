@@ -419,11 +419,11 @@ ul {
   }
   
   .top li {
-    float: left;
-    margin: 0 20px 0 0;
-    display: block;
-    margin-bottom: 10px;
     position: relative;
+    display: block;
+    float: left;
+    margin: 0 20px 10px 0;
+    transition: transform 0.1s ease-out;
   }
 
   .top ul {
