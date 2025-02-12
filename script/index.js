@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
   
 
   // Custom Cursor .postCursor
-  
   document.addEventListener("DOMContentLoaded", () => {
     const cursor = document.createElement("div");
     cursor.classList.add("cursor");
@@ -59,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
       postCursorCon.style.top = `${e.pageY + offsetY}px`;
     });
   
-    const posts = document.querySelectorAll(".post");
+    const posts = document.querySelectorAll(".post video");
     posts.forEach((post) => {
       post.addEventListener("mouseover", () => {
         cursor.style.display = "none";
