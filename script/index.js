@@ -157,15 +157,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //
 document.addEventListener("DOMContentLoaded", function () {
-  const links = document.querySelectorAll(".top ul li a");
+  // Get the current page URL
+  const currentUrl = window.location.href;
 
-  links.forEach((link) => {
-    if (link.href === window.location.href) {
-      const listItem = link.parentElement;
-      const svg = listItem.querySelector("svg");
-      if (svg) {
-        svg.style.display = "block";
+  // Select all the nav links in the top menu
+  const navLinks = document.querySelectorAll(".top ul li a");
+
+  navLinks.forEach(link => {
+      if (link.href === currentUrl) {
+          // Get the parent li element
+          const listItem = link.parentElement;
+
+          // Find the SVG inside the span.icon and make it visible
+          const icon = listItem.querySelector(".icon svg");
+          if (icon) {
+              icon.style.display = "block";
+          }
       }
-    }
   });
 });
