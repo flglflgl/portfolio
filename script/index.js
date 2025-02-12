@@ -1,5 +1,4 @@
 // Show Post on scroll
-
 document.addEventListener("DOMContentLoaded", () => {
     const posts = document.querySelectorAll(".post");
   
@@ -24,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
+
   // Custom Cursor .postCursor
   
   document.addEventListener("DOMContentLoaded", () => {
@@ -80,16 +80,16 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".top ul a").forEach(link => {
         link.addEventListener("click", (event) => {
-            event.preventDefault(); // Prevent default anchor behavior
+            event.preventDefault();
             
-            const targetId = link.getAttribute("href"); // Get href attribute (e.g., #skills)
+            const targetId = link.getAttribute("href");
             const targetSection = document.querySelector(targetId); // Select the section
             
             if (targetSection) {
-                // Ensure the section is visible
+              // Show section
                 targetSection.style.display = "block";
                 
-                // Smoothly scroll to the section and center it
+                // Smoothly scroll to the section
                 targetSection.scrollIntoView({ behavior: "smooth", block: "center" });
             }
         });
@@ -98,7 +98,6 @@ document.addEventListener("DOMContentLoaded", () => {
  
 
   // Run video when .cursor is on .post
-
   document.addEventListener("DOMContentLoaded", () => {
     const posts = document.querySelectorAll(".post");
 
@@ -112,27 +111,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
             post.addEventListener("mouseleave", () => {
                 video.pause();
-                video.currentTime = 0; // Reset video when leaving
+                video.currentTime = 0; // Reset video when the cursor is not on it
             });
         }
     });
 });
 
-// Remove Fix Position from .bottom on Scroll
 
+// Remove Fix Position from .bottom on Scroll
 document.addEventListener("DOMContentLoaded", function () {
   const bottom = document.querySelector(".bottom");
 
   window.addEventListener("scroll", function () {
     if (window.scrollY > 100) {
       bottom.style.position = "relative";
-      bottom.style.bottom = "-100px"; // Moves it out of view
+      bottom.style.bottom = "-100px";
     } else {
       bottom.style.position = "sticky";
       bottom.style.bottom = "0";
     }
   });
 });
+
 
 // Follow Cursor effect for .top ul li elements
 document.addEventListener("DOMContentLoaded", function () {
@@ -152,5 +152,21 @@ document.addEventListener("DOMContentLoaded", function () {
       item.style.transition = "transform 0.4s ease-out";
       item.style.transform = "translate(0, 0)";
     });
+  });
+});
+
+
+//
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll(".top ul li a");
+
+  links.forEach((link) => {
+    if (link.href === window.location.href) {
+      const listItem = link.parentElement;
+      const svg = listItem.querySelector("svg");
+      if (svg) {
+        svg.style.display = "block";
+      }
+    }
   });
 });
