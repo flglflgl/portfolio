@@ -352,8 +352,8 @@ button {
   height: 27px;
   border: 1px solid transparent;
   border-radius: 20px;
-  background-color: #777777;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #777777;
   padding: 0 10px;
   cursor: pointer;
 }
@@ -427,10 +427,10 @@ ul {
     font-family: system-ui; 
     font-size: 4vh;
     background: rgb(119,119,119);
-background: -moz-linear-gradient(0deg, rgba(119,119,119,1) 0%, rgba(255,255,255,1) 100%);
-background: -webkit-linear-gradient(0deg, rgba(119,119,119,1) 0%, rgba(255,255,255,1) 100%);
-background: linear-gradient(0deg, rgba(119,119,119,1) 0%, rgba(255,255,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#777777",endColorstr="#ffffff",GradientType=1);
+    background: -moz-linear-gradient(0deg, rgba(119,119,119,1) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(119,119,119,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(0deg, rgba(119,119,119,1) 0%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#777777",endColorstr="#ffffff",GradientType=1);
     background-image:url('public/bg.svg');
     background-attachment:fixed;
     background-repeat: no-repeat;
@@ -502,12 +502,12 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#777777",endCo
   
   .bottom li {
     float: right;
-    margin: 0 20px 20px 0;
+    margin: 0 0 20px 0;
   }
 
   .bottom li img {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(102%) contrast(102%);
   }
   
@@ -628,7 +628,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#777777",endCo
   
   button {
     height: 27px;
-    border: 1px solid transparent;
+    border: 1px solid #777777;
     border-radius: 20px;
     background-color: #777777;
     color: #ffffff;
