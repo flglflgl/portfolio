@@ -37,7 +37,6 @@
     font-size: 2.9vh;
     background-color: #777777;
     color: #ffffff;
-    cursor: none;
   }
   
   /* ---------- #TOP ---------- */
@@ -74,6 +73,12 @@
     float: right;
     font-family: monospace;
     margin: 0 20px 24px 0;
+  }
+
+  .bottom li svg {
+    width: 20px;
+    height: 20px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(102%) contrast(102%);
   }
   
   /* ---------- #GRID ---------- */
@@ -137,6 +142,27 @@
     margin: 0 auto;
     padding: 0 40px;
   }
+
+  .buttonGroup {
+    display: flex;
+    gap: 10px; /* Adds 10px space between buttons */
+    width: fit-content; /* Adjusts width to fit content */
+    margin: 10px 7px;
+  }
+  
+  button {
+    height: 27px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: #777777;
+    color: #ffffff;
+    padding: 0 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgb(119,119,119,0.7);
+  }  
   
   /* ---------- #SKILLS ---------- */
   
