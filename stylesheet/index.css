@@ -74,7 +74,7 @@
     margin: 0 20px 24px 0;
   }
 
-  .bottom li svg {
+  .bottom li img {
     width: 20px;
     height: 20px;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(102%) contrast(102%);
@@ -239,7 +239,7 @@ body {
   margin: 0 20px 24px 0;
 }
 
-.bottom li svg {
+.bottom li img {
   width: 20px;
   height: 20px;
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(102%) contrast(102%);
@@ -432,7 +432,6 @@ ul {
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
-    cursor: none;
   }
   
   /* ---------- #TOP ---------- */
@@ -502,7 +501,7 @@ ul {
     margin: 0 20px 20px 0;
   }
 
-  .bottom li svg {
+  .bottom li img {
     width: 20px;
     height: 20px;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(102%) contrast(102%);
