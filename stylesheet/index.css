@@ -417,21 +417,21 @@ ul {
     padding: 20px 20px 20px 40px;
     z-index: 100;
   }
-  
-  .top ul li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 10px 0;
-}
 
   .top ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.top ul li {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
+  margin: 0 20px; 
 }
 
   .top ul svg {
@@ -454,7 +454,6 @@ ul {
   .icon {
     display: block;
     margin-top: 4.9px;
-    text-align: center;
   }
   
   /* ---------- #BOTTOM ---------- */
