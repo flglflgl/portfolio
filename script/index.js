@@ -58,19 +58,23 @@ document.addEventListener("DOMContentLoaded", () => {
     postCursorCon.style.top = `${e.pageY + offsetY}px`;
   });
 
-  const posts = document.querySelectorAll(".post video");
+  const posts = document.querySelectorAll(".post");
+
   posts.forEach((post) => {
-    post.addEventListener("mouseover", () => {
-      cursor.style.display = "none";
-      postCursorCon.style.display = "flex";
+    const video = post.querySelector("video");
 
-      postCursorToolTip.innerHTML = post.getAttribute("data-text") || "";
-    });
+    if (video) {
+      video.addEventListener("mouseenter", () => {
+        cursor.style.display = "none";
+        postCursorCon.style.display = "flex";
+        postCursorToolTip.innerHTML = post.getAttribute("data-text") || "";
+      });
 
-    post.addEventListener("mouseout", () => {
-      cursor.style.display = "block";
-      postCursorCon.style.display = "none";
-    });
+      video.addEventListener("mouseleave", () => {
+        cursor.style.display = "block";
+        postCursorCon.style.display = "none";
+      });
+    }
   });
 });
 
