@@ -168,12 +168,6 @@
       filter: invert(89%) sepia(0%) saturate(1546%) hue-rotate(176deg) brightness(97%) contrast(82%);
     }
   
-    .bottom .lin img {
-      width: 20px;
-      height: 20px;
-      margin-top: 4px;
-    }
-  
   /* ---------- #GRID ---------- */
   
   .grid {
@@ -533,12 +527,6 @@
   
     .bottom img:hover {
       filter: invert(89%) sepia(0%) saturate(1546%) hue-rotate(176deg) brightness(97%) contrast(82%);
-    }
-  
-    .bottom .lin img {
-      width: 20px;
-      height: 20px;
-      margin-top: 4px;
     }
   
   /* ---------- #GRID ---------- */
