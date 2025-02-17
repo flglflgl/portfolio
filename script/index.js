@@ -1,178 +1,264 @@
 // Show Post on scroll
 document.addEventListener("DOMContentLoaded", () => {
-    const posts = document.querySelectorAll(".post");
-  
-    const observerOptions = {
-      root: null,
-      threshold: 0.1 // Trigger when 10% of the element is visible
-    };
-  
-    const revealPost = (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-          observer.unobserve(entry.target);
-        }
-      });
-    };
-  
-    const observer = new IntersectionObserver(revealPost, observerOptions);
-  
-    posts.forEach((post) => {
-      observer.observe(post);
+  const posts = document.querySelectorAll(".post");
+
+  const observerOptions = {
+    root: null,
+    threshold: 0.1 // Trigger when 10% of the element is visible
+  };
+
+  const revealPost = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
+      }
     });
+  };
+
+  const observer = new IntersectionObserver(revealPost, observerOptions);
+
+  posts.forEach((post) => {
+    observer.observe(post);
   });
-  
-
-  // Custom Cursor .postCursor
-  document.addEventListener("DOMContentLoaded", () => {
-    const cursor = document.createElement("div");
-    cursor.classList.add("cursor");
-  
-    const postCursorCon = document.createElement("div");
-    postCursorCon.classList.add("postCursorCon");
-  
-    const postCursor = document.createElement("div");
-    postCursor.classList.add("postCursor");
-  
-    const postCursorToolTip = document.createElement("div");
-    postCursorToolTip.classList.add("postCursorToolTip");
-  
-    postCursorCon.appendChild(postCursor);
-    postCursorCon.appendChild(postCursorToolTip);
-  
-    document.body.appendChild(cursor);
-    document.body.appendChild(postCursorCon);
-  
-    cursor.style.display = "block";
-    postCursorCon.style.display = "none";
-  
-    // Cursor Position
-    document.addEventListener("mousemove", (e) => {
-      const offsetX = 20;
-      const offsetY = 10;
-  
-      cursor.style.left = `${e.pageX + offsetX}px`;
-      cursor.style.top = `${e.pageY + offsetY}px`;
-      postCursorCon.style.left = `${e.pageX + offsetX}px`;
-      postCursorCon.style.top = `${e.pageY + offsetY}px`;
-    });
-  
-    const posts = document.querySelectorAll(".post video");
-    posts.forEach((post) => {
-      post.addEventListener("mouseover", () => {
-        cursor.style.display = "none";
-        postCursorCon.style.display = "flex";
-  
-        postCursorToolTip.innerHTML = post.getAttribute("data-text") || "";
-      });
-  
-      post.addEventListener("mouseout", () => {
-        cursor.style.display = "block";
-        postCursorCon.style.display = "none";
-      });
-    });
-  });
-
-
-  // Flyin effect when clicking on .top ul li
-  document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".top ul a").forEach(link => {
-        link.addEventListener("click", (event) => {
-            event.preventDefault();
-            
-            const targetId = link.getAttribute("href");
-            const targetSection = document.querySelector(targetId); // Select the section
-            
-            if (targetSection) {
-              // Show section
-                targetSection.style.display = "block";
-                
-                // Smoothly scroll to the section
-                targetSection.scrollIntoView({ behavior: "smooth", block: "center" });
-            }
-        });
-    });
-});
- 
-
-  // Run video when .cursor is on .post
-  document.addEventListener("DOMContentLoaded", () => {
-    const posts = document.querySelectorAll(".post");
-
-    posts.forEach((post) => {
-        const video = post.querySelector("video");
-
-        if (video) {
-            post.addEventListener("mouseenter", () => {
-                video.play();
-            });
-
-            post.addEventListener("mouseleave", () => {
-                video.pause();
-                video.currentTime = 0; // Reset video when the cursor is not on it
-            });
-        }
-    });
 });
 
 
-// Remove Fix Position from .bottom on Scroll
+// Custom Cursor .postCursor
+document.addEventListener("DOMContentLoaded", () => {
+  const cursor = document.createElement("div");
+  cursor.classList.add("cursor");
+
+  const postCursorCon = document.createElement("div");
+  postCursorCon.classList.add("postCursorCon");
+
+  const postCursor = document.createElement("div");
+  postCursor.classList.add("postCursor");
+
+  const postCursorToolTip = document.createElement("div");
+  postCursorToolTip.classList.add("postCursorToolTip");
+
+  postCursorCon.appendChild(postCursor);
+  postCursorCon.appendChild(postCursorToolTip);
+
+  document.body.appendChild(cursor);
+  document.body.appendChild(postCursorCon);
+
+  cursor.style.display = "block";
+  postCursorCon.style.display = "none";
+
+  // Cursor Position
+  document.addEventListener("mousemove", (e) => {
+    const offsetX = 20;
+    const offsetY = 10;
+
+    cursor.style.left = `${e.pageX + offsetX}px`;
+    cursor.style.top = `${e.pageY + offsetY}px`;
+    postCursorCon.style.left = `${e.pageX + offsetX}px`;
+    postCursorCon.style.top = `${e.pageY + offsetY}px`;
+  });
+
+  const posts = document.querySelectorAll(".post video");
+  posts.forEach((post) => {
+    post.addEventListener("mouseover", () => {
+      cursor.style.display = "none";
+      postCursorCon.style.display = "flex";
+
+      postCursorToolTip.innerHTML = post.getAttribute("data-text") || "";
+    });
+
+    post.addEventListener("mouseout", () => {
+      cursor.style.display = "block";
+      postCursorCon.style.display = "none";
+    });
+  });
+});
+
+
+// Fly In effect when clicking on .top ul li
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".top ul a").forEach(link => {
+      link.addEventListener("click", (event) => {
+          event.preventDefault();
+          
+          const targetId = link.getAttribute("href");
+          const targetSection = document.querySelector(targetId); // Select the section
+          
+          if (targetSection) {
+            // Show section
+              targetSection.style.display = "block";
+              
+              // Smoothly scroll to the section
+              targetSection.scrollIntoView({ behavior: "smooth", block: "center" });
+          }
+      });
+  });
+});
+
+
+// Run video when .cursor is on .post
+document.addEventListener("DOMContentLoaded", () => {
+  const posts = document.querySelectorAll(".post");
+
+  posts.forEach((post) => {
+      const video = post.querySelector("video");
+
+      if (video) {
+          post.addEventListener("mouseenter", () => {
+              video.play();
+          });
+
+          post.addEventListener("mouseleave", () => {
+              video.pause();
+              video.currentTime = 0; // Reset video when the cursor is not on it
+          });
+      }
+  });
+});
+
+
+// SVG highlight .top ul li
 document.addEventListener("DOMContentLoaded", function () {
-  const bottom = document.querySelector(".bottom");
+const sections = document.querySelectorAll(".col"); // Detect only `.col` elements
+const menuItems = document.querySelectorAll(".top ul li .svg svg");
 
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 100) {
-      bottom.style.position = "relative";
-      bottom.style.bottom = "-100px";
-    } else {
-      bottom.style.position = "sticky";
-      bottom.style.bottom = "0";
+function highlightMenu() {
+  let scrollPosition = window.scrollY;
+
+  sections.forEach((section, index) => {
+    let rect = section.getBoundingClientRect();
+    let sectionTop = rect.top + window.scrollY - 100; // Adjust offset
+    let sectionBottom = sectionTop + section.offsetHeight;
+
+    console.log(`Section: ${section.className}, Top: ${sectionTop}, Bottom: ${sectionBottom}, ScrollY: ${scrollPosition}`);
+
+    if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+      menuItems.forEach((item) => (item.style.display = "none"));
+
+      if (menuItems[index]) {
+        menuItems[index].style.display = "block";
+      }
     }
   });
+}
+
+window.addEventListener("scroll", highlightMenu);
+highlightMenu(); // Run on page load
+});
+
+
+// SVG highlight .minTopUl ul li
+document.addEventListener("DOMContentLoaded", function () {
+const sections = document.querySelectorAll(".col"); // Detect only `.col` elements
+const menuItems = document.querySelectorAll(".minTopUl ul li .svg svg");
+
+function highlightMenu() {
+  let scrollPosition = window.scrollY;
+
+  sections.forEach((section, index) => {
+    let rect = section.getBoundingClientRect();
+    let sectionTop = rect.top + window.scrollY - 100; // Adjust offset
+    let sectionBottom = sectionTop + section.offsetHeight;
+
+    console.log(`Section: ${section.className}, Top: ${sectionTop}, Bottom: ${sectionBottom}, ScrollY: ${scrollPosition}`);
+
+    if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+      menuItems.forEach((item) => (item.style.display = "none"));
+
+      if (menuItems[index]) {
+        menuItems[index].style.display = "block";
+      }
+    }
+  });
+}
+
+window.addEventListener("scroll", highlightMenu);
+highlightMenu(); // Run on page load
 });
 
 
 // Follow Cursor effect for .top ul li elements
 document.addEventListener("DOMContentLoaded", function () {
-  const topMenuItems = document.querySelectorAll(".top ul li");
+// Select only direct children of .top ul
+const topMenuItems = document.querySelectorAll(".top > ul > li");
 
-  topMenuItems.forEach((item) => {
-    item.addEventListener("mousemove", (event) => {
-      const { clientX, clientY } = event;
-      const rect = item.getBoundingClientRect();
-      const offsetX = clientX - (rect.left + rect.width / 2);
-      const offsetY = clientY - (rect.top + rect.height / 2);
+topMenuItems.forEach((item) => {
+  item.addEventListener("mousemove", (event) => {
+    const { clientX, clientY } = event;
+    const rect = item.getBoundingClientRect();
+    const offsetX = clientX - (rect.left + rect.width / 2);
+    const offsetY = clientY - (rect.top + rect.height / 2);
 
-      item.style.transform = `translate(${offsetX * 4}px, ${offsetY * 4}px)`;
-    });
+    item.style.transform = `translate(${offsetX * 1.4}px, ${offsetY * 1.4}px)`;
+  });
 
-    item.addEventListener("mouseleave", () => {
-      item.style.transition = "transform 0.4s ease-out";
-      item.style.transform = "translate(0, 0)";
-    });
+  item.addEventListener("mouseleave", () => {
+    item.style.transition = "transform 0.4s ease-out";
+    item.style.transform = "translate(0, 0)";
+  });
+});
+});
+
+
+// Follow Cursor effect for .introbtn
+document.querySelectorAll('.introbtn').forEach(button => {
+  button.addEventListener('mousemove', (e) => {
+      const rect = button.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+
+      // Move the button slightly
+      button.style.transform = `translate(${x * 0.1}px, ${y * 0.1}px)`;
+
+      // Move the text inside more
+      button.querySelector('span').style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+  });
+
+  button.addEventListener('mouseleave', () => {
+      button.style.transform = 'translate(0, 0)';
+      button.querySelector('span').style.transform = 'translate(0, 0)';
   });
 });
 
 
-//
+// Show .intro on scroll
 document.addEventListener("DOMContentLoaded", function () {
-  // Get the current page URL
-  const currentUrl = window.location.href;
+  const introSection = document.querySelector(".intro");
 
-  // Select all the nav links in the top menu
-  const navLinks = document.querySelectorAll(".top ul li a");
-
-  navLinks.forEach(link => {
-      if (link.href === currentUrl) {
-          // Get the parent li element
-          const listItem = link.parentElement;
-
-          // Find the SVG inside the span.icon and make it visible
-          const icon = listItem.querySelector(".icon svg");
-          if (icon) {
-              icon.style.display = "block";
-          }
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        introSection.classList.add("show");
       }
-  });
+    });
+  }, { threshold: 0.3 });
+
+  observer.observe(introSection);
+});
+
+
+// Show .minTopUl on click
+document.addEventListener("DOMContentLoaded", () => {
+  const menuButton = document.querySelector(".minTopUlbtn");
+  const menu = document.querySelector(".minTopUl");
+
+  if (menuButton && menu) {
+      menuButton.addEventListener("click", () => {
+          menu.classList.toggle("show");
+      });
+  }
+});
+
+// Hiding .minTopUl on click
+document.querySelector('.minTopUlClosingbtn').addEventListener('click', function() {
+document.querySelector('.minTopUl').classList.remove('show');
+});
+
+// Hiding .minTopUl when clicking on the li element links
+const links = document.querySelectorAll('.minTopUl ul li a');
+
+links.forEach(link => {
+link.addEventListener('click', () => {
+  document.querySelector('.minTopUl').classList.remove('show');
+});
 });

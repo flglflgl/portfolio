@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="stylesheet/index.css">
   <link rel="icon" href="public/logo.png">
-  <title>dnnn</title>
+  <title>My Portfolio</title>
 </head>
 
 <body>
@@ -16,38 +16,49 @@
   <div class="col">
   </div>
 
-  <div class="col intro">
-    <p>Hi I'm</br></br>
+  <div id="me" class="col intro">
+    <h1>Hi I'm<br><br>
 
-    I first got into coding writing custom PHP scripts .</br>
-    scripting finding solution</br></br>
+    I first got into coding writing custom PHP scripts .<br>
+    scripting finding solution.<br>
 
-    I'm now tipping my toes into .</br></br>
+    I'm now tipping my toes into .</h1><br><br>
 
-    If you stumbled on on my Github or</p>
+    <p>If you stumbled on on my Github or you've good <br>
+      coding tips feel free to post them <a href="https://www.flglportfolio.com/tip">here</a>.</p>
 
     <div class="buttonGroup">
-    <a href=""><button>View Resume</button></a> <a href=""><button>View Github</button></a>
+    <a href="public/CV.pdf" download><button class="introbtn"><span>View Resume</span></button></a> <a href="https://github.com/flglflgl"><button class="introbtn"><span>Github</span></button></a>
     </div>
   </div>
 
 <!-- Skills -->
- <div class="col">
-  <div id="skills" class="skills">
-    <h1>Skills</h1>
+ <div id="skills" class="col skill">
+  <div class="skillColGrid">
+    <div class="codinghours">
+      <p>Coding hours</p><br>
+      <strong><h1>1000</h1></strong>
+    </div><div class="github">
+      <p>Github Repositories</p>
+    </div>
+  </div>
+  <div class="skillCol">
+    <div class="skills">
+      <p>Technologies & Tools</p>
+    </div>
   </div>
  </div>
 
 <!-- Post Grid -->
-<div class="col postGrid">
+<div id="projects" class="col postGrid">
 
   <!-- Coding Tool -->
   <div class="post" data-text="Coding Tool">
-    <a href="https://github.com/dnnnnnnnnnn/codingtool">
-      <video width="320" height="240" muted playsinline>
-        <source src="public/coodingtool.mp4" type="video/mp4">
+    <a href="https://github.com/flglflgl/codingtool">
+      <video muted playsinline>
+        <source src="public/codingtool.mp4" type="video/mp4">
         Your browser does not support video.
-      </video></br>
+        </video><br>
       <strong>
         <p>CodingTool</p>
       </strong>
@@ -58,8 +69,8 @@
 
   <!-- Tip -->
   <div class="post" data-text="Tip">
-    <a href="https://github.com/dnnnnnnnnnn/tip">
-      <img src="" alt="tip" border="0"></br>
+    <a href="https://github.com/flglflgl/tip">
+      <img><br>
       <strong>
         <p>Tip</p>
       </strong>
@@ -70,11 +81,8 @@
 
   <!-- Short URL -->
   <div class="post" data-text="Short URL">
-    <a href="https://github.com/dnnnnnnnnnn/shorturl">
-      <video width="320" height="240" muted playsinline>
-        <source src="public/shorturl.mp4" type="video/mp4">
-        Your browser does not support video.
-      </video></br>
+    <a href="https://github.com/flglflgl/shorturl">
+      <img><br>
       <strong>
         <p>shorturl</p>
       </strong>
@@ -87,8 +95,12 @@
 
 <div class="col bottom">
   <ul>
-    <a href=""><li><img src="public/github.svg"></li></a>
-    <a href=""><li><img src="public/linkedin.svg"></li></a>
+    <li>© flglportfolio</li>
+  </ul>
+
+  <ul>
+    <li><a href="https://github.com/flglflgl"><img src="public/github.svg"></a></li>
+    <li class="lin"><a href="https://www.linkedin.com/in/flgl"><img src="public/linkedin.svg"></a></li>
   </ul>
 </div>
 
@@ -103,18 +115,22 @@
       <stop offset="1" style="stop-color: rgb(255, 255, 255)" />
     </linearGradient>
   </defs>
-  <rect style="stroke: url(&quot;#gradient-0&quot;); stroke-miterlimit: 1; stroke-width: 0px; fill: rgb(255, 255, 255);" x="75.236" y="34.552" width="49.528" height="130.896" rx="24.8" ry="24.8" />
+  <rect style="stroke: url(&quot;#gradient-0&quot;); stroke-miterlimit: 1; stroke-width: 0px; fill: rgb(255, 255, 255);" x="75.236" y="34.552" width="40.528" height="120.896" rx="24.8" ry="24.8" />
 </svg></a>
 
 <ul>
   <li>
-    l@icloud.com
-    <span class="icon">
+    <a href="mailto:l@icloud.com">l@icloud.com</a>
+  </li>
+
+  <li>
+    <a href="#me">Me</a>
+    <span id="meSVG" class="svg">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="75.236 34.552 49.528 130.896" width="20px" height="40px">
         <defs>
           <linearGradient gradientUnits="userSpaceOnUse" x1="100" y1="34.552" x2="100" y2="165.448" id="gradient-0">
             <stop offset="0" style="stop-color: rgb(100% 100% 100%)" />
-            <stop offset="1" style="stop-color: rgb(255, 255, 255)" />
+            <stop offset="1" style="stop-color: rgb(119, 119, 119)" />
           </linearGradient>
         </defs>
         <rect style="stroke: url(#gradient-0); stroke-miterlimit: 1; stroke-width: 0px; fill: rgb(255, 255, 255);" x="75.236" y="34.552" width="49.528" height="130.896" rx="24.8" ry="24.8" />
@@ -124,12 +140,12 @@
 
   <li>
     <a href="#skills">Skills</a>
-    <span class="icon">
+    <span id="skillsSVG" class="svg">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="75.236 34.552 49.528 130.896" width="20px" height="40px">
         <defs>
           <linearGradient gradientUnits="userSpaceOnUse" x1="100" y1="34.552" x2="100" y2="165.448" id="gradient-0">
             <stop offset="0" style="stop-color: rgb(100% 100% 100%)" />
-            <stop offset="1" style="stop-color: rgb(255, 255, 255)" />
+            <stop offset="1" style="stop-color: rgb(119, 119, 119)" />
           </linearGradient>
         </defs>
         <rect style="stroke: url(#gradient-0); stroke-miterlimit: 1; stroke-width: 0px; fill: rgb(255, 255, 255);" x="75.236" y="34.552" width="49.528" height="130.896" rx="24.8" ry="24.8" />
@@ -138,13 +154,28 @@
   </li>
 
   <li>
-    Tips
-    <span class="icon">
+    <a href="#projects">Projects</a>
+    <span id="projectsSVG" class="svg">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="75.236 34.552 49.528 130.896" width="20px" height="40px">
         <defs>
           <linearGradient gradientUnits="userSpaceOnUse" x1="100" y1="34.552" x2="100" y2="165.448" id="gradient-0">
             <stop offset="0" style="stop-color: rgb(100% 100% 100%)" />
-            <stop offset="1" style="stop-color: rgb(255, 255, 255)" />
+            <stop offset="1" style="stop-color: rgb(119, 119, 119)" />
+          </linearGradient>
+        </defs>
+        <rect style="stroke: url(#gradient-0); stroke-miterlimit: 1; stroke-width: 0px; fill: rgb(255, 255, 255);" x="75.236" y="34.552" width="49.528" height="130.896" rx="24.8" ry="24.8" />
+      </svg>
+    </span>
+  </li>
+
+  <li>
+    <a href="https://www.flglportfolio/tip">Tip</a>
+    <span class="svg">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="75.236 34.552 49.528 130.896" width="20px" height="40px">
+        <defs>
+          <linearGradient gradientUnits="userSpaceOnUse" x1="100" y1="34.552" x2="100" y2="165.448" id="gradient-0">
+            <stop offset="0" style="stop-color: rgb(100% 100% 100%)" />
+            <stop offset="1" style="stop-color: rgb(119, 119, 119)" />
           </linearGradient>
         </defs>
         <rect style="stroke: url(#gradient-0); stroke-miterlimit: 1; stroke-width: 0px; fill: rgb(255, 255, 255);" x="75.236" y="34.552" width="49.528" height="130.896" rx="24.8" ry="24.8" />
@@ -152,11 +183,92 @@
     </span>
   </li>
 </ul>
+
+<button class="minTopUlbtn"><img src="public/menu.svg"></button>
+
+<div class="minTopUl">
+  <button class="minTopUlClosingbtn"><img src="public/minMenu.svg"></button>
+
+  <ul>
+    <li>
+      <span class="li">
+        <span class="svg">
+        </span>
+      <span class="link">
+      <a href="mailto:l@icloud.com">l@icloud.com</a>
+    </span>
+      </span>
+    </li>
+
+    <li>
+      <span class="li">
+        <span id="meSVG" class="svg">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="75.236 34.552 49.528 130.896" width="20px" height="40px">
+        <defs>
+          <linearGradient gradientUnits="userSpaceOnUse" x1="100" y1="34.552" x2="100" y2="165.448" id="gradient-0">
+            <stop offset="0" style="stop-color: rgb(100% 100% 100%)" />
+            <stop offset="1" style="stop-color: rgb(119, 119, 119)" />
+          </linearGradient>
+        </defs>
+        <rect style="stroke: url(#gradient-0); stroke-miterlimit: 1; stroke-width: 0px; fill: rgb(255, 255, 255);" x="75.236" y="34.552" width="49.528" height="130.896" rx="24.8" ry="24.8" />
+      </svg>
+    </span>
+      <span class="link">
+      <a href="#me">Me</a>
+    </span>
+      </span>
+    </li>
+
+    <li>
+      <span class="li">
+        <span id="skillsSVG" class="svg">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="75.236 34.552 49.528 130.896" width="20px" height="40px">
+        <defs>
+          <linearGradient gradientUnits="userSpaceOnUse" x1="100" y1="34.552" x2="100" y2="165.448" id="gradient-0">
+            <stop offset="0" style="stop-color: rgb(100% 100% 100%)" />
+            <stop offset="1" style="stop-color: rgb(119, 119, 119)" />
+          </linearGradient>
+        </defs>
+        <rect style="stroke: url(#gradient-0); stroke-miterlimit: 1; stroke-width: 0px; fill: rgb(255, 255, 255);" x="75.236" y="34.552" width="49.528" height="130.896" rx="24.8" ry="24.8" />
+      </svg>
+    </span>
+      <span class="link">
+      <a href="#skills">Skills</a>
+    </span>
+    </span>
+    </li>
+
+    <li>
+      <span class="li">
+        <span id="projectsSVG" class="svg">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="75.236 34.552 49.528 130.896" width="20px" height="40px">
+        <defs>
+          <linearGradient gradientUnits="userSpaceOnUse" x1="100" y1="34.552" x2="100" y2="165.448" id="gradient-0">
+            <stop offset="0" style="stop-color: rgb(100% 100% 100%)" />
+            <stop offset="1" style="stop-color: rgb(119, 119, 119)" />
+          </linearGradient>
+        </defs>
+        <rect style="stroke: url(#gradient-0); stroke-miterlimit: 1; stroke-width: 0px; fill: rgb(255, 255, 255);" x="75.236" y="34.552" width="49.528" height="130.896" rx="24.8" ry="24.8" />
+      </svg>
+    </span>
+      <span class="link">
+      <a href="#projects">Projects</a>
+    </span>
+    </span>
+    </li>
+
+    <li>
+      <span class="li">
+      <span class="svg">
+      </span>
+      <span class="link">
+      <a href="https:/wwww.flglportfolio.com/tip">Tip</a>
+    </span>
+      </span>
+    </li>
+  </ul>
 </div>
 
-<!-- Bottom (fix position not in grid) -->
-<div class="">
-  
 </div>
 
 <script src="script/index.js"></script>
