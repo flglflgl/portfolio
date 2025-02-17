@@ -155,8 +155,9 @@
     }
 
     .bottom .lin img {
-      width: 20px;
-      height: 20px;
+      width: 22.9px;
+      height: 22.9px;
+      margin: 4px 0 0 0;
     }
   
     .bottom img {
@@ -412,7 +413,7 @@
   
   a {
     text-decoration: none;
-    color: #ffffff;
+    color: #777777;
     cursor: pointer;
   }
   
@@ -522,8 +523,9 @@
     }
 
     .bottom .lin img {
-      width: 20px;
-      height: 20px;
+      width: 22.9px;
+      height: 22.9px;
+      margin: 4px 0 0 0;
     }
   
     .bottom img {
@@ -793,7 +795,7 @@
   
   a {
     text-decoration: none;
-    color: #ffffff;
+    color: #777777;
     cursor: pointer;
   }
   
