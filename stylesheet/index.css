@@ -64,11 +64,7 @@
     border: none;
     background: none;
   }
-  
-  .minTopUlbtn img {
-    filter: invert(100%) sepia(12%) saturate(0%) hue-rotate(46deg) brightness(100%) contrast(104%);
-  }
-  
+
   .minTopUl {
     position: fixed;
     top: 0;
