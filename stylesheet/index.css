@@ -200,11 +200,9 @@
     height: 100%;
     display: grid;
     grid-template-rows: repeat(1, 1fr);
-    gap: 70px;
+    gap: 100px;
     align-items: center;
     justify-items: center;
-    border: 1px solid #ffffff;
-    border-radius: 20px;
     margin: 0 auto;
     padding: 20px;
   }
@@ -215,11 +213,14 @@
     width: 100%;
     aspect-ratio: 10/4;
     font-size: 2.9vh;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
     transition: transform 0.4s ease;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease, transform 0.6s ease;
     margin: 0 auto;
+    padding: 20px;
   }
   
   .post.show {
@@ -227,50 +228,11 @@
     transform: translateY(0);
   }
   
-  .post:hover {
-    transform: scale(1.02);
-  }
-  
-  .post:hover .cursor {
-    width: 10px;
-    height: 10px;
-    background: none;
-    border: 2px solid #7c7c7c;
-    border-radius: 20px;
-    transform: translate(-50%, -50%) scale(1.1);
-    transition: transform 0.4s ease, width 0.4s ease, height 0.4s ease;
-    z-index: 10000;
-    cursor: pointer;
-  }
-  
   .post video {
     width: 100%;
     height: 70%;
-    object-fit: fill;
-  }
-  
-  .postCursorCon {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    pointer-events: none;
-  }
-  
-  .postCursorToolTip {
-    font-size: 4vh;
-    color: #777777;
-    white-space: nowrap;
-    transform: translateY(2px);
-    padding: 2px 8px;
-  }
-  
-  .postCursor {
-    height: 10.9vh;
-    aspect-ratio: 4/10;
-    border: 2px solid #777777;
     border-radius: 20px;
-    pointer-events: none;
+    object-fit: fill;
   }
   
   /* ---------- #INTRO ---------- */
@@ -356,19 +318,15 @@
     padding: 0 40px;
   }
   
-  .skillCol {
-    height: 100%;
-  }
-  
   .skillColGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    height: 40vh;
+    min-height: 200px;
   }
   
-  .skills {
-    height:40vh;
+  .skillCol {
+    min-height: 200px;
     border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 20px;
     color: #ffffff;
@@ -386,28 +344,57 @@
   
   .codinghours h1 {
     font-size: 7vh;
-    font-weight: 700;
+    font-weight: 490;
+  }
+
+  .skillLi {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    margin: 20px 0 0 0;
+  }
+
+  .skLi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    height: 20px;
+    font-size: 12px;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #777777;
+    padding: 0 10px;
+    margin: 0 0 0 10px;
+  }
+
+  .skill li {
+    margin: 7px 0 0 0;
+  }
+
+  .skill ul li .li {
+    display: grid;
+    grid-template-columns: 4.9px auto;
+    gap: 10px;
+    width: 100%;
   }
   
-  /* ---------- #CURSOR ---------- */
+  .skill .svg {
+    display: flex;
+    align-items: center;
+  }
   
-  .cursor {
-    position: absolute;
-    height: 7vh;
-    aspect-ratio: 4/10;
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.29);
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: transform 0.04s linear;
-    transition: transform 0.4s ease;
-    z-index: 1000;
+  .skill .li svg {
+    width: 4px;
+    height: 8px;
   }
   
   /* ---------- #HELPERS ---------- */
   
   h1 {
-    font-size: 4vh;
+    font-size: 3.3vh;
     font-weight: 400;
   }
   
@@ -570,7 +557,7 @@
   /* ---------- #POSTGRID ---------- */
   
   .postGrid {
-    width: 70vw;
+    width: 80vw;
     height: 100%;
     display: grid;
     grid-template-rows: repeat(1, 1fr);
@@ -743,19 +730,15 @@
     padding: 0 40px;
   }
   
-  .skillCol {
-    height: 100%;
-  }
-  
   .skillColGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    height: 40vh;
+    min-height: 200px;
   }
   
-  .skills {
-    height:40vh;
+  .skillCol {
+    min-height: 200px;
     border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 20px;
     color: #ffffff;
