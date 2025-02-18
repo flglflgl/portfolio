@@ -158,8 +158,6 @@ function highlightMenu() {
     let sectionTop = rect.top + window.scrollY - 100; // Adjust offset
     let sectionBottom = sectionTop + section.offsetHeight;
 
-    console.log(`Section: ${section.className}, Top: ${sectionTop}, Bottom: ${sectionBottom}, ScrollY: ${scrollPosition}`);
-
     if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
       menuItems.forEach((item) => (item.style.display = "none"));
 
