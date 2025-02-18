@@ -601,9 +601,9 @@
     opacity: 1;
     transform: translateY(0);
   }
-  
-  .post:hover {
-    transform: scale(1.02);
+
+  .post:hover video {
+      transform: scale(1.02);
   }
   
   .post:hover .cursor {
@@ -621,6 +621,7 @@
   .post video {
     width: 100%;
     height: 70%;
+    border-radius: 20px;
     object-fit: fill;
   }
   
