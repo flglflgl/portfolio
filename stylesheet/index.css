@@ -302,6 +302,10 @@
     position: relative;
     z-index: 10;
   }
+
+  .intro p {
+    font-size: 2vh;
+  }
   
   /* ---------- #SKILLS ---------- */
   
@@ -709,6 +713,9 @@
     transform: translateY(0);
   }
   
+  .intro p {
+    font-size: 2vh;
+  }
   
   /* ---------- #SKILLS ---------- */
   
