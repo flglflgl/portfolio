@@ -272,7 +272,7 @@
   /* ---------- #INTRO ---------- */
   
   .intro {
-    width: 60vw;
+    width: 70vw;
     font-size: 4vh;
     margin: 0 auto;
     padding: 0 40px;
@@ -413,7 +413,7 @@
   
   a {
     text-decoration: none;
-    color: #777777;
+    color: #ffffff;
     cursor: pointer;
   }
   
@@ -579,9 +579,6 @@
     width: 100%;
     aspect-ratio: 10/4;
     font-size: 2.9vh;
-    border-radius: 20px;
-    background-color: #ffffff;
-    color: #777777;
     transition: transform 0.4s ease;
     opacity: 0;
     transform: translateY(20px);
@@ -795,7 +792,7 @@
   
   a {
     text-decoration: none;
-    color: #777777;
+    color: #ffffff;
     cursor: pointer;
   }
   
