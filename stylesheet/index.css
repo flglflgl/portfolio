@@ -495,9 +495,13 @@
   .top li:hover .svg {
     display: block;
   }
-  
-  .svg {
+
+  .top ul li svg {
     display: none;
+  }
+
+  .top ul li.show svg {
+    display: block;
   }
   
   .minTopUl {

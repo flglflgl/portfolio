@@ -123,31 +123,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // SVG highlight .top ul li
 document.addEventListener("DOMContentLoaded", function () {
-const sections = document.querySelectorAll(".col"); // Detect only `.col` elements
-const menuItems = document.querySelectorAll(".top ul li .svg svg");
+  const sections = document.querySelectorAll("section, .col"); // Sections to observe
+  const navLinks = document.querySelectorAll(".top ul li"); // Navigation links
 
-function highlightMenu() {
-  let scrollPosition = window.scrollY;
+  function highlightNav() {
+    let scrollPosition = window.scrollY;
 
-  sections.forEach((section, index) => {
-    let rect = section.getBoundingClientRect();
-    let sectionTop = rect.top + window.scrollY - 100; // Adjust offset
-    let sectionBottom = sectionTop + section.offsetHeight;
+    sections.forEach((section, index) => {
+      const sectionTop = section.offsetTop - 50; // Adjust for header height
+      const sectionHeight = section.clientHeight;
 
-    console.log(`Section: ${section.className}, Top: ${sectionTop}, Bottom: ${sectionBottom}, ScrollY: ${scrollPosition}`);
-
-    if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-      menuItems.forEach((item) => (item.style.display = "none"));
-
-      if (menuItems[index]) {
-        menuItems[index].style.display = "block";
+      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+        navLinks.forEach((link) => link.classList.remove("show")); // Remove class from all
+        navLinks[index]?.classList.add("show"); // Add class to active link
       }
-    }
-  });
-}
+    });
+  }
 
-window.addEventListener("scroll", highlightMenu);
-highlightMenu(); // Run on page load
+  window.addEventListener("scroll", highlightNav);
+  highlightNav(); // Run initially in case user is already scrolled
 });
 
 
