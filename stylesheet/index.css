@@ -655,6 +655,7 @@
   
   .intro a {
     color: rgba(255, 255, 255, 0.6);
+    text-decoration: underline;
   }
   
   .intro a:hover {
@@ -804,7 +805,6 @@
   }
   
   .skill .li svg {
-    display: none;
     width: 4px;
     height: 8px;
   }
