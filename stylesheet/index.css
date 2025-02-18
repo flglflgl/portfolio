@@ -780,8 +780,13 @@
     height: 29px;
     font-size: 12px;
     border: 1px solid #ffffff;
-    border: 20px;
+    border-radius: 20px;
+    background-color: #ffffff;
     color: #777777;
+  }
+
+  .skill li {
+    margin: 4.9px 0 0 0;
   }
 
   .skill ul li .li {
