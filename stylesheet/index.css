@@ -778,8 +778,12 @@
   }
 
   .skLi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-width: 40px;
     height: 20px;
+    font-size: 10px;
     border: 1px solid #ffffff;
     border-radius: 20px;
     background-color: #ffffff;
