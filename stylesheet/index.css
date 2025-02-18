@@ -6,11 +6,13 @@
 **
 ** Grid
 **
-** postGrid
-**
 ** Intro
 **
+** postGrid
+**
 ** Skills
+**
+** Outro
 **
 ** Cursor
 **
@@ -175,7 +177,7 @@
   .grid {
     width: 100vw;
     display: grid;
-    grid-template-rows: 20vh auto auto auto 10vh;
+    grid-template-rows: 20vh auto auto auto auto 10vh;
     gap: 40px;
     overflow-x: hidden;
     -ms-overflow-style: none;
@@ -547,7 +549,7 @@
   .grid {
     width: 100vw;
     display: grid;
-    grid-template-rows: 10vh auto auto auto 10vh;
+    grid-template-rows: 10vh auto auto auto auto 10vh;
     gap: 70px;
     overflow-x: hidden;
     -ms-overflow-style: none;
