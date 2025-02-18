@@ -766,6 +766,21 @@
     font-size: 7vh;
     font-weight: 490;
   }
+
+  .skillLi {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+  }
+
+  .skLi {
+    height: 29px;
+    font-size: 12px;
+    border: 1px solid #ffffff;
+    border: 20px;
+    color: #777777;
+  }
   
   /* ---------- #CURSOR ---------- */
   
