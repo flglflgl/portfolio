@@ -1,25 +1,25 @@
-// Show Post on scroll
-document.addEventListener("DOMContentLoaded", () => {
+ // Show Post on scroll
+ document.addEventListener("DOMContentLoaded", () => {
   const posts = document.querySelectorAll(".post");
 
   const observerOptions = {
-    root: null,
-    threshold: 0.1 // Trigger when 10% of the element is visible
+      root: null,
+      threshold: 0.1 // Trigger when 10% of the element is visible
   };
 
   const revealPost = (entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-        observer.unobserve(entry.target);
-      }
-    });
+      entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+              observer.unobserve(entry.target);
+          }
+      });
   };
 
   const observer = new IntersectionObserver(revealPost, observerOptions);
 
   posts.forEach((post) => {
-    observer.observe(post);
+      observer.observe(post);
   });
 });
 
@@ -47,34 +47,58 @@ document.addEventListener("DOMContentLoaded", () => {
   cursor.style.display = "block";
   postCursorCon.style.display = "none";
 
-  // Cursor Position
-  document.addEventListener("mousemove", (e) => {
-    const offsetX = 20;
-    const offsetY = 10;
+  let mouseX = 0, mouseY = 0;
+  let cursorX = 0, cursorY = 0;
+  let isHolding = false;
 
-    cursor.style.left = `${e.pageX + offsetX}px`;
-    cursor.style.top = `${e.pageY + offsetY}px`;
-    postCursorCon.style.left = `${e.pageX + offsetX}px`;
-    postCursorCon.style.top = `${e.pageY + offsetY}px`;
+  // Mouse Move Listener
+  document.addEventListener("mousemove", (e) => {
+      mouseX = e.pageX + 10; // Keep 10px distance
+      mouseY = e.pageY + 10;
   });
 
+  // Click Listener (Jump to Mouse Position)
+  document.addEventListener("mousedown", () => {
+      isHolding = true;
+      cursorX = mouseX;
+      cursorY = mouseY;
+      cursor.style.left = `${cursorX}px`;
+      cursor.style.top = `${cursorY}px`;
+  });
+
+  document.addEventListener("mouseup", () => {
+      isHolding = false;
+  });
+
+  // Cursor Animation Loop (Smooth Follow)
+  function animateCursor() {
+      if (!isHolding) {
+          cursorX += (mouseX - cursorX) * 0.1; // Smooth follow
+          cursorY += (mouseY - cursorY) * 0.1;
+          cursor.style.left = `${cursorX}px`;
+          cursor.style.top = `${cursorY}px`;
+      }
+      requestAnimationFrame(animateCursor);
+  }
+
+  animateCursor();
+
+  // Handle postCursor for video hover
   const posts = document.querySelectorAll(".post");
-
   posts.forEach((post) => {
-    const video = post.querySelector("video");
+      const video = post.querySelector("video");
+      if (video) {
+          video.addEventListener("mouseenter", () => {
+              cursor.style.display = "none";
+              postCursorCon.style.display = "flex";
+              postCursorToolTip.innerHTML = post.getAttribute("data-text") || "";
+          });
 
-    if (video) {
-      video.addEventListener("mouseenter", () => {
-        cursor.style.display = "none";
-        postCursorCon.style.display = "flex";
-        postCursorToolTip.innerHTML = post.getAttribute("data-text") || "";
-      });
-
-      video.addEventListener("mouseleave", () => {
-        cursor.style.display = "block";
-        postCursorCon.style.display = "none";
-      });
-    }
+          video.addEventListener("mouseleave", () => {
+              cursor.style.display = "block";
+              postCursorCon.style.display = "none";
+          });
+      }
   });
 });
 
@@ -84,14 +108,14 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".top ul a").forEach(link => {
       link.addEventListener("click", (event) => {
           event.preventDefault();
-          
+
           const targetId = link.getAttribute("href");
           const targetSection = document.querySelector(targetId); // Select the section
-          
+
           if (targetSection) {
-            // Show section
+              // Show section
               targetSection.style.display = "block";
-              
+
               // Smoothly scroll to the section
               targetSection.scrollIntoView({ behavior: "smooth", block: "center" });
           }
@@ -127,17 +151,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".top ul li"); // Navigation links
 
   function highlightNav() {
-    let scrollPosition = window.scrollY;
+      let scrollPosition = window.scrollY;
 
-    sections.forEach((section, index) => {
-      const sectionTop = section.offsetTop - 50; // Adjust for header height
-      const sectionHeight = section.clientHeight;
+      sections.forEach((section, index) => {
+          const sectionTop = section.offsetTop - 50; // Adjust for header height
+          const sectionHeight = section.clientHeight;
 
-      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-        navLinks.forEach((link) => link.classList.remove("show")); // Remove class from all
-        navLinks[index]?.classList.add("show"); // Add class to active link
-      }
-    });
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+              navLinks.forEach((link) => link.classList.remove("show")); // Remove class from all
+              navLinks[index]?.classList.add("show"); // Add class to active link
+          }
+      });
   }
 
   window.addEventListener("scroll", highlightNav);
@@ -147,52 +171,52 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // SVG highlight .minTopUl ul li
 document.addEventListener("DOMContentLoaded", function () {
-const sections = document.querySelectorAll(".col"); // Detect only `.col` elements
-const menuItems = document.querySelectorAll(".minTopUl ul li .svg svg");
+  const sections = document.querySelectorAll(".col"); // Detect only `.col` elements
+  const menuItems = document.querySelectorAll(".minTopUl ul li .svg svg");
 
-function highlightMenu() {
-  let scrollPosition = window.scrollY;
+  function highlightMenu() {
+      let scrollPosition = window.scrollY;
 
-  sections.forEach((section, index) => {
-    let rect = section.getBoundingClientRect();
-    let sectionTop = rect.top + window.scrollY - 100; // Adjust offset
-    let sectionBottom = sectionTop + section.offsetHeight;
+      sections.forEach((section, index) => {
+          let rect = section.getBoundingClientRect();
+          let sectionTop = rect.top + window.scrollY - 100; // Adjust offset
+          let sectionBottom = sectionTop + section.offsetHeight;
 
-    if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-      menuItems.forEach((item) => (item.style.display = "none"));
+          if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+              menuItems.forEach((item) => (item.style.display = "none"));
 
-      if (menuItems[index]) {
-        menuItems[index].style.display = "block";
-      }
-    }
-  });
-}
+              if (menuItems[index]) {
+                  menuItems[index].style.display = "block";
+              }
+          }
+      });
+  }
 
-window.addEventListener("scroll", highlightMenu);
-highlightMenu(); // Run on page load
+  window.addEventListener("scroll", highlightMenu);
+  highlightMenu(); // Run on page load
 });
 
 
 // Follow Cursor effect for .top ul li elements
 document.addEventListener("DOMContentLoaded", function () {
-// Select only direct children of .top ul
-const topMenuItems = document.querySelectorAll(".top > ul > li");
+  // Select only direct children of .top ul
+  const topMenuItems = document.querySelectorAll(".top > nav > ul > li");
 
-topMenuItems.forEach((item) => {
-  item.addEventListener("mousemove", (event) => {
-    const { clientX, clientY } = event;
-    const rect = item.getBoundingClientRect();
-    const offsetX = clientX - (rect.left + rect.width / 2);
-    const offsetY = clientY - (rect.top + rect.height / 2);
+  topMenuItems.forEach((item) => {
+      item.addEventListener("mousemove", (event) => {
+          const { clientX, clientY } = event;
+          const rect = item.getBoundingClientRect();
+          const offsetX = clientX - (rect.left + rect.width / 2);
+          const offsetY = clientY - (rect.top + rect.height / 2);
 
-    item.style.transform = `translate(${offsetX * 1.4}px, ${offsetY * 1.4}px)`;
+          item.style.transform = `translate(${offsetX * 1.4}px, ${offsetY * 1.4}px)`;
+      });
+
+      item.addEventListener("mouseleave", () => {
+          item.style.transition = "transform 0.4s ease-out";
+          item.style.transform = "translate(0, 0)";
+      });
   });
-
-  item.addEventListener("mouseleave", () => {
-    item.style.transition = "transform 0.4s ease-out";
-    item.style.transform = "translate(0, 0)";
-  });
-});
 });
 
 
@@ -204,10 +228,10 @@ document.querySelectorAll('.introbtn').forEach(button => {
       const y = e.clientY - rect.top - rect.height / 2;
 
       // Move the button slightly
-      button.style.transform = `translate(${x * 0.1}px, ${y * 0.1}px)`;
+      button.style.transform = `translate(${x * 1.4}px, ${y * 1.4}px)`;
 
       // Move the text inside more
-      button.querySelector('span').style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+      button.querySelector('span').style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
   });
 
   button.addEventListener('mouseleave', () => {
@@ -222,12 +246,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const introSection = document.querySelector(".intro");
 
   const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        introSection.classList.add("show");
-      }
-    });
-  }, { threshold: 0.3 });
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              introSection.classList.add("show");
+          }
+      });
+  }, { threshold: 0.2 });
 
   observer.observe(introSection);
 });
@@ -246,15 +270,15 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Hiding .minTopUl on click
-document.querySelector('.minTopUlClosingbtn').addEventListener('click', function() {
-document.querySelector('.minTopUl').classList.remove('show');
+document.querySelector('.minTopUlClosingbtn').addEventListener('click', function () {
+  document.querySelector('.minTopUl').classList.remove('show');
 });
 
 // Hiding .minTopUl when clicking on the li element links
 const links = document.querySelectorAll('.minTopUl ul li a');
 
 links.forEach(link => {
-link.addEventListener('click', () => {
-  document.querySelector('.minTopUl').classList.remove('show');
-});
+  link.addEventListener('click', () => {
+      document.querySelector('.minTopUl').classList.remove('show');
+  });
 });
