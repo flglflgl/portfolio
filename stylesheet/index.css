@@ -43,7 +43,7 @@
     body {
         font-family: 'SF Pro';
         font-size: 2.9vh;
-        background-color: #a9a9aa;
+        background-color: #adadad;
         color: #ffffff;
     }
 
@@ -466,7 +466,7 @@
     body {
         font-family: 'SF Pro';
         font-size: 4vh;
-        background-color: #a9a9aa;
+        background-color: #adadad;
         color: #ffffff;
     }
 
@@ -481,7 +481,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #a9a9aa;
+        background-color: #adadad;
         padding: 20px 20px 20px 29px;
         z-index: 100;
     }
