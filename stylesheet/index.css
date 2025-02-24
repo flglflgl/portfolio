@@ -452,7 +452,7 @@
 
     body {
         font-family: 'SF Pro';
-        font-size: 2.9vh;
+        font-size: 4vh;
         background-color: #a9a9aa;
         color: #ffffff;
     }
@@ -847,8 +847,8 @@
     /* ---------- #HELPERS ---------- */
 
     h1 {
-        font-size: 2.9vh;
-        font-weight: 1000;
+        font-size: 4.9vh;
+        font-weight: 700;
     }
 
     h2 {
