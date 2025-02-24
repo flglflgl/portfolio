@@ -165,8 +165,8 @@
     }
 
     .bottom .lin img {
-        width: 40px;
-        height: 40px;
+        width: 49px;
+        height: 49px;
         margin: 4px 0 0 0;
     }
 
@@ -253,13 +253,26 @@
     /* ---------- #INTRO ---------- */
 
     .intro {
-        width: 70vw;
+        width: 40vw;
+        font-size: 4vh;
+        margin: 0 auto;
+        padding: 0 70px;
+    }
+
+    .intro h1 {
+        font-size: 7vh;
+    }
+
+    /* ---------- #Me ---------- */
+
+    .me {
+        width: 40vw;
         font-size: 2.9vh;
         margin: 0 auto;
         padding: 0 70px;
     }
 
-    .intro a:hover {
+    .me a:hover {
         color: rgba(255, 255, 255, 0.4);
     }
 
@@ -270,7 +283,7 @@
         margin: 20px 0;
     }
 
-    .introbtn {
+    .mebtn {
         height: 40px;
         border: 1px solid #a9a9aa;
         border-radius: 20px;
@@ -284,7 +297,7 @@
         z-index: 1;
     }
 
-    .introbtn::before {
+    .mebtn::before {
         content: "";
         position: absolute;
         bottom: -66%;
@@ -300,11 +313,11 @@
         z-index: 0;
     }
 
-    .introbtn:hover {
+    .mebtn:hover {
         color: #ffffff;
     }
 
-    .introbtn:hover::before {
+    .mebtn:hover::before {
         bottom: 0;
         height: 290%;
         width: 290%;
@@ -312,14 +325,14 @@
         clip-path: none;
     }
 
-    .introbtn span {
+    .mebtn span {
         display: inline-block;
         transition: transform 0.1s ease-out;
         position: relative;
         z-index: 10;
     }
 
-    .intro p {
+    .me p {
         font-size: 2.29vh;
     }
 
@@ -535,8 +548,8 @@
     }
 
     .bottom .lin img {
-        width: 29px;
-        height: 29px;
+        width: 49px;
+        height: 49px;
         margin: 4px 0 0 0;
     }
 
@@ -663,13 +676,25 @@
     /* ---------- #INTRO ---------- */
 
     .intro {
-        width: 70vw;
+        width: 40vw;
+        margin: 0 auto;
+        padding: 0 70px;
+    }
+
+    .intro h1 {
+        font-size: 10vh;
+    }
+
+    /* ---------- #ME ---------- */
+
+    .me {
+        width: 40vw;
         font-size: 2.9vh;
         margin: 0 auto;
         padding: 0 70px;
     }
 
-    .intro a:hover {
+    .me a:hover {
         color: rgba(255, 255, 255, 0.4);
     }
 
@@ -680,7 +705,7 @@
         margin: 20px 0;
     }
 
-    .introbtn {
+    .mebtn {
         height: 40px;
         border: 1px solid #a9a9aa;
         border-radius: 20px;
@@ -693,7 +718,7 @@
         transition: color 0.4s ease-out;
     }
 
-    .introbtn::before {
+    .me::before {
         content: "";
         position: absolute;
         bottom: -66%;
@@ -709,11 +734,11 @@
         /* Ensures only the top of the circle is visible */
     }
 
-    .introbtn:hover {
+    .mebtn:hover {
         color: #ffffff;
     }
 
-    .introbtn:hover::before {
+    .mebtn:hover::before {
         bottom: 0;
         height: 290%;
         width: 290%;
@@ -722,25 +747,12 @@
         /* Removes circle effect */
     }
 
-    .introbtn span {
+    .mebtn span {
         position: relative;
         z-index: 10;
     }
 
-    .intro h1,
-    .intro p {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-    }
-
-    .intro.show h1,
-    .intro.show p {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    .intro p {
+    .me p {
         font-size: 2.29vh;
     }
 
