@@ -165,8 +165,8 @@
     }
 
     .bottom .lin img {
-        width: 29px;
-        height: 29px;
+        width: 40px;
+        height: 40px;
         margin: 4px 0 0 0;
     }
 
@@ -271,7 +271,7 @@
     }
 
     .introbtn {
-        height: 29px;
+        height: 40px;
         border: 1px solid #a9a9aa;
         border-radius: 20px;
         background-color: #ffffff;
@@ -361,7 +361,7 @@
 
     .codinghours h1 {
         font-size: 7h;
-        font-weight: 700;
+        font-weight: 1000;
     }
 
     .skillList {
@@ -412,7 +412,7 @@
 
     h1 {
         font-size: 2.9vh;
-        font-weight: 400;
+        font-weight: 1000;
     }
 
     h2 {
@@ -535,8 +535,8 @@
     }
 
     .bottom .lin img {
-        width: 22.9px;
-        height: 22.9px;
+        width: 29px;
+        height: 29px;
         margin: 4px 0 0 0;
     }
 
@@ -782,7 +782,7 @@
 
     .codinghours h1 {
         font-size: 7vh;
-        font-weight: 700;
+        font-weight: 1000;
     }
 
     .skillList {
@@ -848,7 +848,7 @@
 
     h1 {
         font-size: 2.9vh;
-        font-weight: 400;
+        font-weight: 1000;
     }
 
     h2 {
