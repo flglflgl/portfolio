@@ -42,7 +42,8 @@
 
     body {
         font-family: 'SF Pro';
-        font-size: 2.9vh;
+        font-size: 14px;
+        font-weight: 400;
         background-color: #adadad;
         color: #ffffff;
     }
@@ -152,31 +153,32 @@
 
     /* ---------- #BOTTOM ---------- */
 
-    .bottom {
+    footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        width: 100vw;
         padding: 0 0 0 20px;
     }
 
-    .bottom li {
+    footer li {
         float: right;
         margin: 0 10px 0 0;
     }
 
-    .bottom .lin img {
+    footer .lin img {
         width: 49px;
         height: 49px;
         margin: 4px 0 0 0;
     }
 
-    .bottom img {
+    footer img {
         width: 29px;
         height: 29px;
         filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(37deg) brightness(121%) contrast(114%);
     }
 
-    .bottom img:hover {
+    footer img:hover {
         filter: invert(89%) sepia(0%) saturate(1546%) hue-rotate(176deg) brightness(97%) contrast(82%);
     }
 
@@ -256,6 +258,9 @@
 
     /* ---------- #INTRO ---------- */
 
+    .intro {
+        height: 100vh;
+    }
 
     .intro h1 {
         font-size: 49px;
@@ -323,6 +328,13 @@
         color: white;
     }
     
+    .me h1 {
+        font-size: 40px;
+    }
+
+    .me p {
+        font-size: 20px;
+    }
 
     /* ---------- #SKILLS ---------- */
 
@@ -361,7 +373,7 @@
     }
 
     .codinghours h1 {
-        font-size: 49px;
+        font-size: 70px;
         font-weight: 700;
     }
 
@@ -411,13 +423,8 @@
 
     /* ---------- #HELPERS ---------- */
 
-    h1 {
-        font-size: 49px;
-        font-weight: 700;
-    }
-
     h2 {
-        font-weight: 400;
+        font-size: 20px;
     }
 
     a {
@@ -453,7 +460,8 @@
 
     body {
         font-family: 'SF Pro';
-        font-size: 4vh;
+        font-size: 14px;
+        font-weight: 400;
         background-color: #adadad;
         color: #ffffff;
     }
@@ -523,31 +531,32 @@
 
     /* ---------- #BOTTOM ---------- */
 
-    .bottom {
+    footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        width: 100vw;
         padding: 0 0 0 20px;
     }
 
-    .bottom li {
+    footer li {
         float: right;
         margin: 0 10px 0 0;
     }
 
-    .bottom .lin img {
+    footer .lin img {
         width: 49px;
         height: 49px;
         margin: 4px 0 0 0;
     }
 
-    .bottom img {
+    footer img {
         width: 29px;
         height: 29px;
         filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(37deg) brightness(121%) contrast(114%);
     }
 
-    .bottom img:hover {
+    footer img:hover {
         filter: invert(89%) sepia(0%) saturate(1546%) hue-rotate(176deg) brightness(97%) contrast(82%);
     }
 
@@ -667,6 +676,10 @@
 
     /* ---------- #INTRO ---------- */
 
+    .intro {
+        height: 100vh;
+    }
+
     .intro h1 {
         font-size: 49px;
     }
@@ -732,6 +745,14 @@
         color: white;
     }    
 
+    .me h1 {
+        font-size: 40px;
+    }
+
+    .me p {
+        font-size: 20px;
+    }
+
     /* ---------- #SKILLS ---------- */
 
     .skill {
@@ -769,7 +790,7 @@
     }
 
     .codinghours h1 {
-        font-size: 49px;
+        font-size: 70px;
         font-weight: 1000;
     }
 
@@ -834,13 +855,8 @@
 
     /* ---------- #HELPERS ---------- */
 
-    h1 {
-        font-size: 49px;
-        font-weight: 700;
-    }
-
     h2 {
-        font-weight: 400;
+        font-size: 20px;
     }
 
     a {
