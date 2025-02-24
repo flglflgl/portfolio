@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
       isHolding = false;
   });
 
-  // Cursor Animation Loop (Smooth Follow)
+  // Cursor Smooth Follow
   function animateCursor() {
       if (!isHolding) {
           cursorX += (mouseX - cursorX) * 0.1; // Smooth follow
@@ -83,7 +83,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   animateCursor();
 
-  // Handle postCursor for video hover
   const posts = document.querySelectorAll(".post");
   posts.forEach((post) => {
       const video = post.querySelector("video");
