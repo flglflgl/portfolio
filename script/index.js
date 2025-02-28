@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const posts = document.querySelectorAll(".post");
   posts.forEach((post) => {
-      const video = post.querySelector("video");
+      const video = post.querySelector(".post video");
       if (video) {
           video.addEventListener("mouseenter", () => {
               cursor.style.display = "none";
