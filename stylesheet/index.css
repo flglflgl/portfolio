@@ -330,7 +330,7 @@
     }
 
     .intro h1 {
-        font-size: 49px;
+        font-size: 22.9px;
     }
 
     /* ---------- #OUTRO ---------- */
@@ -338,7 +338,7 @@
     .outro {
         width: 70vw;
         font-family: 'SF Pro Thin';
-        font-size: 29px;
+        font-size: 22.9px;
         margin: 0 auto;
     }
 
@@ -411,7 +411,7 @@
     }
 
     .me h1 {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .me p {
@@ -443,6 +443,7 @@
 
     .skillCol {
         position: relative;
+        width: 100%;
         border: 1px solid #ffffff;
         border-radius: 20px;
         color: #ffffff;
@@ -451,6 +452,7 @@
 
     .codinghours,
     .github {
+        width: 100%;
         border: 1px solid #ffffff;
         border-radius: 20px;
         background-color: #9f9fa1;
@@ -783,7 +785,7 @@
     }
 
     .intro h1 {
-        font-size: 29px;
+        font-size: 40px;
     }
 
     /* ---------- #OUTRO ---------- */
@@ -865,12 +867,12 @@
 
     .me h1 {
         font-family: 'SF Pro Thin';
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .me p {
         font-family: 'SF Pro';
-        font-size: 19px;
+        font-size: 17px;
         margin: 60px 0 0 0;
     }
 

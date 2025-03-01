@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
         let scrollPosition = window.scrollY;
 
         sections.forEach((section, index) => {
-            const sectionTop = section.offsetTop - 20;
+            const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
 
             if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
@@ -215,7 +215,6 @@ document.addEventListener("DOMContentLoaded", () => {
     cursor.classList.add("cursor");
     document.body.appendChild(cursor);
 
-    // Create postCursorCon and postCursorToolTip
     const postCursorCon = document.createElement("div");
     postCursorCon.classList.add("postCursorCon");
 
@@ -225,7 +224,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const postCursorToolTip = document.createElement("span");
     postCursorToolTip.classList.add("postCursorToolTip");
 
-    // Append tooltip and cursor to postCursorCon
     postCursorCon.appendChild(postCursorToolTip);
     postCursorCon.appendChild(postCursor);
     document.body.appendChild(postCursorCon);
@@ -268,14 +266,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     animateCursor();
 
-    // Handle hover over video elements
     document.querySelectorAll(".post video").forEach(video => {
         video.addEventListener("mouseenter", (e) => {
-            cursor.style.display = "none"; // Hide default cursor
-            postCursorCon.style.display = "flex"; // Show custom cursor
-            postCursorCon.style.opacity = "1"; // Fade in
+            cursor.style.display = "none"; 
+            postCursorCon.style.display = "flex";
+            postCursorCon.style.opacity = "1";
 
-            // Set tooltip text from data-text attribute
             const post = video.closest(".post");
             if (post && post.dataset.text) {
                 postCursorToolTip.textContent = post.dataset.text;
@@ -285,11 +281,11 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         video.addEventListener("mouseleave", () => {
-            cursor.style.display = "block"; // Show default cursor
-            postCursorCon.style.opacity = "0"; // Fade out
+            cursor.style.display = "block";
+            postCursorCon.style.opacity = "0";
             setTimeout(() => {
                 postCursorCon.style.display = "none";
-            }, 200); // Delay hiding for smooth transition
+            }, 200)
         });
     });
 });
