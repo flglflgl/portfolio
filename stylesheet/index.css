@@ -22,13 +22,13 @@
 
 @font-face {
     font-family: 'SF Pro';
-    src: url('SF-Pro-Display-Light.otf') format('opentype');
+    src: url('../public/font/SF-Pro-Display-Light.otf') format('opentype');
     font-style: normal;
 }
 
 @font-face {
     font-family: 'SF Pro Thin';
-    src: url('SF-Pro-Display-Thin.otf') format('opentype');
+    src: url('../public/font/SF-Pro-Display-Thin.otf') format('opentype');
     font-style: normal;
 }
 
