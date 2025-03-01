@@ -309,7 +309,6 @@
 
     .postCon {
         display: flex;
-        border: 1px solid #ffffff;
     }
 
     .postIconCon {
@@ -348,7 +347,7 @@
     }
 
     .outro .buttonGroup {
-        margin: 0;
+        margin: 20px 0;
     }
 
     /* ---------- #ME ---------- */
@@ -769,7 +768,6 @@
 
     .postCon {
         display: flex;
-        border: 1px solid #ffffff;
     }
 
     .postIconCon {
