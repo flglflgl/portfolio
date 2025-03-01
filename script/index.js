@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 targetSection.style.display = "block";
 
                 // Smoothly scroll to the section
-                targetSection.scrollIntoView({ behavior: "smooth", block: "center" });
+                targetSection.scrollIntoView({ behavior: "smooth" });
             }
         });
     });
@@ -75,18 +75,18 @@ document.addEventListener("DOMContentLoaded", function () {
         let scrollPosition = window.scrollY;
 
         sections.forEach((section, index) => {
-            const sectionTop = section.offsetTop - 50; // Adjust for header height
+            const sectionTop = section.offsetTop - 20;
             const sectionHeight = section.clientHeight;
 
             if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                navLinks.forEach((link) => link.classList.remove("show")); // Remove class from all
-                navLinks[index]?.classList.add("show"); // Add class to active link
+                navLinks.forEach((link) => link.classList.remove("show"));
+                navLinks[index]?.classList.add("show");
             }
         });
     }
 
     window.addEventListener("scroll", highlightNav);
-    highlightNav(); // Run initially in case user is already scrolled
+    highlightNav();
 });
 
 
