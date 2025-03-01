@@ -319,7 +319,7 @@
         width: 22px;
         height: 22px;
         filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(88deg) brightness(105%) contrast(100%);
-        margin: 0 0 0 4.9px;
+        margin: 4px 0 0 4.9px;
     }
 
     /* ---------- #INTRO ---------- */
@@ -415,6 +415,7 @@
     }
 
     .me h1 {
+        font-family: 'SF Pro Thin';
         font-size: 22px;
     }
 
@@ -474,7 +475,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        margin: 20px 0 0 -20px;
+        margin: 20px 0 0 -10px;
     }
 
     .skillListItem {
@@ -484,7 +485,7 @@
         min-width: 40px;
         height: 20px;
         font-size: 12px;
-        font-weight: 500;
+        font-weight: 700;
         border: 1px solid #ffffff;
         border-radius: 20px;
         background-color: #ffffff;
