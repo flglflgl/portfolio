@@ -431,7 +431,7 @@
         display: grid;
         grid-template-rows: 1fr 1fr;
         gap: 20px;
-        width: 70vw;
+        width: 40vw;
         margin: 0 auto;
     }
 
@@ -448,7 +448,7 @@
 
     .skillCol {
         position: relative;
-        width: 70vw;
+        width: 40vw;
         border: 1px solid #ffffff;
         border-radius: 20px;
         color: #ffffff;
