@@ -118,6 +118,7 @@
 
     .minTopUl ul li {
         display: flex;
+        font-weight: 400;
         color: #a9a9aa;
         margin: 12.9px 0;
         width: 100%;
@@ -337,12 +338,12 @@
     .outro {
         width: 70vw;
         font-family: 'SF Pro Thin';
-        font-size: 40px;
+        font-size: 29px;
         margin: 0 auto;
     }
 
     .outro .buttonGroup {
-        margin: 0;
+        margin: -10px 0 0 0;
     }
 
     /* ---------- #ME ---------- */
@@ -410,17 +411,13 @@
     }
 
     .me h1 {
-        font-size: 22.9px;
-    }
-
-    .me h1 {
         font-family: 'SF Pro Thin';
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .me p {
         font-family: 'SF Pro';
-        font-size: 19px;
+        font-size: 17px;
         margin: 60px 0 0 0;
     }
 
@@ -441,7 +438,7 @@
 
     .skillColGrid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         gap: 20px;
     }
 
@@ -558,7 +555,7 @@
 }
 
 /* XL */
-@media screen and (min-width: 800px) and (max-width: 2000px) {
+@media screen and (min-width: 800px) {
 
     * {
         margin: 0;
@@ -803,7 +800,7 @@
     }
 
     .intro h1 {
-        font-size: 49px;
+        font-size: 29px;
     }
 
     /* ---------- #OUTRO ---------- */
@@ -881,10 +878,6 @@
 
     .mebtn:hover {
         color: #ffffff;
-    }
-
-    .me h1 {
-        font-size: 22.9px;
     }
 
     .me h1 {
