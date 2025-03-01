@@ -237,7 +237,7 @@
         width: 100%;
         aspect-ratio: 10/4;
         font-weight: 400;
-        font-size: 17px;
+        font-size: 14.9px;
         transition: transform 0.4s ease;
         opacity: 0;
         transform: translateY(20px);
@@ -362,11 +362,11 @@
         color: rgba(255, 255, 255, 0.4);
     }
 
-    .buttonGroup {
+   .me .buttonGroup {
         display: flex;
         gap: 20px;
         width: fit-content;
-        margin: 0;
+        margin: 20px 0;
     }
 
     .mebtn {
