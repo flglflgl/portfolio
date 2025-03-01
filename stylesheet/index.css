@@ -474,7 +474,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        margin: 20px -10px 0 0;
+        margin: 20px 0 0 -20px;
     }
 
     .skillListItem {
@@ -490,7 +490,7 @@
         background-color: #ffffff;
         color: #9f9fa1;
         padding: 0 10px;
-        margin: 0 0 0 10px;
+        margin: 0 0 10px 10px;
     }
 
     .skill ul {
