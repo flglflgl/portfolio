@@ -453,7 +453,7 @@
 
     .codinghours,
     .github {
-        width: 70vw;
+        max-width: 40vw;
         border: 1px solid #ffffff;
         border-radius: 20px;
         background-color: #9f9fa1;
