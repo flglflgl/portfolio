@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet/index.css">
-    <link rel="icon" href="public/img/logo.png?">
+    <link rel="icon" href="logo.png?">
     <title>Sarah Portfolio</title>
 </head>
 
@@ -14,35 +14,39 @@
     <!-- Grid  -->
     <div class="grid">
 
-        <!-- Column (empty) -->
-        <div class="col"></div>
-
         <!-- Introduction -->
-        <div class="col intro">
+        <div class="col intro jump">
             <h1>
-                Hi, I'm Sarah.
+                Hi, I'm Sarah.<br>
+                Frontend Developer with.
             </h1>
+
+            <!-- Button Group -->
+            <div class="buttonGroup jump">
+                <a href="CV.pdf" download><button class="mebtn"><span>View Resume</span>
+                        <div class="circle"></div>
+                    </button></a>
+                <a href="https://github.com/flglflgl" target="_blank" rel="noopener noreferrer">
+                    <button class="mebtn"><span>GitHub</span>
+                        <div class="circle"></div>
+                    </button>
+                </a>
+            </div>
         </div>
 
         <!-- Me -->
-        <div id="me" class="col me">
+        <div id="me" class="col me jump">
             <h1>I first got into coding by writing PHP scripts to find custom solutions in my role as a Support
                 Engineer. Scripting and finding solutions led me to dive deeper into web development.<br><br>
                 Now, I focus on building responsive, user-centric things for the web and refining my skills in
                 TypeScript and modern front-end technologies.
-            </h1><br>
+            </h1>
 
             <p>
                 If you stumbled upon kludge on my GitHub or you've<br>
                 good coding tips, feel free to post them <strong><a href="https://www.tip-flgl.vercel.app"
                         target="_blank" rel="noopener noreferrer">here</a></strong>.
             </p>
-
-            <!-- Button Group -->
-            <div class="buttonGroup">
-                <a href="CV.pdf" download><button class="mebtn">View Resume</button></a>
-                <a href="https://github.com/flglflgl" target="_blank" rel="noopener noreferrer"><button class="mebtn">GitHub</button></a>
-            </div>
         </div>
 
         <!-- Skills -->
@@ -51,13 +55,13 @@
 
                 <!-- Coding Hours -->
                 <div class="codinghours">
-                    <h2>Coding hours</h2><br>
+                    <h2>Coding hours</h2>
                     <h1>19901</h1>
                 </div>
 
                 <!-- UX/UI Design Skills -->
                 <div class="github">
-                    <h2>UX/UI Design</h2><br>
+                    <h2>UX/UI Design</h2>
 
                     <ul>
                         <li>
@@ -99,7 +103,7 @@
                                     </svg>
                                 </span>
                                 <span class="link">
-                                    User Interviews
+                                    Conducting insightful user interviews
                                 </span>
                             </span>
                         </li>
@@ -130,9 +134,9 @@
                 </div>
             </div>
 
-            <!-- Web Development Skills -->
+            <!-- Frontend Development Skills -->
             <div class="skillCol">
-                <h2>Web Development</h2><br>
+                <h2>Frontend Development</h2>
 
                 <ul>
                     <li>
@@ -152,7 +156,7 @@
                                         y="34.552" width="49.528" height="130.896" rx="24.8" ry="24.8" />
                                 </svg>
                             </span>
-                            <span class="link">Responsive Design</span>
+                            <span class="link">Building </span>
                         </span>
                     </li>
 
@@ -216,83 +220,95 @@
         </div>
 
         <!-- Projects -->
-        <div id="projects" class="col">
-            <h2>Projects</h2>
-
-            <div class="postGrid">
-                <!-- Project: Coding Tool -->
-                <div class="post" data-text="Coding Tool">
-                    <a href="https://github.com/flglflgl/codingtool" target="_blank" rel="noopener noreferrer">
-                        <video muted playsinline>
-                            <source src="public/videos/codingtool.mp4" type="video/mp4">
-                            Your browser does not support video.
-                        </video>
-                        <strong>
-                            <p>CodingTool</p>
-                        </strong>
-                        <p>Coding tool to edit HTML, CSS, JS</p>
-                        <span class="postIconCon">
-                            <p>HTML, CSS, TypeScript, Next.js</p><img src="public/img/link.svg">
-                        </span>
-                    </a>
-                </div>
-
-                <!-- Project: Github User Viewer -->
-                <div class="post" data-text="Github User Viewer">
-                    <a href="https://github.com/flglflgl/github" target="_blank" rel="noopener noreferrer">
-                        <video muted playsinline>
-                            <source src="public/videos/github.mp4" type="video/mp4">
-                            Your browser does not support video.
-                        </video><br>
-                        <strong>
-                            <p>Github User Viewer</p>
-                        </strong>
-                        <p>Tool to look up Github Users</p>
-                        <span class="postIconCon">
-                            <p>HTML, CSS, TypeScript, Node.js, Express.js, Github</p><img src="public/img/link.svg">
-                        </span>
-                    </a>
-                </div>
-
-                <!-- Project: ShortURL -->
-                <div class="post" data-text="Short URL">
-                    <a href="https://github.com/flglflgl/shorturl" target="_blank" rel="noopener noreferrer">
-                        <video muted playsinline>
-                            <source src="public/videos/shorturl.mp4" type="video/mp4">
-                            Your browser does not support video.
-                        </video><br>
-                        <strong>
-                            <p>shorturl</p>
-                        </strong>
-                        <p>Tool to shorten URLs</p>
-                        <span class="postIconCon">
-                            <p>HTML, CSS, TypeScript, Next.js</p><img src="public/img/link.svg">
-                        </span>
-                    </a>
-                </div>
-
+        <div id="projects" class="col postGrid">
+            <!-- Project: Coding Tool -->
+            <div class="post" data-text="Coding Tool">
+                <a href="https://github.com/flglflgl/codingtool" target="_blank" rel="noopener noreferrer">
+                    <video muted playsinline>
+                        <source src="codingtool.mp4" type="video/mp4">
+                        Your browser does not support video.
+                    </video>
+                    <strong>
+                        <h2>CodingTool</h2>
+                    </strong>
+                    <p>Coding tool to edit HTML, CSS, JS</p>
+                    <span class="postIconCon">
+                        <p>HTML, CSS, TypeScript, Next.js</p><img src="link.svg">
+                    </span>
+                </a>
             </div>
+
+            <!-- Project: Github User Viewer -->
+            <div class="post" data-text="Github User Viewer">
+                <a href="https://github.com/flglflgl/github" target="_blank" rel="noopener noreferrer">
+                    <video muted playsinline>
+                        <source src="github.mp4" type="video/mp4">
+                        Your browser does not support video.
+                    </video><br>
+                    <strong>
+                        <h2>Github User Viewer</h2>
+                    </strong>
+                    <p>Tool to look up Github Users</p>
+                    <span class="postIconCon">
+                        <p>HTML, CSS, TypeScript, Node.js, Express.js, Github</p><img src="link.svg">
+                    </span>
+                </a>
+            </div>
+
+            <!-- Project: ShortURL -->
+            <div class="post" data-text="Short URL">
+                <a href="https://github.com/flglflgl/shorturl" target="_blank" rel="noopener noreferrer">
+                    <video muted playsinline>
+                        <source src="shorturl.mp4" type="video/mp4">
+                        Your browser does not support video.
+                    </video><br>
+                    <strong>
+                        <h2>shorturl</h2>
+                    </strong>
+                    <p>Tool to shorten URLs</p>
+                    <span class="postIconCon">
+                        <p>HTML, CSS, TypeScript, Next.js</p><img src="link.svg">
+                    </span>
+                </a>
+            </div>
+
         </div>
 
         <!-- Outro -->
-        <div class="col outro"></div>
+        <div class="col outro">
+            <h2>Let's connect.</h2>
+
+            <!-- Button Group -->
+            <div class="buttonGroup jump">
+                <a href="CV.pdf" download><button class="mebtn"><span>View Resume</span>
+                        <div class="circle"></div>
+                    </button></a>
+                <a href="https://github.com/flglflgl" target="_blank" rel="noopener noreferrer">
+                    <button class="mebtn"><span>GitHub</span>
+                        <div class="circle"></div>
+                    </button>
+                </a>
+            </div>
+        </div>
 
         <!-- Bottom Footer -->
-        <footer class="col bottom">
+        <div class="col bottom">
             <ul>
                 <li>© flglportfolio</li>
             </ul>
             <ul>
-                <li><a href="https://github.com/flglflgl"><img src="public/img/github.svg" alt="GitHub"></a></li>
-                <li><a href="https://www.linkedin.com/in/flgl"><img src="public/img/linkedin.svg" alt="LinkedIn"></a>
+                <li><a href="https://github.com/flglflgl"><img src="github.svg" alt="GitHub"></a></li>
+                <span class="lin">
+                    <li><a href="https://www.linkedin.com/in/flgl"><img src="linkedin.svg" alt="LinkedIn"></a>
+                </span>
                 </li>
             </ul>
-        </footer>
-        
+        </div>
+
     </div>
 
     <!-- Top (Fixed Position) -->
-    <header class="top">
+    <div class="top">
 
         <!-- SVG Logo -->
         <a href="https://flglportfolio.com">
@@ -405,13 +421,13 @@
 
         <!-- Mobile Menu Button -->
         <button class="minTopUlbtn">
-            <img src="public/img/menu.svg" alt="Menu">
+            <img src="menu.svg" alt="Menu">
         </button>
 
         <!-- Mobile Menu -->
         <div class="minTopUl">
             <button class="minTopUlClosingbtn">
-                <img src="public/img/minMenu.svg" alt="Close Menu">
+                <img src="minMenu.svg" alt="Close Menu">
             </button>
 
             <nav>
@@ -507,7 +523,7 @@
                 </ul>
             </nav>
         </div>
-    </header>
+    </div>
 
     <script src="script/index.js"></script>
 

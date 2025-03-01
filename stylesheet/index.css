@@ -22,8 +22,13 @@
 
 @font-face {
     font-family: 'SF Pro';
-    src: url('../public/font/SF-Pro-Display-Thin.otf') format('opentype');
-    font-weight: 400;
+    src: url('SF-Pro-Display-Light.otf') format('opentype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Thin';
+    src: url('SF-Pro-Display-Thin.otf') format('opentype');
     font-style: normal;
 }
 
@@ -43,8 +48,7 @@
     body {
         font-family: 'SF Pro';
         font-size: 20px;
-        font-weight: 400;
-        background-color: #c7c7c9;
+        background-color: #9f9fa1;
         color: #ffffff;
     }
 
@@ -133,7 +137,7 @@
         display: none;
         width: 4px;
         height: 8px;
-        filter: invert(46%) sepia(7%) saturate(17%) hue-rotate(359deg) brightness(98%) contrast(89%);
+        filter: invert(70%) sepia(5%) saturate(87%) hue-rotate(201deg) brightness(90%) contrast(91%);
     }
 
     .minTopUlClosingbtn {
@@ -148,63 +152,55 @@
     }
 
     .minTopUlClosingbtn img {
-        filter: invert(47%) sepia(0%) saturate(0%) hue-rotate(200deg) brightness(98%) contrast(92%);
+        filter: invert(70%) sepia(5%) saturate(87%) hue-rotate(201deg) brightness(90%) contrast(91%);
     }
 
     /* ---------- #BOTTOM ---------- */
 
-    footer {
+    .bottom {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100vw;
-        padding: 0 0 0 20px;
+        width: 100%;
     }
 
-    footer li {
+    .bottom ul {
+        margin: 0 20px;
+    }
+
+    .bottom li {
         float: right;
-        margin: 0 10px 0 0;
+        margin: 20px 4.9px 0 0;
     }
 
-    footer .lin img {
-        width: 49px;
-        height: 49px;
-        margin: 4px 0 0 0;
-    }
-
-    footer img {
+    .bottom img {
         width: 29px;
         height: 29px;
-        filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(37deg) brightness(121%) contrast(114%);
+        filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(88deg) brightness(105%) contrast(100%);
     }
 
-    footer img:hover {
-        filter: invert(89%) sepia(0%) saturate(1546%) hue-rotate(176deg) brightness(97%) contrast(82%);
+    .bottom .lin img {
+        width: 40px;
+        height: 40px;
+        margin: -4.9px 0 0 0;
+    }
+
+    .bottom img:hover {
+        filter: invert(95%) sepia(6%) saturate(65%) hue-rotate(202deg) brightness(85%) contrast(89%);
     }
 
     /* ---------- #GRID ---------- */
 
     .grid {
-        width: 100vw;
         display: grid;
-        grid-template-rows: 20vh auto auto auto auto auto 10vh;
-        gap: 40px;
-        overflow-x: hidden;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    }
-
-    .grid::-webkit-scrollbar {
-        display: none;
+        grid-template-rows: 100vh auto auto auto auto 10vh;
+        gap: 70px;
+        width: 70vw;
+        overflow: hidden;
     }
 
     .col {
-        width: 70vw;
         min-height: 10vh;
-        font-size: 4vh;
-        margin: 0 auto;
-        padding: 0 70px;
-        text-align: left;
         overflow: hidden;
     }
 
@@ -212,14 +208,13 @@
 
     .postGrid {
         width: 70vw;
-        height: 100%;
         display: grid;
         grid-template-rows: repeat(1, 1fr);
         gap: 100px;
         align-items: center;
         justify-items: center;
         margin: 0 auto;
-        padding: 20px;
+        overflow: visible;
     }
 
     /* ---------- #POST ---------- */
@@ -227,7 +222,8 @@
     .post {
         width: 100%;
         aspect-ratio: 10/4;
-        font-size: 2.9vh;
+        font-weight: 1000;
+        font-size: 17px;
         transition: transform 0.4s ease;
         opacity: 0;
         transform: translateY(20px);
@@ -251,15 +247,21 @@
     }
 
     .postIconCon img {
-        width: 20px;
-        height: 20px;
-        margin: 2.9px 0 0 4.9px;
+        width: 22px;
+        height: 22px;
+        filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(88deg) brightness(105%) contrast(100%);
+        margin: 4.9px 0 0 4.9px;
     }
 
     /* ---------- #INTRO ---------- */
 
     .intro {
-        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70vw;
+        font-family: 'SF Pro Thin';
+        margin: 0 auto;
     }
 
     .intro h1 {
@@ -267,6 +269,12 @@
     }
 
     /* ---------- #Me ---------- */
+
+    .me {
+        width: 70vw;
+        font-family: 'SF Pro Thin';
+        margin: 0 auto;
+    }
 
     .me a:hover {
         color: rgba(255, 255, 255, 0.4);
@@ -276,64 +284,63 @@
         display: flex;
         gap: 20px;
         width: fit-content;
-        margin: 20px 0;
+        margin: 44px 0;
     }
 
     .mebtn {
+        position: relative;
         height: 40px;
         border: 1px solid #a9a9aa;
         border-radius: 20px;
         background-color: #ffffff;
         color: #a9a9aa;
-        padding: 0 29px;
+        padding: 10px 29px;
         cursor: pointer;
-        position: relative;
         overflow: hidden;
-        transition: color 0.4s ease-out;
+        transition: transform 0.2s ease-out, color 0.3s ease-out;
         z-index: 1;
     }
 
-    .mebtn::before {
-        content: "";
+    .mebtn span {
+        display: inline-block;
+        position: relative;
+        transition: transform 0.1s ease-out, color 0.3s ease-out;
+        z-index: 2;
+    }
+
+    /* Flying circle */
+    .circle {
         position: absolute;
-        bottom: -50%;
+        bottom: -40px;
         left: 50%;
-        width: 200%;
-        height: 200%;
-        background-color: rgba(119, 119, 119, 0.7);
+        width: 10px;
+        height: 10px;
+        background-color: #c7c7c9;
         border-radius: 50%;
-        transform: translateX(-50%);
-        transition: bottom 0.4s ease-out;
-    }
-    
-    .mebtn:hover::before {
-        bottom: 0;
-    }
-    
-    .mebtn {
-        position: relative;
+        transform: translateX(-50%) translateY(100%) scale(0);
+        transition: transform 0.4s ease-out, width 0.4s ease-out, height 0.4s ease-out;
         z-index: 1;
-        height: 40px;
-        border: 1px solid #a9a9aa;
-        border-radius: 20px;
-        background-color: #ffffff;
-        color: #a9a9aa;
-        padding: 0 29px;
-        cursor: pointer;
-        overflow: hidden;
-        transition: color 0.4s ease-out;
     }
-    
+
+    /* Hover effect */
+    .mebtn:hover .circle {
+        transform: translateX(-50%) translateY(0) scale(8);
+        width: 150px;
+        height: 150px;
+    }
+
     .mebtn:hover {
-        color: white;
+        color: #ffffff;
     }
-    
+
     .me h1 {
-        font-size: 40px;
+        font-size: 22.9px;
     }
 
     .me p {
-        font-size: 20px;
+        font-size: 17px;
+        font-family: 'SF Pro';
+        margin: 60px 0 0 0;
     }
 
     /* ---------- #SKILLS ---------- */
@@ -344,38 +351,39 @@
         gap: 20px;
         width: 70vw;
         margin: 0 auto;
-        padding: 0 40px;
     }
 
     .skillColGrid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
-        min-height: 100px;
+        height: 100px;
     }
 
     .skillCol {
-        min-height: 200px;
+        height: 200px;
         border: 1px solid rgba(255, 255, 255, 0.7);
         border-radius: 20px;
         color: #ffffff;
         padding: 20px;
-        box-sizing: border-box;
     }
 
     .codinghours,
     .github {
-        border: 1px solid #f1f1f2;
+        border: 1px solid #ffffff;
         border-radius: 20px;
-        background-color: #f1f1f2;
-        color: #ffffff;
+        background-color: #ffffff;
+        color: #9f9fa1;
         padding: 20px;
-        box-sizing: border-box;
     }
 
     .codinghours h1 {
         font-size: 100px;
-        font-weight: 1200;
+    }
+
+    .skill h2 {
+        font-weight: 400;
+        margin: 0 0 10px 0;
     }
 
     .skillList {
@@ -390,15 +398,19 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        min-width: 40px;
-        height: 20px;
+        min-width: 49px;
+        height: 29px;
         font-size: 12px;
-        border: 1px solid #ffffff;
+        border: 1px solid #9f9fa1;
         border-radius: 20px;
-        background-color: #ffffff;
-        color: #a9a9aa;
+        background-color: #9f9fa1;
+        color: #ffffff;
         padding: 0 10px;
         margin: 0 0 0 10px;
+    }
+
+    .skill ul {
+        margin: 0 0 20px 0;
     }
 
     .skill li {
@@ -424,10 +436,6 @@
 
     /* ---------- #HELPERS ---------- */
 
-    h2 {
-        font-size: 20px;
-    }
-
     a {
         text-decoration: none;
         color: #ffffff;
@@ -436,7 +444,6 @@
 
     p {
         font-size: 2.9vh;
-        font-weight: 290;
         margin: 4.9px 0 0 0;
     }
 
@@ -462,8 +469,7 @@
     body {
         font-family: 'SF Pro';
         font-size: 20px;
-        font-weight: 400;
-        background-color: #c7c7c9;
+        background-color: #9f9fa1;
         color: #ffffff;
     }
 
@@ -478,7 +484,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #c7c7c9;
+        background-color: #9f9fa1;
         padding: 20px 20px 20px 29px;
         z-index: 100;
     }
@@ -502,6 +508,7 @@
         gap: 7px;
         min-height: 49px;
         margin: 20px;
+        transition: transform 0.2s ease-out;
     }
 
     .top ul svg {
@@ -519,7 +526,8 @@
     }
 
     .top ul li.show svg {
-        display: block;
+        display: inline-block;
+        transition: transform 0.2s ease-out;
     }
 
     .minTopUl {
@@ -532,58 +540,50 @@
 
     /* ---------- #BOTTOM ---------- */
 
-    footer {
+    .bottom {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100vw;
-        padding: 0 0 0 20px;
+        width: 100%;
     }
 
-    footer li {
+    .bottom ul {
+        margin: 0 20px;
+    }
+
+    .bottom li {
         float: right;
-        margin: 0 10px 0 0;
+        margin: 20px 4.9px 0 0;
     }
 
-    footer .lin img {
-        width: 49px;
-        height: 49px;
-        margin: 4px 0 0 0;
-    }
-
-    footer img {
+    .bottom img {
         width: 29px;
         height: 29px;
-        filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(37deg) brightness(121%) contrast(114%);
+        filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(88deg) brightness(105%) contrast(100%);
     }
 
-    footer img:hover {
-        filter: invert(89%) sepia(0%) saturate(1546%) hue-rotate(176deg) brightness(97%) contrast(82%);
+    .bottom .lin img {
+        width: 40px;
+        height: 40px;
+        margin: -4.9px 0 0 0;
+    }
+
+    .bottom img:hover {
+        filter: invert(95%) sepia(6%) saturate(65%) hue-rotate(202deg) brightness(85%) contrast(89%);
     }
 
     /* ---------- #GRID ---------- */
 
     .grid {
-        width: 100vw;
         display: grid;
-        grid-template-rows: 20vh auto auto auto auto auto 10vh;
-        gap: 70px;
-        overflow-x: hidden;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    }
-
-    .grid::-webkit-scrollbar {
-        display: none;
+        grid-template-rows: 100vh auto auto auto auto 10vh;
+        gap: 100px;
+        width: 100vw;
+        overflow: hidden;
     }
 
     .col {
-        width: 70vw;
         min-height: 10vh;
-        font-size: 4vh;
-        margin: 0 auto;
-        padding: 0 70px;
-        text-align: left;
         overflow: hidden;
     }
 
@@ -591,14 +591,13 @@
 
     .postGrid {
         width: 70vw;
-        height: 100%;
         display: grid;
         grid-template-rows: repeat(1, 1fr);
         gap: 100px;
         align-items: center;
         justify-items: center;
         margin: 0 auto;
-        padding: 20px;
+        overflow: visible;
     }
 
     /* ---------- #POST ---------- */
@@ -606,12 +605,18 @@
     .post {
         width: 100%;
         aspect-ratio: 10/4;
-        font-size: 2.9vh;
+        font-weight: 400;
+        font-size: 17px;
         transition: transform 0.4s ease;
         opacity: 0;
         transform: translateY(20px);
         transition: opacity 0.6s ease, transform 0.6s ease;
         margin: 0 auto;
+    }
+
+    .post h2 {
+        font-weight: 1000;
+        font-size: 17px;
     }
 
     .post.show {
@@ -627,7 +632,7 @@
         width: 10px;
         height: 10px;
         background: none;
-        border: 2px solid #7c7c7c;
+        border: 2px solid #ffffff;
         border-radius: 20px;
         transform: translate(-50%, -50%) scale(1.1);
         transition: transform 0.4s ease, width 0.4s ease, height 0.4s ease;
@@ -638,31 +643,37 @@
     .post video {
         width: 100%;
         height: 70%;
+        margin: 0 0 7px 0;
         object-fit: fill;
     }
 
     .postCursorCon {
-        position: absolute;
-        display: flex;
+        position: fixed;
+        display: none;
         align-items: center;
         gap: 4px;
         pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+        z-index: 99999;
     }
 
     .postCursorToolTip {
-        font-size: 4vh;
-        color: #a9a9aa;
+        font-size: 20px;
+        color: #9f9fa1;
+        padding: 4.9px 10px;
+        border-radius: 5px;
         white-space: nowrap;
-        transform: translateY(2px);
-        padding: 2px 8px;
+        transition: opacity 0.2s ease-in-out;
     }
 
     .postCursor {
         height: 10.9vh;
         aspect-ratio: 4/10;
-        border: 2px solid #a9a9aa;
+        border: 2px solid #9f9fa1;
         border-radius: 20px;
         pointer-events: none;
+        transition: transform 0.2s ease-in-out;
     }
 
     .postIconCon {
@@ -670,22 +681,45 @@
     }
 
     .postIconCon img {
-        width: 20px;
-        height: 20px;
-        margin: 2.9px 0 0 4.9px;
+        width: 22px;
+        height: 22px;
+        filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(88deg) brightness(105%) contrast(100%);
+        margin: 4.9px 0 0 4.9px;
     }
 
     /* ---------- #INTRO ---------- */
 
     .intro {
-        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70vw;
+        font-family: 'SF Pro Thin';
+        margin: 0 auto;
     }
 
     .intro h1 {
         font-size: 49px;
     }
 
+    /* ---------- #OUTRO ---------- */
+
+    .outro {
+        width: 70vw;
+        font-size: 49px;
+        margin: 0 auto;
+    }
+
+    .outro .buttonGroup {
+        margin: -20px 0 0 0;
+    }
+
     /* ---------- #ME ---------- */
+
+    .me {
+        width: 70vw;
+        margin: 0 auto;
+    }
 
     .me a:hover {
         color: rgba(255, 255, 255, 0.4);
@@ -695,63 +729,68 @@
         display: flex;
         gap: 20px;
         width: fit-content;
-        margin: 20px 0;
+        margin: 29px 0;
     }
 
     .mebtn {
+        position: relative;
         height: 40px;
         border: 1px solid #a9a9aa;
         border-radius: 20px;
         background-color: #ffffff;
         color: #a9a9aa;
-        padding: 0 29px;
+        padding: 10px 29px;
         cursor: pointer;
-        position: relative;
         overflow: hidden;
-        transition: color 0.4s ease-out;
-    }
-
-    .mebtn::before {
-        content: "";
-        position: absolute;
-        bottom: -50%;
-        left: 50%;
-        width: 200%;
-        height: 200%;
-        background-color: rgba(119, 119, 119, 0.7);
-        border-radius: 50%;
-        transform: translateX(-50%);
-        transition: bottom 0.4s ease-out;
-    }
-    
-    .mebtn:hover::before {
-        bottom: 0;
-    }
-    
-    .mebtn {
-        position: relative;
+        transition: transform 0.2s ease-out, color 0.3s ease-out;
         z-index: 1;
-        height: 40px;
-        border: 1px solid #a9a9aa;
-        border-radius: 20px;
-        background-color: #ffffff;
-        color: #a9a9aa;
-        padding: 0 29px;
-        cursor: pointer;
-        overflow: hidden;
-        transition: color 0.4s ease-out;
     }
-    
+
+    .mebtn span {
+        display: inline-block;
+        position: relative;
+        transition: transform 0.1s ease-out, color 0.3s ease-out;
+        z-index: 2;
+    }
+
+    /* Flying circle */
+    .circle {
+        position: absolute;
+        bottom: -40px;
+        left: 50%;
+        width: 10px;
+        height: 10px;
+        background-color: #c7c7c9;
+        border-radius: 50%;
+        transform: translateX(-50%) translateY(100%) scale(0);
+        transition: transform 0.4s ease-out, width 0.4s ease-out, height 0.4s ease-out;
+        z-index: 1;
+    }
+
+    /* Hover effect */
+    .mebtn:hover .circle {
+        transform: translateX(-50%) translateY(0) scale(8);
+        width: 150px;
+        height: 150px;
+    }
+
     .mebtn:hover {
-        color: white;
-    }    
+        color: #ffffff;
+    }
 
     .me h1 {
-        font-size: 40px;
+        font-size: 22.9px;
+    }
+
+    .me h1 {
+        font-family: 'SF Pro Thin';
+        font-size: 22px;
     }
 
     .me p {
-        font-size: 20px;
+        font-family: 'SF Pro';
+        font-size: 19px;
+        margin: 60px 0 0 0;
     }
 
     /* ---------- #SKILLS ---------- */
@@ -762,45 +801,44 @@
         gap: 20px;
         width: 70vw;
         margin: 0 auto;
-        padding: 0 40px;
+    }
+
+    .skill h2 {
+        font-weight: 400;
+        margin: 0 0 10px 0;
     }
 
     .skillColGrid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
-        min-height: 200px;
     }
 
     .skillCol {
-        min-height: 200px;
-        border: 1px solid rgba(255, 255, 255, 0.7);
+        position: relative;
+        border: 1px solid #ffffff;
         border-radius: 20px;
         color: #ffffff;
         padding: 20px;
-        box-sizing: border-box;
     }
 
     .codinghours,
     .github {
-        border: 1px solid #f1f1f2;
+        border: 1px solid #ffffff;
         border-radius: 20px;
-        background-color: #f1f1f2;
+        background-color: #9f9fa1;
         color: #ffffff;
         padding: 20px;
-        box-sizing: border-box;
     }
 
     .codinghours h1 {
-        font-size: 100px;
-        font-weight: 1200;
+        font-size: 70px;
     }
 
     .skillList {
         display: flex;
         align-items: center;
         width: 100%;
-        height: 40px;
         margin: 20px 0 0 0;
     }
 
@@ -808,18 +846,24 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        min-width: 40px;
+        min-width: 49px;
         height: 20px;
         font-size: 12px;
+        font-weight: 400;
         border: 1px solid #ffffff;
         border-radius: 20px;
         background-color: #ffffff;
-        color: #a9a9aa;
+        color: #9f9fa1;
         padding: 0 10px;
         margin: 0 0 0 10px;
     }
 
+    .skill ul {
+        margin: 0 0 20px 0;
+    }
+
     .skill li {
+        font-size: 14.9px;
         margin: 7px 0 0 0;
     }
 
@@ -844,22 +888,26 @@
     /* ---------- #CURSOR ---------- */
 
     .cursor {
-        position: absolute;
+        position: fixed;
+        left: 0;
+        top: 0;
         height: 7vh;
         aspect-ratio: 4/10;
         border-radius: 20px;
-        background-color: rgba(255, 255, 255, 0.7);
+        background-color: #ffffff;
         pointer-events: none;
-        transform: translate(-50%, -50%);
-        transition: transform 0.4s ease, background-color 0.2s ease;
-        z-index: 10000;
+        z-index: 99999;
+        transition: transform 0.2s ease-out;
+    }
+
+    /* ---------- #EFFECTS ---------- */
+
+    .jump {
+        transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+        will-change: transform;
     }
 
     /* ---------- #HELPERS ---------- */
-
-    h2 {
-        font-size: 20px;
-    }
 
     a {
         text-decoration: none;
