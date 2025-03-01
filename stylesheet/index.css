@@ -449,6 +449,7 @@
     .skillCol {
         position: relative;
         width: 40vw;
+        height: 40vh;
         border: 1px solid #ffffff;
         border-radius: 20px;
         color: #ffffff;
@@ -466,7 +467,7 @@
     }
 
     .codinghours h1 {
-        font-size: 70px;
+        font-size: 60px;
     }
 
     .skillList {
