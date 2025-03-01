@@ -361,7 +361,7 @@
         color: rgba(255, 255, 255, 0.4);
     }
 
-   .me .buttonGroup {
+    .me .buttonGroup {
         display: flex;
         gap: 20px;
         width: fit-content;
@@ -472,6 +472,7 @@
 
     .skillList {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         margin: 20px 0 0 0;
     }
