@@ -343,7 +343,7 @@
     }
 
     .outro .buttonGroup {
-        margin: -10px 0 0 0;
+        margin: 0;
     }
 
     /* ---------- #ME ---------- */
@@ -361,7 +361,7 @@
         display: flex;
         gap: 20px;
         width: fit-content;
-        margin: 29px 0;
+        margin: 0;
     }
 
     .mebtn {
