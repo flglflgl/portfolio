@@ -421,7 +421,7 @@
     .me p {
         font-family: 'SF Pro Thin';
         font-size: 17px;
-        margin: 60px 0 0 0;
+        margin: 40px 0 0 0;
     }
 
     /* ---------- #SKILLS ---------- */
@@ -430,11 +430,12 @@
         display: grid;
         grid-template-rows: 1fr 1fr;
         gap: 20px;
-        width: 40vw;
+        width: 70vw;
         margin: 0 auto;
     }
 
     .skill h2 {
+        font-size: 17px;
         font-weight: 400;
         margin: 0 0 10px 0;
     }
@@ -471,7 +472,6 @@
     .skillList {
         display: flex;
         align-items: center;
-        width: 100%;
         margin: 20px 0 0 0;
     }
 
@@ -778,7 +778,7 @@
         width: 22px;
         height: 22px;
         filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(88deg) brightness(105%) contrast(100%);
-        margin: 0 0 0 4.9px;
+        margin: 4px 0 0 4.9px;
     }
 
     /* ---------- #INTRO ---------- */
@@ -806,7 +806,7 @@
     }
 
     .outro .buttonGroup {
-        margin: 0;
+        margin: 29px 0;
     }
 
     /* ---------- #ME ---------- */
@@ -881,7 +881,7 @@
     .me p {
         font-family: 'SF Pro';
         font-size: 17px;
-        margin: 60px 0 0 0;
+        margin: 40px 0 0 0;
     }
 
     /* ---------- #SKILLS ---------- */
@@ -895,6 +895,7 @@
     }
 
     .skill h2 {
+        font-size: 17px;
         font-weight: 400;
         margin: 0 0 10px 0;
     }
