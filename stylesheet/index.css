@@ -309,11 +309,11 @@
 
     .postCon {
         display: flex;
+        border: 1px solid #ffffff;
     }
 
     .postIconCon {
         display: flex;
-        border: 1px solid #ffffff;
     }
 
     .postIconCon img {
@@ -343,7 +343,7 @@
     .outro {
         width: 70vw;
         font-family: 'SF Pro Thin';
-        font-size: 29px;
+        font-size: 22.9px;
         margin: 0 auto;
     }
 
@@ -769,11 +769,11 @@
 
     .postCon {
         display: flex;
+        border: 1px solid #ffffff;
     }
 
     .postIconCon {
         display: flex;
-        border: 1px solid #ffffff;
     }
 
     .postIconCon img {
