@@ -706,12 +706,13 @@
 
     .outro {
         width: 70vw;
-        font-size: 49px;
+        font-family: 'SF Pro Thin';
+        font-size: 40px;
         margin: 0 auto;
     }
 
     .outro .buttonGroup {
-        margin: -20px 0 0 0;
+        margin: 0;
     }
 
     /* ---------- #ME ---------- */
