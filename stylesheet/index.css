@@ -54,6 +54,7 @@
 
     /* ---------- #TOP ---------- */
 
+
     .top {
         position: fixed;
         top: 0;
@@ -67,9 +68,11 @@
         z-index: 100;
     }
 
+
     .top ul {
         display: none;
     }
+
 
     .minTopUlbtn {
         float: right;
@@ -78,6 +81,7 @@
         border: none;
         background: none;
     }
+
 
     .minTopUl {
         position: fixed;
@@ -96,10 +100,12 @@
         transition: right 0.7s ease-in-out, border-radius 0.7s ease-in-out;
     }
 
+
     .minTopUl.show {
         right: 0;
         border-radius: 0;
     }
+
 
     .minTopUl ul {
         display: flex;
@@ -109,6 +115,7 @@
         height: 49vh;
     }
 
+
     .minTopUl ul li {
         display: flex;
         color: #a9a9aa;
@@ -116,10 +123,12 @@
         width: 100%;
     }
 
+
     .minTopUl ul li a {
         text-decoration: none;
         color: #a9a9aa;
     }
+
 
     .minTopUl ul li .li {
         display: grid;
@@ -128,10 +137,12 @@
         width: 100%;
     }
 
+
     .minTopUl .svg {
         display: flex;
         align-items: center;
     }
+
 
     .minTopUl .li svg {
         display: none;
@@ -139,6 +150,7 @@
         height: 8px;
         filter: invert(70%) sepia(5%) saturate(87%) hue-rotate(201deg) brightness(90%) contrast(91%);
     }
+
 
     .minTopUlClosingbtn {
         position: absolute;
@@ -150,6 +162,7 @@
         background: none;
         color: #a9a9aa;
     }
+
 
     .minTopUlClosingbtn img {
         filter: invert(70%) sepia(5%) saturate(87%) hue-rotate(201deg) brightness(90%) contrast(91%);
@@ -194,8 +207,8 @@
     .grid {
         display: grid;
         grid-template-rows: 100vh auto auto auto auto 10vh;
-        gap: 70px;
-        width: 70vw;
+        gap: 100px;
+        width: 100vw;
         overflow: hidden;
     }
 
@@ -222,7 +235,7 @@
     .post {
         width: 100%;
         aspect-ratio: 10/4;
-        font-weight: 1000;
+        font-weight: 400;
         font-size: 17px;
         transition: transform 0.4s ease;
         opacity: 0;
@@ -231,15 +244,66 @@
         margin: 0 auto;
     }
 
+    .post h2 {
+        font-weight: 1000;
+        font-size: 17px;
+    }
+
     .post.show {
         opacity: 1;
         transform: translateY(0);
     }
 
+    .post:hover {
+        transform: scale(1.02);
+    }
+
+    .post:hover .cursor {
+        width: 10px;
+        height: 10px;
+        background: none;
+        border: 2px solid #ffffff;
+        border-radius: 20px;
+        transform: translate(-50%, -50%) scale(1.1);
+        transition: transform 0.4s ease, width 0.4s ease, height 0.4s ease;
+        z-index: 10000;
+        cursor: pointer;
+    }
+
     .post video {
         width: 100%;
         height: 70%;
+        margin: 0 0 7px 0;
         object-fit: fill;
+    }
+
+    .postCursorCon {
+        position: fixed;
+        display: none;
+        align-items: center;
+        gap: 4px;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out;
+        z-index: 99999;
+    }
+
+    .postCursorToolTip {
+        font-size: 20px;
+        color: #9f9fa1;
+        padding: 4.9px 10px;
+        border-radius: 5px;
+        white-space: nowrap;
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .postCursor {
+        height: 10.9vh;
+        aspect-ratio: 4/10;
+        border: 2px solid #9f9fa1;
+        border-radius: 20px;
+        pointer-events: none;
+        transition: transform 0.2s ease-in-out;
     }
 
     .postIconCon {
@@ -258,7 +322,7 @@
     .intro {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
         width: 70vw;
         font-family: 'SF Pro Thin';
         margin: 0 auto;
@@ -268,11 +332,23 @@
         font-size: 49px;
     }
 
-    /* ---------- #Me ---------- */
+    /* ---------- #OUTRO ---------- */
+
+    .outro {
+        width: 70vw;
+        font-family: 'SF Pro Thin';
+        font-size: 40px;
+        margin: 0 auto;
+    }
+
+    .outro .buttonGroup {
+        margin: 0;
+    }
+
+    /* ---------- #ME ---------- */
 
     .me {
         width: 70vw;
-        font-family: 'SF Pro Thin';
         margin: 0 auto;
     }
 
@@ -284,7 +360,7 @@
         display: flex;
         gap: 20px;
         width: fit-content;
-        margin: 44px 0;
+        margin: 29px 0;
     }
 
     .mebtn {
@@ -337,9 +413,14 @@
         font-size: 22.9px;
     }
 
+    .me h1 {
+        font-family: 'SF Pro Thin';
+        font-size: 22px;
+    }
+
     .me p {
-        font-size: 17px;
         font-family: 'SF Pro';
+        font-size: 19px;
         margin: 60px 0 0 0;
     }
 
@@ -353,16 +434,20 @@
         margin: 0 auto;
     }
 
+    .skill h2 {
+        font-weight: 400;
+        margin: 0 0 10px 0;
+    }
+
     .skillColGrid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
-        height: 100px;
     }
 
     .skillCol {
-        height: 200px;
-        border: 1px solid rgba(255, 255, 255, 0.7);
+        position: relative;
+        border: 1px solid #ffffff;
         border-radius: 20px;
         color: #ffffff;
         padding: 20px;
@@ -372,25 +457,19 @@
     .github {
         border: 1px solid #ffffff;
         border-radius: 20px;
-        background-color: #ffffff;
-        color: #9f9fa1;
+        background-color: #9f9fa1;
+        color: #ffffff;
         padding: 20px;
     }
 
     .codinghours h1 {
-        font-size: 100px;
-    }
-
-    .skill h2 {
-        font-weight: 400;
-        margin: 0 0 10px 0;
+        font-size: 70px;
     }
 
     .skillList {
         display: flex;
         align-items: center;
         width: 100%;
-        height: 40px;
         margin: 20px 0 0 0;
     }
 
@@ -399,12 +478,13 @@
         align-items: center;
         justify-content: center;
         min-width: 49px;
-        height: 29px;
+        height: 20px;
         font-size: 12px;
-        border: 1px solid #9f9fa1;
+        font-weight: 400;
+        border: 1px solid #ffffff;
         border-radius: 20px;
-        background-color: #9f9fa1;
-        color: #ffffff;
+        background-color: #ffffff;
+        color: #9f9fa1;
         padding: 0 10px;
         margin: 0 0 0 10px;
     }
@@ -414,6 +494,7 @@
     }
 
     .skill li {
+        font-size: 14.9px;
         margin: 7px 0 0 0;
     }
 
@@ -432,6 +513,29 @@
     .skill .li svg {
         width: 4px;
         height: 8px;
+    }
+
+
+    /* ---------- #CURSOR ---------- */
+
+    .cursor {
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 7vh;
+        aspect-ratio: 4/10;
+        border-radius: 20px;
+        background-color: #ffffff;
+        pointer-events: none;
+        z-index: 99999;
+        transition: transform 0.2s ease-out;
+    }
+
+    /* ---------- #EFFECTS ---------- */
+
+    .jump {
+        transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+        will-change: transform;
     }
 
     /* ---------- #HELPERS ---------- */
@@ -593,7 +697,7 @@
         width: 70vw;
         display: grid;
         grid-template-rows: repeat(1, 1fr);
-        gap: 120px;
+        gap: 100px;
         align-items: center;
         justify-items: center;
         margin: 0 auto;
