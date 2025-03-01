@@ -68,14 +68,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // SVG highlight .top ul li
 document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll("section, .col"); // Sections to observe
-    const navLinks = document.querySelectorAll(".top ul li"); // Navigation links
+    const sections = document.querySelectorAll("section, .col");
+    const navLinks = document.querySelectorAll(".top ul li");
 
     function highlightNav() {
         let scrollPosition = window.scrollY;
 
         sections.forEach((section, index) => {
-            const sectionTop = section.offsetTop + 100;
+            const sectionTop = section.offsetTop + 40;
             const sectionHeight = section.clientHeight;
 
             if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
