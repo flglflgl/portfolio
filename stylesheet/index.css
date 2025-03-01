@@ -309,6 +309,7 @@
 
     .postIconCon {
         display: flex;
+        border: 1px solid #ffffff;
     }
 
     .postIconCon img {
@@ -764,6 +765,7 @@
 
     .postIconCon {
         display: flex;
+        border: 1px solid #ffffff;
     }
 
     .postIconCon img {
