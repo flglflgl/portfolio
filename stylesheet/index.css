@@ -444,7 +444,7 @@
 
     .skillCol {
         position: relative;
-        width: 100%;
+        width: 70vw;
         border: 1px solid #ffffff;
         border-radius: 20px;
         color: #ffffff;
@@ -453,7 +453,7 @@
 
     .codinghours,
     .github {
-        width: 100%;
+        width: 70vw;
         border: 1px solid #ffffff;
         border-radius: 20px;
         background-color: #9f9fa1;
