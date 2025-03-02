@@ -220,7 +220,7 @@ body {
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        padding: 0 20px 10px 40px;
+        padding: 0 40px 10px 20px;
     }
 
     .bottom li {
@@ -230,7 +230,7 @@ body {
 
     /* Copyright Sign */
     .copyrightsign {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     /* Github SVG */
@@ -265,7 +265,6 @@ body {
 
     .col {
         min-height: 10vh;
-        border: 1px solid #ffffff;
         overflow: hidden;
     }
 
@@ -497,6 +496,7 @@ body {
         grid-template-columns: 4.9px auto;
         gap: 10px;
         width: 100%;
+        border: 1px solid #a9a9aa;
     }
 
     .skillGrid .liItem svg {
@@ -686,7 +686,7 @@ body {
 
     /* Copyright Sign */
     .copyrightsign {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     /* Github SVG */
@@ -721,7 +721,6 @@ body {
 
     .col {
         min-height: 10vh;
-        border: 1px solid #ffffff;
         overflow: hidden;
     }
 
@@ -872,7 +871,6 @@ body {
     }
 
     .outro .buttonGroup {
-        border: 1px solid #ffffff;
         margin: 4px 0;
     }
 
@@ -1041,7 +1039,6 @@ body {
         display: flex;
         gap: 20px;
         width: fit-content;
-        border: 1px solid #ffffff;
         margin: 10px 0;
     }
 
