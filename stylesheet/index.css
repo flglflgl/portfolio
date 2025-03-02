@@ -20,6 +20,25 @@
 **
 */
 
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'SF Pro';
+    font-size: 20px;
+    background-color: #9f9fa1;
+    color: #ffffff;
+}
+
 @font-face {
     font-family: 'SF Pro';
     src: url('../public/font/SF-Pro-Display-Light.otf') format('opentype');
@@ -34,23 +53,6 @@
 
 /* S */
 @media screen and (max-width: 780px) {
-
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    html {
-        scroll-behavior: smooth;
-        overflow-x: hidden;
-    }
-
-    body {
-        font-family: 'SF Pro';
-        font-size: 20px;
-        background-color: #9f9fa1;
-        color: #ffffff;
-    }
 
     /* ---------- #TOP ---------- */
 
@@ -551,23 +553,6 @@
 /* XL */
 @media screen and (min-width: 800px) {
 
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    html {
-        scroll-behavior: smooth;
-        overflow-x: hidden;
-    }
-
-    body {
-        font-family: 'SF Pro';
-        font-size: 20px;
-        background-color: #9f9fa1;
-        color: #ffffff;
-    }
-
     /* ---------- #TOP ---------- */
 
     .top {
@@ -592,7 +577,7 @@
         padding: 0;
     }
 
-    .top ul li:hover .svg svg {
+    .top ul li:hover svg {
         display: block;
     }
 
@@ -606,18 +591,11 @@
         transition: transform 0.2s ease-out;
     }
 
-    .top ul svg {
+    .top ul li svg {
+        display: none;
         width: 4px;
         height: 8px;
         margin-top: 7px;
-    }
-
-    .top li:hover .svg {
-        display: block;
-    }
-
-    .top ul li svg {
-        display: none;
     }
 
     .top ul li.show svg {
@@ -639,11 +617,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
-    }
-
-    .bottom ul {
-        margin: 10px 20px;
+        padding: 10px 20px;
     }
 
     .bottom li {
@@ -651,12 +625,14 @@
         margin: 20px 4.9px 0 0;
     }
 
+    /* Github SVG */
     .bottom img {
         width: 29px;
         height: 29px;
         filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(88deg) brightness(105%) contrast(100%);
     }
 
+    /* LinkedIn SVG */
     .bottom .lin img {
         width: 40px;
         height: 40px;
@@ -756,8 +732,8 @@
     .postCursorToolTip {
         font-size: 20px;
         color: #9f9fa1;
-        padding: 4.9px 10px;
         border-radius: 5px;
+        padding: 4.9px 10px;
         white-space: nowrap;
         transition: opacity 0.2s ease-in-out;
     }
@@ -793,11 +769,11 @@
         flex-direction: column;
         justify-content: center;
         width: 70vw;
-        font-family: 'SF Pro Thin';
         margin: 0 auto;
     }
 
     .intro h1 {
+        font-family: 'SF Pro Thin';
         font-size: 2rem;
     }
 
@@ -811,7 +787,7 @@
     }
 
     .outro .buttonGroup {
-        margin: 29px 0;
+        margin: 20px 0;
     }
 
     /* ---------- #ME ---------- */
@@ -847,8 +823,8 @@
     }
 
     .mebtn span {
-        display: inline-block;
         position: relative;
+        display: inline-block;
         transition: transform 0.1s ease-out, color 0.3s ease-out;
         z-index: 2;
     }
@@ -1010,11 +986,6 @@
         text-decoration: none;
         color: #ffffff;
         cursor: pointer;
-    }
-
-    p {
-        font-size: 2.9vh;
-        margin: 4.9px 0 0 0;
     }
 
     ul {
