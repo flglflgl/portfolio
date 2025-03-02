@@ -1,30 +1,63 @@
 /*
+** CONTENTS
 **
-** Top
+** SETTINGS
+** Html..........Scroll effect, overflow hidden.
+** Body..........Font, BG Color, Text Color.
+** Font..........SF Pro Light, SF Pro Thin.
 **
-** Bottom
+** TOP
+** Logo..........Logo SVG on top left.
+** Desktop Menu..........Desktop Menu.
+** Mobile Menu..........Mobile Menu.
+** Mobile Menu Button..........Button to open or close the Mobile Menu
 **
-** Grid
+** BOTTOM
+** Copyright..........Copyright Sign on bottom left.
+** Github..........Github SVG on bottom right.
+** LinkedIn..........LinkedIn SVG on bottom right.
 **
-** postGrid
+** GRID
+** Grid..........Grid dividing body into rows.
+** Column..........Grid Column.
 **
-** Skills
+** POSTGRID
+** PostGrid..........Grid for showing posts.
+** Post..........Column in PostGrid showing (demo video, title, description, github link).
+** PostCursor..........Custom Cusor for post showing post title.
 **
-** Me
+** SKILLS
+** SkillGrid..........Grid for showing skills (Coding hours, UX/UI Design, Frontend Development).
+** SkillGridCol..........Column in SkillGrid showing (Coding hours, UX/UI Design).
+** SkillGridRow..........Row in SkillGrid showing (Frontend Development).
+** 
+** ME
+** Me h1..........Introduction.
+** Me p..........Link to Tips form.
 **
-** Intro
+** INTRO
+** Intro h1..........Introduction.
+** Intro Button Group..........Button Group (View Resume, View Github).
 **
-** Outro
+** OUTRO
+** Outro..........Outro.
+** Outro Button Group..........Button Group (Get in touch, Connect on LinkedIn).
 **
-** Cursor
+** CURSOR
+** Cursor..........Custom Cursor.
 **
-** Effects
+** EFFECTS
+** Jump..........Jump effect on scroll.
+** Button Group follow cursor effect..........Button Group follow cursor effect for button in (Intro, Outro) section.
 **
-** Helpers
+** HELPERS
+** Helpers..........(h1,p, ul,..) styles.
 **
 */
 
-
+/*------------------------------------*\
+     #SETTINGS
+   \*------------------------------------*/
 
 * {
     margin: 0;
@@ -57,9 +90,12 @@ body {
 /* S */
 @media screen and (max-width: 780px) {
 
-    /* ---------- #TOP ---------- */
+    /*------------------------------------*\
+      #TOP
+    \*------------------------------------*/
 
     /* TOP Section (Logo, Menu) */
+
     .top {
         position: fixed;
         top: 0;
@@ -170,7 +206,9 @@ body {
         color: #a9a9aa;
     }
 
-    /* ---------- #BOTTOM ---------- */
+    /*------------------------------------*\
+      #BOTTOM
+    \*------------------------------------*/
 
     /* BOTTOM Section */
     .bottom {
@@ -204,7 +242,9 @@ body {
         filter: invert(95%) sepia(6%) saturate(65%) hue-rotate(202deg) brightness(85%) contrast(89%);
     }
 
-    /* ---------- #GRID ---------- */
+    /*------------------------------------*\
+      #GRID
+    \*------------------------------------*/
 
     .grid {
         display: grid;
@@ -219,7 +259,11 @@ body {
         overflow: hidden;
     }
 
-    /* ---------- #POSTGRID ---------- */
+    /*------------------------------------*\
+      #POSTGRID
+    \*------------------------------------*/
+
+    /* Grid for showing posts */
 
     .postGrid {
         width: 70vw;
@@ -232,7 +276,7 @@ body {
         overflow: visible;
     }
 
-    /* ---------- #POST ---------- */
+    /* Posts */
 
     .post {
         width: 100%;
@@ -284,7 +328,9 @@ body {
         margin: 0 0 0 4.9px;
     }
 
-    /* ---------- #INTRO ---------- */
+    /*------------------------------------*\
+      #INTRO
+    \*------------------------------------*/
 
     .intro {
         display: flex;
@@ -299,7 +345,9 @@ body {
         font-size: 1.4rem;
     }
 
-    /* ---------- #OUTRO ---------- */
+    /*------------------------------------*\
+      #OUTRO
+    \*------------------------------------*/
 
     .outro {
         width: 70vw;
@@ -315,7 +363,9 @@ body {
         margin: 10px 0;
     }
 
-    /* ---------- #ME ---------- */
+    /*------------------------------------*\
+      #ME
+    \*------------------------------------*/
 
     /* ME Section font */
 
@@ -343,64 +393,11 @@ body {
         color: rgba(255, 255, 255, 0.4);
     }
 
-    /* ME Section Btton Group (View Resume, View Github) */
+    /*------------------------------------*\
+      #SKILLGRID
+    \*------------------------------------*/
 
-    .me .buttonGroup {
-        display: flex;
-        gap: 20px;
-        width: fit-content;
-        margin: 10px 0;
-    }
-
-    .mebtn {
-        position: relative;
-        height: 40px;
-        border: 1px solid #a9a9aa;
-        border-radius: 20px;
-        background-color: #ffffff;
-        color: #a9a9aa;
-        padding: 10px 29px;
-        cursor: pointer;
-        overflow: hidden;
-        transition: transform 0.2s ease-out, color 0.3s ease-out;
-        z-index: 1;
-    }
-
-    .mebtn span {
-        display: inline-block;
-        position: relative;
-        transition: transform 0.1s ease-out, color 0.3s ease-out;
-        z-index: 2;
-    }
-
-    /* Flying circle */
-    .circle {
-        position: absolute;
-        bottom: -40px;
-        left: 50%;
-        width: 10px;
-        height: 10px;
-        background-color: #c7c7c9;
-        border-radius: 50%;
-        transform: translateX(-50%) translateY(100%) scale(0);
-        transition: transform 0.4s ease-out, width 0.4s ease-out, height 0.4s ease-out;
-        z-index: 1;
-    }
-
-    /* Hover effect */
-    .mebtn:hover .circle {
-        transform: translateX(-50%) translateY(0) scale(8);
-        width: 150px;
-        height: 150px;
-    }
-
-    .mebtn:hover {
-        color: #ffffff;
-    }
-
-    /* ---------- #SKILLS ---------- */
-
-    .skill {
+    .skillGrid {
         display: grid;
         grid-template-rows: 1fr 1fr;
         gap: 20px;
@@ -410,31 +407,19 @@ body {
         margin: 0 auto;
     }
 
-    .skill h2 {
+    .skillGrid h2 {
         font-size: 1rem;
         font-weight: 400;
         margin: 0 0 10px 0;
     }
 
-    .skillColGrid {
+    .skillTopGrid {
         display: grid;
         grid-template-rows: 1fr 1fr;
         gap: 20px;
     }
 
-    .skillCol {
-        position: relative;
-        width: 40vw;
-        height: 49vh;
-        border: 1px solid #ffffff;
-        border-radius: 20px;
-        color: #ffffff;
-        padding: 20px;
-        overflow: visible;
-    }
-
-    .codinghours,
-    .github {
+    .skillTopGridCol {
         max-width: 40vw;
         border: 1px solid #ffffff;
         border-radius: 20px;
@@ -445,6 +430,17 @@ body {
 
     .codinghours h1 {
         font-size: 4rem;
+    }
+
+    .skillBottomRow {
+        position: relative;
+        width: 40vw;
+        height: 49vh;
+        border: 1px solid #ffffff;
+        border-radius: 20px;
+        color: #ffffff;
+        padding: 20px;
+        overflow: visible;
     }
 
     .skillList {
@@ -469,33 +465,35 @@ body {
         margin: 0 0 10px 10px;
     }
 
-    .skill ul {
+    .skillGrid ul {
         margin: 0 0 20px 0;
     }
 
-    .skill li {
+    .skillGrid li {
         font-size: 0.9rem;
         margin: 7px 0 0 0;
     }
 
-    .skill ul li .li {
+    .skillGrid .liItem {
         display: grid;
         grid-template-columns: 4.9px auto;
         gap: 10px;
         width: 100%;
     }
 
-    .skill .svg {
-        display: flex;
-        align-items: center;
-    }
-
-    .skill .li svg {
+    .skillGrid .liItem svg {
         width: 4px;
         height: 8px;
     }
 
-    /* ---------- #EFFECTS ---------- */
+    .skillGrid .svgCon {
+        display: flex;
+        align-items: center;
+    }
+
+    /*------------------------------------*\
+      #EFFECTS
+    \*------------------------------------*/
 
     /* Jump effect on scroll */
 
@@ -505,7 +503,7 @@ body {
     }
 
 
-    /* Button Group follow cursor effect */
+    /* Button Group follow cursor effect for button in (Intro, Outro) section */
 
     button .buttonGroup {
         display: flex;
@@ -560,16 +558,13 @@ body {
         color: #ffffff;
     }
 
-    /* ---------- #HELPERS ---------- */
+    /*------------------------------------*\
+      #HELPERS
+    \*------------------------------------*/
 
     a {
-        text-decoration: none;
         color: #ffffff;
         cursor: pointer;
-    }
-
-    p {
-        margin: 4.9px 0 0 0;
     }
 
     ul {
@@ -581,7 +576,11 @@ body {
 /* XL */
 @media screen and (min-width: 800px) {
 
-    /* ---------- #TOP ---------- */
+    /*------------------------------------*\
+      #TOP
+    \*------------------------------------*/
+
+    /* TOP Section (Logo, Menu) */
 
     .top {
         position: fixed;
@@ -596,6 +595,9 @@ body {
         padding: 20px 20px 20px 29px;
         z-index: 100;
     }
+
+
+    /* Desktop Menu */
 
     .top ul {
         display: flex;
@@ -631,6 +633,9 @@ body {
         transition: transform 0.2s ease-out;
     }
 
+
+    /* Mobile Menu */
+
     .minTopUl {
         display: none;
     }
@@ -639,9 +644,11 @@ body {
         display: none;
     }
 
-    /* ---------- #BOTTOM ---------- */
+    /*------------------------------------*\
+      #BOTTOM
+    \*------------------------------------*/
 
-    /* BOTTOM Section */
+    /* Bottom Section (Copyright Sign, Github, LinkedIn) */
 
     .bottom {
         display: flex;
@@ -673,7 +680,9 @@ body {
         filter: invert(95%) sepia(6%) saturate(65%) hue-rotate(202deg) brightness(85%) contrast(89%);
     }
 
-    /* ---------- #GRID ---------- */
+    /*------------------------------------*\
+      #GRID
+    \*------------------------------------*/
 
     .grid {
         display: grid;
@@ -688,9 +697,12 @@ body {
         overflow: hidden;
     }
 
-    /* ---------- #POSTGRID ---------- */
+    /*------------------------------------*\
+      #POSTGRID
+    \*------------------------------------*/
 
-    /* POSTGRID Section showing posts */
+    /* Grid for showing posts */
+
     .postGrid {
         width: 90vw;
         display: grid;
@@ -702,9 +714,7 @@ body {
         overflow: visible;
     }
 
-    /* ---------- #POST ---------- */
-
-    /* Posts */
+    /* Post */
     .post {
         width: 100%;
         aspect-ratio: 10/4;
@@ -799,7 +809,9 @@ body {
         transition: transform 0.2s ease-in-out;
     }
 
-    /* ---------- #INTRO ---------- */
+    /*------------------------------------*\
+      #INTRO
+    \*------------------------------------*/
 
     .intro {
         display: flex;
@@ -814,7 +826,9 @@ body {
         font-size: 2rem;
     }
 
-    /* ---------- #OUTRO ---------- */
+    /*------------------------------------*\
+      #OUTRO
+    \*------------------------------------*/
 
     .outro {
         width: 70vw;
@@ -827,7 +841,9 @@ body {
         margin: 20px 0;
     }
 
-    /* ---------- #ME ---------- */
+    /*------------------------------------*\
+      #ME
+    \*------------------------------------*/
 
     .me {
         width: 70vw;
@@ -856,9 +872,11 @@ body {
         color: rgba(255, 255, 255, 0.4);
     }
 
-    /* ---------- #SKILLS ---------- */
+    /*------------------------------------*\
+      #SKILLGRID
+    \*------------------------------------*/
 
-    .skill {
+    .skillGrid {
         display: grid;
         grid-template-rows: 1fr 1fr;
         gap: 20px;
@@ -867,28 +885,19 @@ body {
         margin: 0 auto;
     }
 
-    .skill h2 {
+    .skillGrid h2 {
         font-size: 1.2rem;
         font-weight: 400;
         margin: 0 0 10px 0;
     }
 
-    .skillColGrid {
+    .skillTopGrid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
 
-    .skillCol {
-        position: relative;
-        border: 1px solid #ffffff;
-        border-radius: 20px;
-        color: #ffffff;
-        padding: 20px;
-    }
-
-    .codinghours,
-    .github {
+    .skillTopGridCol {
         border: 1px solid #ffffff;
         border-radius: 20px;
         background-color: #9f9fa1;
@@ -898,6 +907,14 @@ body {
 
     .codinghours h1 {
         font-size: 4rem;
+    }
+
+    .skillBottomRow {
+        position: relative;
+        border: 1px solid #ffffff;
+        border-radius: 20px;
+        color: #ffffff;
+        padding: 20px;
     }
 
     .skillList {
@@ -923,34 +940,36 @@ body {
         margin: 0 0 0 10px;
     }
 
-    .skill ul {
+    .skillGrid ul {
         margin: 0 0 20px 0;
     }
 
-    .skill li {
+    .skillGrid li {
         font-size: 0.9rem;
         margin: 7px 0 0 0;
     }
 
-    .skill ul li .li {
+    .skillGrid .liItem {
         display: grid;
         grid-template-columns: 4.9px auto;
         gap: 10px;
         width: 100%;
     }
 
-    .skill .svg {
+    .skillGrid .svgCon {
         display: flex;
         align-items: center;
     }
 
-    .skill .li svg {
+    .skillGrid .liItem svg {
         width: 4px;
         height: 8px;
     }
 
 
-    /* ---------- #CURSOR ---------- */
+    /*------------------------------------*\
+      #CURSOR
+    \*------------------------------------*/
 
     .cursor {
         position: fixed;
@@ -965,7 +984,11 @@ body {
         transition: transform 0.2s ease-out;
     }
 
-    /* ---------- #EFFECTS ---------- */
+    /*------------------------------------*\
+      #EFFECTS
+    \*------------------------------------*/
+
+    /* Jump effect on scroll */
 
     .jump {
         transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
@@ -1028,10 +1051,11 @@ body {
         color: #ffffff;
     }
 
-    /* ---------- #HELPERS ---------- */
+    /*------------------------------------*\
+      #HELPERS
+    \*------------------------------------*/
 
     a {
-        text-decoration: none;
         color: #ffffff;
         cursor: pointer;
     }
