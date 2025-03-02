@@ -289,35 +289,3 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
-
-
-// Jump effect on .jump elements
-let lastScrollY = window.scrollY;
-let ticking = false;
-let isJumping = false;
-
-function handleScroll() {
-    const element = document.querySelector('.jump');
-    const currentScrollY = window.scrollY;
-    const scrollDirection = currentScrollY > lastScrollY ? -1 : 1; // Down = -1, Up = 1
-
-    if (!isJumping) {
-        isJumping = true;
-        element.style.transform = `translateY(${scrollDirection * 100}px)`;
-
-        setTimeout(() => {
-            element.style.transform = 'translateY(0)';
-            isJumping = false;
-        }, 400);
-    }
-
-    lastScrollY = currentScrollY;
-    ticking = false;
-}
-
-window.addEventListener('scroll', () => {
-    if (!ticking) {
-        requestAnimationFrame(handleScroll);
-        ticking = true;
-    }
-});
