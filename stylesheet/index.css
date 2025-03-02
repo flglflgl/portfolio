@@ -538,7 +538,7 @@ body {
         border-radius: 20px;
         background-color: #ffffff;
         color: #a9a9aa;
-        padding: 10px 29px;
+        padding: 10px 40px;
         cursor: pointer;
         overflow: hidden;
         transition: transform 0.2s ease-out, color 0.3s ease-out;
@@ -1050,7 +1050,7 @@ body {
         border-radius: 20px;
         background-color: #ffffff;
         color: #a9a9aa;
-        padding: 10px 29px;
+        padding: 10px 40px;
         cursor: pointer;
         overflow: hidden;
         transition: transform 0.2s ease-out, color 0.3s ease-out;
