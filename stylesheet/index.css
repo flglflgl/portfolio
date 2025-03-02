@@ -391,6 +391,7 @@ body {
     .me h1 {
         font-family: 'SF Pro Thin';
         font-size: 1.4rem;
+        font-weight: 500;
     }
 
     .me p {
@@ -434,7 +435,7 @@ body {
     }
 
     .skillTopGridCol {
-        max-width: 40vw;
+        width: 100%;
         border: 1px solid #ffffff;
         border-radius: 20px;
         background-color: #9f9fa1;
@@ -449,8 +450,7 @@ body {
 
     .skillBottomRow {
         position: relative;
-        width: 40vw;
-        height: 49vh;
+        width: 100%;
         border: 1px solid #ffffff;
         border-radius: 20px;
         color: #ffffff;
@@ -472,7 +472,7 @@ body {
         min-width: 40px;
         height: 20px;
         font-size: 0.7rem;
-        font-weight: 700;
+        font-weight: 500;
         border: 1px solid #ffffff;
         border-radius: 20px;
         background-color: #ffffff;
@@ -889,6 +889,7 @@ body {
     .me h1 {
         font-family: 'SF Pro Thin';
         font-size: 1.4rem;
+        font-weight: 500;
     }
 
     .me p {
@@ -964,7 +965,7 @@ body {
         min-width: 49px;
         height: 20px;
         font-size: 0.7rem;
-        font-weight: 700;
+        font-weight: 500;
         border: 1px solid #ffffff;
         border-radius: 20px;
         background-color: #ffffff;
