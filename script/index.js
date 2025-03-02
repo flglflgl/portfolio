@@ -143,8 +143,8 @@ document.querySelectorAll(".top > nav > ul > li").forEach((li) => {
 
 
 
-// Follow Cursor effect for .mebtn
-document.querySelectorAll(".mebtn").forEach((btn) => {
+// Follow Cursor effect for .buttonGroup button
+document.querySelectorAll(".buttonGroup button").forEach((btn) => {
     const textSpan = btn.querySelector("span");
 
     btn.addEventListener("mousemove", (e) => {

@@ -109,6 +109,10 @@ body {
         z-index: 100;
     }
 
+    .top a {
+        text-decoration: none;
+    }
+
 
     /* Desktop Menu */
 
@@ -249,13 +253,14 @@ body {
     .grid {
         display: grid;
         grid-template-rows: 100vh 100vh 100vh auto auto 10vh;
-        gap: 100px;
+        gap: 0;
         width: 100vw;
         overflow: hidden;
     }
 
     .col {
         min-height: 10vh;
+        border: 1px solid #ffffff;
         overflow: hidden;
     }
 
@@ -269,7 +274,7 @@ body {
         width: 70vw;
         display: grid;
         grid-template-rows: repeat(1, 1fr);
-        gap: 10vh;
+        gap: 0;
         align-items: center;
         justify-items: center;
         margin: 0 auto;
@@ -301,10 +306,6 @@ body {
     .post.show {
         opacity: 1;
         transform: translateY(0);
-    }
-
-    .post:hover {
-        transform: scale(1.02);
     }
 
     .post video {
@@ -380,12 +381,12 @@ body {
 
     .me h1 {
         font-family: 'SF Pro Thin';
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     .me p {
         font-family: 'SF Pro Thin';
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         margin: 20px 0 0 0;
     }
 
@@ -600,6 +601,10 @@ body {
         z-index: 100;
     }
 
+    .top a {
+        text-decoration: none;
+    }
+
 
     /* Desktop Menu */
 
@@ -658,6 +663,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        width: 100%;
         padding: 20px;
     }
 
@@ -698,6 +704,7 @@ body {
 
     .col {
         min-height: 10vh;
+        border: 1px solid #ffffff;
         overflow: hidden;
     }
 
@@ -867,7 +874,6 @@ body {
     }
 
     .me p {
-        font-family: 'SF Pro';
         font-size: 1rem;
         margin: 40px 0 0 0;
     }
@@ -938,7 +944,7 @@ body {
         justify-content: center;
         min-width: 49px;
         height: 20px;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         font-weight: 400;
         border: 1px solid #ffffff;
         border-radius: 20px;
