@@ -334,7 +334,7 @@
     }
 
     .intro h1 {
-        font-size: 29px;
+        font-size: 2rem;
     }
 
     /* ---------- #OUTRO ---------- */
@@ -798,7 +798,7 @@
     }
 
     .intro h1 {
-        font-size: 40px;
+        font-size: 2rem;
     }
 
     /* ---------- #OUTRO ---------- */
@@ -880,12 +880,12 @@
 
     .me h1 {
         font-family: 'SF Pro Thin';
-        font-size: 20px;
+        font-size: 1.4rem;
     }
 
     .me p {
         font-family: 'SF Pro';
-        font-size: 17px;
+        font-size: 1rem;
         margin: 40px 0 0 0;
     }
 
