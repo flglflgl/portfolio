@@ -301,7 +301,7 @@ body {
     }
 
     .post h2 {
-        font-weight: 500;
+        font-weight: 700;
         font-size: 1rem;
     }
 
@@ -365,6 +365,7 @@ body {
         font-family: 'SF Pro Thin';
         font-size: 1.4rem;
         margin: 0 auto;
+        padding: 0 0 100px 0;
     }
 
 
@@ -754,7 +755,7 @@ body {
     }
 
     .post h2 {
-        font-weight: 1000;
+        font-weight: 700;
         font-size: 1rem;
     }
 
@@ -866,6 +867,7 @@ body {
         font-family: 'SF Pro Thin';
         font-size: 1.4rem;
         margin: 0 auto;
+        padding: 0 0 100px 0;
     }
 
     .outro .buttonGroup {
