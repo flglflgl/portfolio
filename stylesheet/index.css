@@ -283,6 +283,7 @@ body {
         align-items: center;
         justify-items: center;
         margin: 0 auto;
+        padding: 100px 0;
         overflow: visible;
     }
 
@@ -521,7 +522,7 @@ body {
 
     /* Button Group follow cursor effect for button in (Intro, Outro) section */
 
-    button .buttonGroup {
+    .buttonGroup {
         display: flex;
         gap: 20px;
         width: fit-content;
@@ -529,7 +530,7 @@ body {
         margin: 10px 0;
     }
 
-    button {
+    .buttonGroup button {
         position: relative;
         height: 44px;
         border: 1px solid #a9a9aa;
@@ -543,7 +544,7 @@ body {
         z-index: 1;
     }
 
-    button span {
+    .buttonGroup button span {
         display: inline-block;
         position: relative;
         transition: transform 0.1s ease-out, color 0.3s ease-out;
@@ -565,13 +566,13 @@ body {
     }
 
     /* Hover effect */
-    button:active .circle {
+    .buttonGroup button:active .circle {
         transform: translateX(-50%) translateY(0) scale(8);
         width: 150px;
         height: 150px;
     }
 
-    button:active {
+    .buttonGroup button:active {
         color: #ffffff;
     }
 
@@ -1032,7 +1033,7 @@ body {
 
     /* Button Group follow cursor effect */
 
-    button .buttonGroup {
+    .buttonGroup {
         display: flex;
         gap: 20px;
         width: fit-content;
@@ -1040,7 +1041,7 @@ body {
         margin: 10px 0;
     }
 
-    button {
+    .buttonGroup button {
         position: relative;
         height: 40px;
         border: 1px solid #a9a9aa;
@@ -1054,7 +1055,7 @@ body {
         z-index: 1;
     }
 
-    button span {
+    .buttonGroup button span {
         display: inline-block;
         position: relative;
         transition: transform 0.1s ease-out, color 0.3s ease-out;
@@ -1076,13 +1077,13 @@ body {
     }
 
     /* Hover effect */
-    button:hover .circle {
+    .buttonGroup button:hover .circle {
         transform: translateX(-50%) translateY(0) scale(8);
         width: 150px;
         height: 150px;
     }
 
-    button:hover {
+    .buttonGroup button:hover {
         color: #ffffff;
     }
 
