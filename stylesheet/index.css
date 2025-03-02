@@ -34,7 +34,6 @@ html {
 
 body {
     font-family: 'SF Pro';
-    font-size: 20px;
     background-color: #9f9fa1;
     color: #ffffff;
 }
@@ -242,7 +241,7 @@ body {
     .post {
         width: 100%;
         aspect-ratio: 10/4;
-        font-size: 14.9px;
+        font-size: 0.7rem;
         transition: transform 0.4s ease;
         opacity: 0;
         transform: translateY(20px);
@@ -252,7 +251,7 @@ body {
 
     .post h2 {
         font-weight: 1000;
-        font-size: 17px;
+        font-size: 1rem;
     }
 
     .post.show {
@@ -295,7 +294,7 @@ body {
     }
 
     .postCursorToolTip {
-        font-size: 20px;
+        font-size: 1.4rem;
         color: #9f9fa1;
         padding: 4.9px 10px;
         border-radius: 5px;
@@ -447,7 +446,7 @@ body {
     }
 
     .skill h2 {
-        font-size: 17px;
+        font-size: 1rem;
         font-weight: 400;
         margin: 0 0 10px 0;
     }
@@ -479,7 +478,7 @@ body {
     }
 
     .codinghours h1 {
-        font-size: 50px;
+        font-size: 2.2rem;
     }
 
     .skillList {
@@ -495,7 +494,7 @@ body {
         justify-content: center;
         min-width: 40px;
         height: 20px;
-        font-size: 12px;
+        font-size: 0.7rem;
         border: 1px solid #ffffff;
         border-radius: 20px;
         background-color: #ffffff;
@@ -509,7 +508,7 @@ body {
     }
 
     .skill li {
-        font-size: 14.9px;
+        font-size: 0.9rem;
         margin: 7px 0 0 0;
     }
 
@@ -548,7 +547,6 @@ body {
     }
 
     p {
-        font-size: 2.9vh;
         margin: 4.9px 0 0 0;
     }
 
@@ -684,7 +682,7 @@ body {
     .post {
         width: 100%;
         aspect-ratio: 10/4;
-        font-size: 20px;
+        font-size: 1rem;
         transition: transform 0.4s ease;
         opacity: 0;
         transform: translateY(20px);
@@ -694,7 +692,7 @@ body {
 
     .post h2 {
         font-weight: 1000;
-        font-size: 17px;
+        font-size: 1.2rem;
     }
 
     .post.show {
@@ -737,7 +735,7 @@ body {
     }
 
     .postCursorToolTip {
-        font-size: 20px;
+        font-size: 1.4rem;
         color: #9f9fa1;
         border-radius: 5px;
         padding: 4.9px 10px;
@@ -789,7 +787,7 @@ body {
     .outro {
         width: 70vw;
         font-family: 'SF Pro Thin';
-        font-size: 29px;
+        font-size: 1.4rem;
         margin: 0 auto;
     }
 
@@ -883,7 +881,7 @@ body {
     }
 
     .skill h2 {
-        font-size: 17px;
+        font-size: 1.2rem;
         font-weight: 400;
         margin: 0 0 10px 0;
     }
@@ -912,7 +910,7 @@ body {
     }
 
     .codinghours h1 {
-        font-size: 70px;
+        font-size: 4rem;
     }
 
     .skillList {
@@ -928,7 +926,7 @@ body {
         justify-content: center;
         min-width: 49px;
         height: 20px;
-        font-size: 12px;
+        font-size: 0.9rem;
         font-weight: 400;
         border: 1px solid #ffffff;
         border-radius: 20px;
@@ -943,7 +941,7 @@ body {
     }
 
     .skill li {
-        font-size: 14.9px;
+        font-size: 0.9rem;
         margin: 7px 0 0 0;
     }
 
