@@ -207,7 +207,7 @@
 
     .grid {
         display: grid;
-        grid-template-rows: 100vh auto auto auto auto 10vh;
+        grid-template-rows: 100vh 100vh 100vh auto auto 10vh;
         gap: 100px;
         width: 100vw;
         overflow: hidden;
@@ -671,7 +671,7 @@
 
     .grid {
         display: grid;
-        grid-template-rows: 100vh auto auto auto auto 10vh;
+        grid-template-rows: 100vh 100vh 100vh auto auto 10vh;
         gap: 100px;
         width: 100vw;
         overflow: hidden;
