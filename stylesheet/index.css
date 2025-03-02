@@ -229,7 +229,7 @@ body {
     }
 
     /* Copyright Sign */
-    .copyright {
+    .copyrightsign {
         font-size: 2rem;
     }
 
@@ -685,7 +685,7 @@ body {
     }
 
     /* Copyright Sign */
-    .copyright {
+    .copyrightsign {
         font-size: 2rem;
     }
 
@@ -739,6 +739,7 @@ body {
         align-items: center;
         justify-items: center;
         margin: 0 auto;
+        padding: 100px 0;
         overflow: visible;
     }
 
@@ -872,7 +873,7 @@ body {
 
     .outro .buttonGroup {
         border: 1px solid #ffffff;
-        margin: 10px 0;
+        margin: 4px 0;
     }
 
     /*------------------------------------*\
@@ -881,7 +882,8 @@ body {
 
     .me {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        justify-content: center;
         width: 70vw;
         margin: 0 auto;
     }
