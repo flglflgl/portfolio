@@ -237,7 +237,7 @@ body {
     .post {
         width: 100%;
         aspect-ratio: 10/4;
-        font-size: 1rem;
+        font-size: 0.9rem;
         transition: transform 0.4s ease;
         opacity: 0;
         transform: translateY(20px);
@@ -281,7 +281,7 @@ body {
         width: 22px;
         height: 22px;
         filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(88deg) brightness(105%) contrast(100%);
-        margin: 4px 0 0 4.9px;
+        margin: 0 0 0 4.9px;
     }
 
     /* ---------- #INTRO ---------- */
@@ -333,6 +333,10 @@ body {
         font-family: 'SF Pro Thin';
         font-size: 0.9rem;
         margin: 20px 0 0 0;
+    }
+
+    .me a {
+        text-decoration: underline;
     }
 
     .me a:hover {
@@ -688,7 +692,7 @@ body {
 
     /* POSTGRID Section showing posts */
     .postGrid {
-        width: 70vw;
+        width: 90vw;
         display: grid;
         grid-template-rows: repeat(1, 1fr);
         gap: 100px;
@@ -704,7 +708,7 @@ body {
     .post {
         width: 100%;
         aspect-ratio: 10/4;
-        font-size: 1rem;
+        font-size: 0.9rem;
         transition: transform 0.4s ease;
         opacity: 0;
         transform: translateY(20px);
@@ -714,7 +718,7 @@ body {
 
     .post h2 {
         font-weight: 1000;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .post.show {
@@ -748,7 +752,7 @@ body {
         width: 22px;
         height: 22px;
         filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(88deg) brightness(105%) contrast(100%);
-        margin: 4px 0 0 4.9px;
+        margin: 0 0 0 4.9px;
     }
 
 
@@ -844,6 +848,10 @@ body {
         margin: 40px 0 0 0;
     }
 
+    .me a {
+        text-decoration: underline;
+    }
+
     .me a:hover {
         color: rgba(255, 255, 255, 0.4);
     }
@@ -855,6 +863,7 @@ body {
         grid-template-rows: 1fr 1fr;
         gap: 20px;
         width: 70vw;
+        height: 70vh;
         margin: 0 auto;
     }
 
