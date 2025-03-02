@@ -215,7 +215,6 @@ body {
       #BOTTOM
     \*------------------------------------*/
 
-    /* BOTTOM Section */
     .bottom {
         display: flex;
         align-items: center;
@@ -227,6 +226,11 @@ body {
     .bottom li {
         float: right;
         margin: 20px 4.9px 10px 0;
+    }
+
+    /* Copyright Sign */
+    .copyright {
+        font-size: 2rem;
     }
 
     /* Github SVG */
@@ -665,8 +669,6 @@ body {
       #BOTTOM
     \*------------------------------------*/
 
-    /* Bottom Section (Copyright Sign, Github, LinkedIn) */
-
     .bottom {
         display: flex;
         align-items: center;
@@ -678,6 +680,11 @@ body {
     .bottom li {
         float: right;
         margin: 20px 4.9px 0 0;
+    }
+
+    /* Copyright Sign */
+    .copyright {
+        font-size: 2rem;
     }
 
     /* Github SVG */
