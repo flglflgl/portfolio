@@ -55,7 +55,7 @@
 **
 */
 
-/*------------------------------------*\
+   /*------------------------------------*\
      #SETTINGS
    \*------------------------------------*/
 
@@ -257,7 +257,7 @@ body {
 
     .grid {
         display: grid;
-        grid-template-rows: 100vh 100vh 100vh auto auto 10vh;
+        grid-template-rows: 100vh 100vh 100vh auto auto auto;
         gap: 0;
         width: 100vw;
         overflow: hidden;
@@ -713,7 +713,7 @@ body {
 
     .grid {
         display: grid;
-        grid-template-rows: 100vh 100vh 100vh auto auto 10vh;
+        grid-template-rows: 100vh 100vh 100vh auto auto auto;
         gap: 0;
         width: 100vw;
         overflow: hidden;
