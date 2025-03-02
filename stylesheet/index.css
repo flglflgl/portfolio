@@ -173,7 +173,7 @@ body {
     }
 
 
-    .minTopUl .svg {
+    .minTopUl .svgCon {
         display: flex;
         align-items: center;
     }
@@ -292,6 +292,10 @@ body {
     .post h2 {
         font-weight: 500;
         font-size: 1rem;
+    }
+
+    .post a {
+        text-decoration: none;
     }
 
     .post.show {
@@ -729,6 +733,10 @@ body {
     .post h2 {
         font-weight: 1000;
         font-size: 1rem;
+    }
+
+    .post a {
+        text-decoration: none;
     }
 
     .post.show {
