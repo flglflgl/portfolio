@@ -4,7 +4,7 @@
 ** SETTINGS
 ** Html..........Scroll effect, overflow hidden.
 ** Body..........Font, BG Color, Text Color.
-** Font..........SF Pro Light, SF Pro Thin.
+** Font..........Hero Light, Hero Thin.
 **
 ** TOP
 ** Logo..........Logo SVG on top left.
@@ -76,13 +76,13 @@ body {
 }
 
 @font-face {
-    font-family: 'SF Pro';
+    font-family: 'Hero';
     src: url('../public/font/Hero-Light.otf') format('opentype');
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'SF Pro Thin';
+    font-family: 'Hero Thin';
     src: url('../public/font/Hero-Thin.otf') format('opentype');
     font-style: normal;
 }
