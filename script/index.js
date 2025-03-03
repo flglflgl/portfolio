@@ -1,23 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Show posts on scroll
-    const posts = document.querySelectorAll(".post");
-    const introSection = document.querySelector(".intro");
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                obs.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.2 });
 
-    if (posts.length || introSection) {
-        const observer = new IntersectionObserver((entries, obs) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("show");
-                    obs.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.2 });
+    document.querySelectorAll(".post, .intro").forEach(el => observer.observe(el));
 
-        posts.forEach(post => observer.observe(post));
-        if (introSection) observer.observe(introSection);
-    }
-
-    // Fly-In effect for Desktop Menu Links
     document.querySelector(".top ul")?.addEventListener("click", (event) => {
         const link = event.target.closest("a");
         if (!link) return;
@@ -30,10 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Run Demo Video on hover
-    posts.forEach((post) => {
-        const video = post.querySelector("video");
-        if (!video) return;
+    document.querySelectorAll(".post video").forEach(video => {
+        const post = video.closest(".post");
+        if (!post) return;
 
         post.addEventListener("mouseenter", () => video.play());
         post.addEventListener("mouseleave", () => {
@@ -42,7 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Show SVG highlight on scroll
     const sections = document.querySelectorAll("section, .col");
     const navLinks = document.querySelectorAll(".top ul li");
     const menuItems = document.querySelectorAll(".minTopUl ul li .svg svg");
@@ -72,7 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", highlightNav);
     highlightNav();
 
-    // Follow Cursor Effect for buttons
     const applyCursorEffect = (selector, scale) => {
         document.querySelectorAll(selector).forEach((el) => {
             el.addEventListener("mousemove", (e) => {
@@ -96,7 +85,6 @@ document.addEventListener("DOMContentLoaded", () => {
     applyCursorEffect(".top > nav > ul > li", 0.2);
     applyCursorEffect(".buttonGroup button", 0.5);
 
-    // Show/Hiding Mobile Menu
     const minTopUl = document.querySelector(".minTopUl");
     document.querySelector(".minTopUlbtn")?.addEventListener("click", () => {
         minTopUl?.classList.toggle("show");
@@ -112,7 +100,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Custom Cursor
     const cursor = document.createElement("div");
     cursor.classList.add("cursor");
     document.body.appendChild(cursor);
@@ -126,8 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const postCursorToolTip = document.createElement("span");
     postCursorToolTip.classList.add("postCursorToolTip");
 
-    postCursorCon.appendChild(postCursorToolTip);
-    postCursorCon.appendChild(postCursor);
+    postCursorCon.append(postCursorToolTip, postCursor);
     document.body.appendChild(postCursorCon);
 
     let mouseX = 0, mouseY = 0;
@@ -139,7 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
         mouseY = e.clientY + 20;
     });
 
-    document.addEventListener("mousedown", (e) => {
+    document.addEventListener("mousedown", () => {
         cursor.style.transform = "scale(1.3)";
     });
 
