@@ -70,7 +70,7 @@ html {
 }
 
 body {
-    font-family: 'SF Pro';
+    font-family: 'Hero';
     background-color: #9f9fa1;
     color: #ffffff;
 }
@@ -226,7 +226,7 @@ body {
 
     .bottom li {
         float: right;
-        margin: 20px 4.9px 10px 0;
+        margin: 0 4.9px 10px 0;
     }
 
     /* Copyright Sign */
@@ -348,7 +348,7 @@ body {
         flex-direction: column;
         justify-content: center;
         width: 70vw;
-        font-family: 'SF Pro Thin';
+        font-family: 'Hero Thin';
         margin: 0 auto;
     }
 
@@ -362,7 +362,7 @@ body {
 
     .outro {
         width: calc(100vw - 120px);
-        font-family: 'SF Pro Thin';
+        font-family: 'Hero Thin';
         font-size: 1.4rem;
         margin: 0 auto;
         padding: 0 0 100px 0;
@@ -390,13 +390,13 @@ body {
     }
 
     .me h1 {
-        font-family: 'SF Pro';
+        font-family: 'Hero';
         font-size: 1.4rem;
         font-weight: 500;
     }
 
     .me p {
-        font-family: 'SF Pro';
+        font-family: 'Hero';
         font-size: 1.1rem;
         margin: 20px 0 0 0;
     }
@@ -679,7 +679,7 @@ body {
 
     .bottom li {
         float: right;
-        margin: 20px 4.9px 0 0;
+        margin: 0 4.9px 0 0;
     }
 
     /* Copyright Sign */
@@ -852,7 +852,7 @@ body {
     }
 
     .intro h1 {
-        font-family: 'SF Pro Thin';
+        font-family: 'Hero Thin';
         font-size: 2.9rem;
     }
 
@@ -862,7 +862,7 @@ body {
 
     .outro {
         width: 70vw;
-        font-family: 'SF Pro Thin';
+        font-family: 'Hero Thin';
         font-size: 1.4rem;
         margin: 0 auto;
         padding: 0 0 100px 0;
@@ -888,13 +888,13 @@ body {
     /* Me Section font */
 
     .me h1 {
-        font-family: 'SF Pro';
+        font-family: 'Hero';
         font-size: 1.4rem;
         font-weight: 500;
     }
 
     .me p {
-        font-family: 'SF Pro';
+        font-family: 'Hero';
         font-size: 1rem;
         margin: 40px 0 0 0;
     }
