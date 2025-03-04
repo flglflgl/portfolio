@@ -138,7 +138,6 @@ document.querySelectorAll(".top > nav > ul > li").forEach((li) => {
 });
 
 
-
 // Follow Cursor effect for .buttonGroup button
 document.querySelectorAll(".buttonGroup button").forEach((btn) => {
     const textSpan = btn.querySelector("span");
@@ -264,7 +263,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.querySelectorAll(".post video").forEach(video => {
         video.addEventListener("mouseenter", (e) => {
-            cursor.style.display = "none"; 
+            cursor.style.display = "none";
             postCursorCon.style.display = "flex";
             postCursorCon.style.opacity = "1";
 

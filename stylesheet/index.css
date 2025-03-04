@@ -380,11 +380,12 @@ body {
         font-family: 'Hero Thin';
         font-size: 1.4rem;
         margin: 0 auto;
+        padding:  0 0 100px 0;
         box-sizing: border-box;
     }
 
     .outro h2 {
-        margin: 0 10px 0 0;
+        margin: 0 20px 0 0;
     }
 
     /* Outro Button Group */
@@ -891,12 +892,12 @@ body {
         font-family: 'Hero Thin';
         font-size: 1.4rem;
         margin: 0 auto;
-        border: 1px solid #ffffff;
+        padding:  0 0 100px 0;
         box-sizing: border-box;
     }
 
     .outro h2 {
-        margin: 0 10px 0 0;
+        margin: 0 20px 0 0;
     }
 
     .outro .buttonGroup {
