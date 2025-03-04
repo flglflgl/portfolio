@@ -71,7 +71,7 @@ html {
 
 body {
     font-family: 'Hero';
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     background-color: #9f9fa1;
     color: #ffffff;
 }
@@ -350,10 +350,10 @@ body {
     }
 
     .postIconCon img {
-        width: 19px;
-        height: 19px;
+        width: 17px;
+        height: 17px;
         filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(41deg) brightness(110%) contrast(104%);
-        margin: -4px 0 0 4.9px;
+        margin: -2.9px 0 0 4.9px;
     }
 
     /*------------------------------------*\
@@ -384,10 +384,6 @@ body {
         margin: 0 auto;
         padding: 0 0 100px 0;
         box-sizing: border-box;
-    }
-
-    .outro h2 {
-        margin: 0 0 0 10px;
     }
 
     /* Outro Button Group */
@@ -869,10 +865,10 @@ body {
     }
 
     .postIconCon img {
-        width: 19px;
-        height: 19px;
+        width: 17px;
+        height: 17px;
         filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(41deg) brightness(110%) contrast(104%);
-        margin: -4px 0 0 4.9px;
+        margin: -2.9px 0 0 4.9px;
     }
 
     /*------------------------------------*\
@@ -903,10 +899,6 @@ body {
         margin: 0 auto;
         padding: 0 0 100px 0;
         box-sizing: border-box;
-    }
-
-    .outro h2 {
-        margin: 0 0 0 10px;
     }
 
     /* Outro Button Group */
@@ -1336,10 +1328,10 @@ body {
     }
 
     .postIconCon img {
-        width: 19px;
-        height: 19px;
+        width: 17px;
+        height: 17px;
         filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(41deg) brightness(110%) contrast(104%);
-        margin: -4px 0 0 4.9px;
+        margin: -2.9px 0 0 4.9px;
     }
 
 
@@ -1414,10 +1406,6 @@ body {
         margin: 0 auto;
         padding: 0 0 100px 0;
         box-sizing: border-box;
-    }
-
-    .outro h2 {
-        margin: 0 0 0 100px;
     }
 
     .outro .buttonGroup {
