@@ -158,6 +158,11 @@ body {
         width: 100%;
     }
 
+    .minTopUl ul li.show svg {
+        display: inline-block;
+        transition: transform 0.2s ease-out;
+    }
+
 
     .minTopUl ul li a {
         text-decoration: none;
