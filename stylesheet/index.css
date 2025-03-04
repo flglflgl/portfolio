@@ -355,7 +355,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 70vw;
+        width: 80vw;
         font-family: 'Hero Thin';
         margin: 0 auto;
     }
@@ -393,7 +393,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 70vw;
+        width: 80vw;
         margin: 0 auto;
         padding: 0 0 100px 0;
     }
@@ -865,7 +865,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 80vw;
+        width: 70vw;
         margin: 0 auto;
     }
 
@@ -898,7 +898,7 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 80vw;
+        width: 70vw;
         margin: 0 auto;
     }
 
