@@ -398,6 +398,7 @@ body {
         justify-content: center;
         width: 70vw;
         margin: 0 auto;
+        padding: 0 0 100px 0;
     }
 
     .me h1 {
