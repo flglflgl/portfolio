@@ -214,6 +214,9 @@ body {
         border: none;
         background: none;
         color: #a9a9aa;
+    }
+
+    .minTopUlClosingbtn img {
         filter: invert(61%) sepia(58%) saturate(7%) hue-rotate(201deg) brightness(92%) contrast(97%);
     }
 
@@ -729,6 +732,9 @@ body {
         border: none;
         background: none;
         color: #a9a9aa;
+    }
+
+    .minTopUlClosingbtn img {
         filter: invert(61%) sepia(58%) saturate(7%) hue-rotate(201deg) brightness(92%) contrast(97%);
     }
 
