@@ -431,6 +431,7 @@ body {
         align-items: center;
         justify-content: center;
         width: 70vw;
+        height: 70vh;
         margin: 0 auto;
     }
 
@@ -447,7 +448,7 @@ body {
     }
 
     .skillTopGridCol {
-        width: 100%;
+        width: 70vw;
         border: 1px solid #ffffff;
         border-radius: 20px;
         background-color: #9f9fa1;
@@ -462,7 +463,7 @@ body {
 
     .skillBottomRow {
         position: relative;
-        width: 100%;
+        width: 70vw;
         border: 1px solid #ffffff;
         border-radius: 20px;
         color: #ffffff;
