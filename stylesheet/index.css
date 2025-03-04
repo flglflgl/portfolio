@@ -255,6 +255,7 @@ body {
     .copyrightsign {
         display: flex;
         align-items: center;
+        border: 1px solid #ffffff;
     }
 
     .copyrightsign img {
@@ -723,6 +724,7 @@ body {
     .copyrightsign {
         display: flex;
         align-items: center;
+        border: 1px solid #ffffff;
     }
 
     .copyrightsign img {
