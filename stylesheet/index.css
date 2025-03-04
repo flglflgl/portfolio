@@ -1575,7 +1575,6 @@ body {
         display: flex;
         gap: 20px;
         width: fit-content;
-        margin: 10px 0;
     }
 
     .buttonGroup button {
