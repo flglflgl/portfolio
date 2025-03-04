@@ -260,8 +260,6 @@ body {
     }
 
     .copyrightsign img {
-        width: 24px;
-        height: 24px;
         margin: 0 4.9px 0 0;
     }
 
@@ -533,14 +531,6 @@ body {
       #EFFECTS
     \*------------------------------------*/
 
-    /* Jump effect on scroll */
-
-    .jump {
-        transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
-        will-change: transform;
-    }
-
-
     /* Button Group follow cursor effect for button in (Intro, Outro) section */
 
     .buttonGroup {
@@ -731,8 +721,6 @@ body {
     }
 
     .copyrightsign img {
-        width: 24px;
-        height: 24px;
         margin: 0 4.9px 0 0;
     }
 
@@ -900,7 +888,8 @@ body {
         font-family: 'Hero Thin';
         font-size: 1.4rem;
         margin: 0 auto;
-        padding: 0 0 100px 20px;
+        padding: 0 0 100px 100px;
+        border: 1px solid #ffffff;
     }
 
     .outro .buttonGroup {
@@ -1057,14 +1046,6 @@ body {
     /*------------------------------------*\
       #EFFECTS
     \*------------------------------------*/
-
-    /* Jump effect on scroll */
-
-    .jump {
-        transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
-        will-change: transform;
-    }
-
 
     /* Button Group follow cursor effect */
 
