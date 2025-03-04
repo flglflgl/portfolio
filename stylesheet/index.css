@@ -369,11 +369,11 @@ body {
     \*------------------------------------*/
 
     .outro {
-        width: 80vw;
+        width: 70vw;
         font-family: 'Hero Thin';
         font-size: 1.4rem;
         margin: 0 auto;
-        padding: 0 0 100px 0;
+        padding: 0 10px 100px 0;
     }
 
 
@@ -395,7 +395,7 @@ body {
         justify-content: center;
         width: 80vw;
         margin: 0 auto;
-        padding: 0 0 100px 0;
+        padding: 0 10px 100px 0;
     }
 
     .me h1 {
@@ -883,7 +883,7 @@ body {
         font-family: 'Hero Thin';
         font-size: 1.4rem;
         margin: 0 auto;
-        padding: 0 0 100px 0;
+        padding: 0 10px 100px 0;
     }
 
     .outro .buttonGroup {
