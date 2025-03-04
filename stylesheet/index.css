@@ -290,11 +290,11 @@ body {
         width: calc(100vw - 120px);
         display: grid;
         grid-template-rows: repeat(1, 1fr);
-        gap: 0;
+        gap: 100px;
         align-items: center;
         justify-items: center;
         margin: 0 auto;
-        padding: 0 0 100px 0;
+        padding: 100px 0;
         overflow: visible;
     }
 
