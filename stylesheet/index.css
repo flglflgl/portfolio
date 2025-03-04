@@ -59,6 +59,11 @@
      #SETTINGS
    \*------------------------------------*/
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -255,8 +260,8 @@ body {
     }
 
     .copyrightsign img {
-        width: 20px;
-        height: 20px;
+        width: 29px;
+        height: 29px;
         margin: 0 4.9px 0 0;
     }
 
@@ -726,8 +731,8 @@ body {
     }
 
     .copyrightsign img {
-        width: 20px;
-        height: 20px;
+        width: 29px;
+        height: 29px;
         margin: 0 4.9px 0 0;
     }
 
