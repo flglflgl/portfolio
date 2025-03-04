@@ -221,7 +221,7 @@ body {
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        padding: 0 40px;
+        padding: 0 20px;
     }
 
     .bottom ul {
@@ -262,6 +262,7 @@ body {
         width: 14.9px;
         height: 14.9px;
         margin: 0 4.9px 0 0;
+        filter: invert(70%) sepia(3%) saturate(141%) hue-rotate(201deg) brightness(92%) contrast(87%);
     }
 
     /*------------------------------------*\
@@ -686,7 +687,8 @@ body {
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        padding: 0 40px;
+        padding: 0 20px;
+        border: 1px solid #ffffff;
     }
 
     .bottom ul {
