@@ -223,7 +223,7 @@ body {
     .bottom ul {
         display: flex;
         align-items: center;
-        margin: 0 20px;
+        margin: 0 10px 0 20px;
     }
 
     .bottom li {
@@ -258,6 +258,10 @@ body {
         width: 20px;
         height: 20px;
         margin: 0 4.9px 0 0;
+    }
+
+    .copyrightsign img:hover {
+        filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(88deg) brightness(105%) contrast(100%);
     }
 
     /*------------------------------------*\
@@ -690,7 +694,7 @@ body {
     .bottom ul {
         display: flex;
         align-items: center;
-        margin: 0 20px;
+        margin: 0 10px 0 20px;
     }
 
     .bottom li {
@@ -725,6 +729,10 @@ body {
         width: 20px;
         height: 20px;
         margin: 0 4.9px 0 0;
+    }
+
+    .copyrightsign img:hover {
+        filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(88deg) brightness(105%) contrast(100%);
     }
 
     /*------------------------------------*\
@@ -887,11 +895,11 @@ body {
         font-family: 'Hero Thin';
         font-size: 1.4rem;
         margin: 0 auto;
-        padding: 0 20px 100px 0;
+        padding: 0 0 100px 20px;
     }
 
     .outro .buttonGroup {
-        margin: 4px 0;
+        margin: -10px 0 0 0;
     }
 
     /*------------------------------------*\
