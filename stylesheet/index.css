@@ -219,8 +219,6 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100vw;
-        padding: 0 20px;
     }
 
     .bottom ul {
@@ -685,9 +683,6 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 20px;
-        box-sizing: border-box;
-        border: 1px solid #ffffff;
     }
 
     .bottom ul {
