@@ -163,9 +163,9 @@ body {
         width: 100%;
     }
 
+
     .minTopUl ul li.show svg {
-        display: inline-block;
-        transition: transform 0.2s ease-out;
+        display: block;
     }
 
 
@@ -380,7 +380,7 @@ body {
         font-family: 'Hero Thin';
         font-size: 1.4rem;
         margin: 0 auto;
-        padding:  0 0 100px 0;
+        padding: 0 0 100px 0;
         box-sizing: border-box;
     }
 
@@ -892,7 +892,7 @@ body {
         font-family: 'Hero Thin';
         font-size: 1.4rem;
         margin: 0 auto;
-        padding:  0 0 100px 0;
+        padding: 0 0 100px 0;
         box-sizing: border-box;
     }
 
