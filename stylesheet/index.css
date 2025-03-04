@@ -291,7 +291,7 @@ body {
         align-items: center;
         justify-items: center;
         margin: 0 auto;
-        padding: 100px 0;
+        padding: 200px 0 100px 0;
         overflow: visible;
     }
 
@@ -539,7 +539,7 @@ body {
 
     .buttonGroup button {
         position: relative;
-        height: 44px;
+        height: 40px;
         border: 1px solid #a9a9aa;
         border-radius: 20px;
         background-color: #ffffff;
