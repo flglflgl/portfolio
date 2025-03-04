@@ -170,7 +170,7 @@ body {
     }
 
 
-    .minTopUl ul li .liItem {
+    .minTopUl .liCon {
         display: grid;
         grid-template-columns: 4.9px auto;
         gap: 10px;
@@ -185,7 +185,7 @@ body {
     }
 
 
-    .minTopUl .li svg {
+    .minTopUl .liCon svg {
         width: 4px;
         height: 8px;
     }
@@ -502,15 +502,14 @@ body {
         margin: 7px 0 0 0;
     }
 
-    .skillGrid .liItem {
+    .skillGrid .liCon {
         display: grid;
         grid-template-columns: 4.9px auto;
         gap: 10px;
         width: 100%;
-        border: 1px solid #a9a9aa;
     }
 
-    .skillGrid .liItem svg {
+    .skillGrid .liCon svg {
         width: 4px;
         height: 8px;
     }
@@ -1008,7 +1007,7 @@ body {
         margin: 7px 0 0 0;
     }
 
-    .skillGrid .liItem {
+    .skillGrid .liCon {
         display: grid;
         grid-template-columns: 4.9px auto;
         gap: 10px;
@@ -1020,7 +1019,7 @@ body {
         align-items: center;
     }
 
-    .skillGrid .liItem svg {
+    .skillGrid .liCon svg {
         width: 4px;
         height: 8px;
     }
