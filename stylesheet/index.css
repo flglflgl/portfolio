@@ -298,7 +298,7 @@ body {
         align-items: center;
         justify-items: center;
         margin: 0 auto;
-        padding: 200px 0 100px 0;
+        padding: 200px 0;
         overflow: visible;
     }
 
@@ -351,7 +351,7 @@ body {
         width: 22px;
         height: 22px;
         filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(41deg) brightness(110%) contrast(104%);
-        margin: -4px 0 0 0;
+        margin: -4px 4px 0 0;
     }
 
     /*------------------------------------*\
@@ -385,7 +385,7 @@ body {
     }
 
     .outro h2 {
-        margin: 0 20px 0 0;
+        margin: 0 0 0 20px;
     }
 
     /* Outro Button Group */
@@ -763,7 +763,7 @@ body {
         align-items: center;
         justify-items: center;
         margin: 0 auto;
-        padding: 0 0 100px 0;
+        padding: 200px 0;
         overflow: visible;
     }
 
@@ -819,7 +819,7 @@ body {
         width: 22px;
         height: 22px;
         filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(41deg) brightness(110%) contrast(104%);
-        margin: -4px 0 0 0px;
+        margin: -4px 4px 0 0px;
     }
 
 
@@ -897,7 +897,7 @@ body {
     }
 
     .outro h2 {
-        margin: 0 20px 0 0;
+        margin: 0 0 0 100px;
     }
 
     .outro .buttonGroup {
