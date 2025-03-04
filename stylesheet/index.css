@@ -219,6 +219,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        width: 100vw;
         padding: 0 20px;
     }
 
@@ -242,8 +243,8 @@ body {
 
     /* LinkedIn SVG */
     .bottom .lin img {
-        width: 40px;
-        height: 40px;
+        width: 29px;
+        height: 29px;
     }
 
     .bottom img:hover {
@@ -686,6 +687,7 @@ body {
         align-items: center;
         justify-content: space-between;
         padding: 0 20px;
+        box-sizing: border-box;
         border: 1px solid #ffffff;
     }
 
@@ -709,8 +711,8 @@ body {
 
     /* LinkedIn SVG */
     .bottom .lin img {
-        width: 40px;
-        height: 40px;
+        width: 29px;
+        height: 29px;
     }
 
     .bottom img:hover {
