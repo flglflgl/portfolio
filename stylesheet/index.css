@@ -186,7 +186,6 @@ body {
 
 
     .minTopUl .li svg {
-
         width: 4px;
         height: 8px;
     }
@@ -220,7 +219,6 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
         padding: 0 20px;
     }
 
@@ -686,7 +684,6 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
         padding: 0 20px;
         border: 1px solid #ffffff;
     }
