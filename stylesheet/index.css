@@ -71,6 +71,7 @@ html {
 
 body {
     font-family: 'Hero';
+    font-size: 1.1rem;
     background-color: #9f9fa1;
     color: #ffffff;
 }
@@ -298,7 +299,7 @@ body {
         align-items: center;
         justify-items: center;
         margin: 0 auto;
-        padding: 200px 0;
+        padding: 200px 0 100px 0;
         overflow: visible;
     }
 
@@ -816,7 +817,7 @@ body {
         align-items: center;
         justify-items: center;
         margin: 0 auto;
-        padding: 200px 0;
+        padding: 200px 0 100px 0;
         overflow: visible;
     }
 
@@ -1280,7 +1281,7 @@ body {
         align-items: center;
         justify-items: center;
         margin: 0 auto;
-        padding: 200px 0;
+        padding: 200px 0 100px 0;
         overflow: visible;
     }
 
