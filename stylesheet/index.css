@@ -240,8 +240,8 @@ body {
 
     /* LinkedIn SVG */
     .bottom .lin img {
-        width: 29px;
-        height: 29px;
+        width: 40px;
+        height: 40px;
     }
 
     .bottom img:hover {
@@ -284,7 +284,7 @@ body {
     /* Grid for showing posts */
 
     .postGrid {
-        width: 90vw;
+        width: 70vw;
         display: grid;
         grid-template-rows: repeat(1, 1fr);
         gap: 100px;
@@ -369,7 +369,7 @@ body {
     \*------------------------------------*/
 
     .outro {
-        width: 90vw;
+        width: 70vw;
         font-family: 'Hero Thin';
         font-size: 1.4rem;
         margin: 0 auto;
@@ -703,8 +703,8 @@ body {
 
     /* LinkedIn SVG */
     .bottom .lin img {
-        width: 29px;
-        height: 29px;
+        width: 40px;
+        height: 40px;
     }
 
     .bottom img:hover {
