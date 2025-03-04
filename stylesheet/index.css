@@ -253,7 +253,6 @@ body {
     .copyrightsign {
         display: flex;
         align-items: center;
-        border: 1px solid #ffffff;
     }
 
     .copyrightsign img {
@@ -699,7 +698,7 @@ body {
     .bottom img {
         width: 24px;
         height: 24px;
-        filter: invert(70%) sepia(3%) saturate(141%) hue-rotate(201deg) brightness(92%) contrast(87%);
+        filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(88deg) brightness(105%) contrast(100%);
     }
 
     /* LinkedIn SVG */
@@ -709,14 +708,13 @@ body {
     }
 
     .bottom img:hover {
-        filter: invert(95%) sepia(6%) saturate(65%) hue-rotate(202deg) brightness(85%) contrast(89%);
+        filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(88deg) brightness(105%) contrast(100%);
     }
 
     /* Copyright Sign */
     .copyrightsign {
         display: flex;
         align-items: center;
-        border: 1px solid #ffffff;
     }
 
     .copyrightsign img {
