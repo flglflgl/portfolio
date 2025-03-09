@@ -24,27 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// Fly In effect when clicking on .top ul li
-document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".top ul a").forEach(link => {
-        link.addEventListener("click", (event) => {
-            event.preventDefault();
-
-            const targetId = link.getAttribute("href");
-            const targetSection = document.querySelector(targetId); // Select the section
-
-            if (targetSection) {
-                // Show section
-                targetSection.style.display = "block";
-
-                // Smoothly scroll to the section
-                targetSection.scrollIntoView({ behavior: "smooth" });
-            }
-        });
-    });
-});
-
-
 // Run video when .cursor is on .post
 document.addEventListener("DOMContentLoaded", () => {
     const posts = document.querySelectorAll(".post");
