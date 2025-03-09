@@ -107,7 +107,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #9f9fa1;
+        background-color: #8b8b8d;
         padding: 20px;
         z-index: 100;
     }
@@ -139,7 +139,7 @@ body {
         justify-content: center;
         border-radius: 100%;
         background-color: #ffffff;
-        color: #a9a9aa;
+        color: #8b8b8d;
         transition: right 0.7s ease-in-out, border-radius 0.7s ease-in-out;
     }
 
@@ -160,7 +160,7 @@ body {
     .minTopUl ul li {
         display: flex;
         font-weight: 400;
-        color: #a9a9aa;
+        color: #8b8b8d;
         margin: 12.9px 0;
         width: 100%;
     }
@@ -173,7 +173,7 @@ body {
 
     .minTopUl ul li a {
         text-decoration: none;
-        color: #a9a9aa;
+        color: #8b8b8d;
     }
 
 
@@ -214,7 +214,7 @@ body {
         height: 49px;
         border: none;
         background: none;
-        color: #a9a9aa;
+        color: #8b8b8d;
     }
 
     .minTopUlClosingbtn img {
@@ -256,7 +256,7 @@ body {
     }
 
     .bottom img:hover {
-        filter: invert(91%) sepia(2%) saturate(97%) hue-rotate(202deg) brightness(95%) contrast(86%);
+        filter: invert(72%) sepia(6%) saturate(60%) hue-rotate(201deg) brightness(102%) contrast(91%);
     }
 
     /* Copyright Sign */
@@ -466,7 +466,7 @@ body {
     .skillTopGridCol {
         border: 1px solid #ffffff;
         border-radius: 20px;
-        background-color: #9f9fa1;
+        background-color: #8b8b8d;
         color: #ffffff;
         padding: 20px;
     }
@@ -502,7 +502,7 @@ body {
         font-weight: 500;
         border-radius: 20px;
         background-color: #ffffff;
-        color: #9f9fa1;
+        color: #8b8b8d;
         padding: 0 10px;
         margin: 0 0 10px 10px;
     }
@@ -549,10 +549,10 @@ body {
     .buttonGroup button {
         position: relative;
         height: 40px;
-        border: 1px solid #a9a9aa;
+        border: 1px solid #8b8b8d;
         border-radius: 20px;
         background-color: #ffffff;
-        color: #a9a9aa;
+        color: #8b8b8d;
         padding: 10px 40px;
         cursor: pointer;
         overflow: hidden;
@@ -625,7 +625,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #9f9fa1;
+        background-color: #8b8b8d;
         padding: 20px;
         z-index: 100;
     }
@@ -657,7 +657,7 @@ body {
         justify-content: center;
         border-radius: 100%;
         background-color: #ffffff;
-        color: #a9a9aa;
+        color: #8b8b8d;
         transition: right 0.7s ease-in-out, border-radius 0.7s ease-in-out;
     }
 
@@ -678,7 +678,7 @@ body {
     .minTopUl ul li {
         display: flex;
         font-weight: 400;
-        color: #a9a9aa;
+        color: #8b8b8d;
         margin: 12.9px 0;
         width: 100%;
     }
@@ -691,7 +691,7 @@ body {
 
     .minTopUl ul li a {
         text-decoration: none;
-        color: #a9a9aa;
+        color: #8b8b8d;
     }
 
 
@@ -732,7 +732,7 @@ body {
         height: 49px;
         border: none;
         background: none;
-        color: #a9a9aa;
+        color: #8b8b8d;
     }
 
     .minTopUlClosingbtn img {
@@ -774,7 +774,7 @@ body {
     }
 
     .bottom img:hover {
-        filter: invert(91%) sepia(2%) saturate(97%) hue-rotate(202deg) brightness(95%) contrast(86%);
+        filter: invert(72%) sepia(6%) saturate(60%) hue-rotate(201deg) brightness(102%) contrast(91%);
     }
 
     /* Copyright Sign */
@@ -984,7 +984,7 @@ body {
     .skillTopGridCol {
         border: 1px solid #ffffff;
         border-radius: 20px;
-        background-color: #9f9fa1;
+        background-color: #8b8b8d;
         color: #ffffff;
         padding: 20px;
     }
@@ -1020,7 +1020,7 @@ body {
         font-weight: 500;
         border-radius: 20px;
         background-color: #ffffff;
-        color: #9f9fa1;
+        color: #8b8b8d;
         padding: 0 10px;
         margin: 0 0 10px 10px;
     }
@@ -1067,10 +1067,10 @@ body {
     .buttonGroup button {
         position: relative;
         height: 40px;
-        border: 1px solid #a9a9aa;
+        border: 1px solid #8b8b8d;
         border-radius: 20px;
         background-color: #ffffff;
-        color: #a9a9aa;
+        color: #8b8b8d;
         padding: 10px 40px;
         cursor: pointer;
         overflow: hidden;
@@ -1092,7 +1092,7 @@ body {
         left: 50%;
         width: 10px;
         height: 10px;
-        background-color: #c7c7c9;
+        background-color: #b9b9bb;
         border-radius: 50%;
         transform: translateX(-50%) translateY(100%) scale(0);
         transition: transform 0.4s ease-out, width 0.4s ease-out, height 0.4s ease-out;
@@ -1142,7 +1142,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #9f9fa1;
+        background-color: #8b8b8d;
         padding: 20px 20px 20px 40px;
         z-index: 100;
     }
@@ -1234,7 +1234,7 @@ body {
     }
 
     .bottom img:hover {
-        filter: invert(91%) sepia(2%) saturate(97%) hue-rotate(202deg) brightness(95%) contrast(86%);
+        filter: invert(72%) sepia(6%) saturate(60%) hue-rotate(201deg) brightness(102%) contrast(91%);
     }
 
     /* Copyright Sign */
@@ -1369,7 +1369,7 @@ body {
 
     .postCursorToolTip {
         font-size: 1.4rem;
-        color: #9f9fa1;
+        color: #8b8b8d;
         border-radius: 5px;
         padding: 4.9px 10px;
         white-space: nowrap;
@@ -1379,7 +1379,7 @@ body {
     .postCursor {
         height: 10.9vh;
         aspect-ratio: 4/10;
-        border: 2px solid #9f9fa1;
+        border: 2px solid #8b8b8d;
         border-radius: 20px;
         pointer-events: none;
         transition: transform 0.2s ease-in-out;
@@ -1482,7 +1482,7 @@ body {
     .skillTopGridCol {
         border: 1px solid #ffffff;
         border-radius: 20px;
-        background-color: #9f9fa1;
+        background-color: #8b8b8d;
         color: #ffffff;
         padding: 20px;
     }
@@ -1517,7 +1517,7 @@ body {
         font-weight: 500;
         border-radius: 20px;
         background-color: #ffffff;
-        color: #9f9fa1;
+        color: #8b8b8d;
         padding: 0 10px;
         margin: 0 0 0 10px;
     }
@@ -1581,10 +1581,10 @@ body {
     .buttonGroup button {
         position: relative;
         height: 40px;
-        border: 1px solid #a9a9aa;
+        border: 1px solid #8b8b8d;
         border-radius: 20px;
         background-color: #ffffff;
-        color: #a9a9aa;
+        color: #8b8b8d;
         padding: 10px 40px;
         cursor: pointer;
         overflow: hidden;
@@ -1606,7 +1606,7 @@ body {
         left: 50%;
         width: 10px;
         height: 10px;
-        background-color: #c7c7c9;
+        background-color: #b9b9bb;
         border-radius: 50%;
         transform: translateX(-50%) translateY(100%) scale(0);
         transition: transform 0.4s ease-out, width 0.4s ease-out, height 0.4s ease-out;
