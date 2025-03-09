@@ -1461,11 +1461,10 @@ body {
     .skillGrid {
         display: grid;
         grid-template-rows: 1fr 1fr;
-        row-gap: 20px; /* Explicitly set row gap */
+        gap: 20px;
         width: 70vw;
         height: 70vh;
         margin: 0 auto;
-        align-content: start; /* Prevents grid collapse */
     }
 
     .skillGrid h2 {
